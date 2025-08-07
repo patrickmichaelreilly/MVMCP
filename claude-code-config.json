@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "MVMCP": {
+      "command": "dotnet",
+      "args": ["run", "--project", "/home/patrick/MVMCP/MicrovellumMCP.csproj"],
+      "description": "Microvellum MCP Server for SQL Server database operations"
+    }
+  }
+}
