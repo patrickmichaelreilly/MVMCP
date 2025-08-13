@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__zxajnj__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 1340px; height: auto}
+.sty__qv1grq__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__a9oc68__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__tfuwut__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 1340px; height: auto}
+.sty__n4repu__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__sdrfop__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__hv7of1__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ey1vnp__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 866px; height: 580px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Optimized Sheet Yield Overview</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p> As of version 15.6, the program displays an optimized sheet yield value in the nest drawing, the nested pattern layout screen, and the sawing pattern layout screen. It is also possible to add that value to any report consuming data from the PlacedSheets table. The following information applies to Toolbox version 15.6.0830 and greater. <br></p> 
+ <p> Knowing the nested sheet yield is useful when calculating material cost actuals for project cost tracking. This accumulated knowledge can also be helpful when calculating profitability in future projects. <br></p> 
+ <h2 id="Nested_Sheet_Yield" class="toc_anchors"> <b> Nested Sheet Yield </b> <br></h2> 
+ <p> Microvellum calculates the nested sheet yield based on the formula: Yield = Part Area Sum / Sheet Useable Area (not including any trim cuts). <br></p> 
+ <p> The program calculates the Part Area Sum in one of the following ways depending on the type of nesting and settings you select. <br></p> 
+ <p> 1.) If you are processing using simple Block Nesting (or block nesting – “include routes in borders”) and the part is rectangular, the program calculates the yield based on the actual part sizes. <br></p> 
+ <p> If the part is not rectangular (e.g. circular, pizza slice shaped, irregular polygon), the program calculates the yield based on the dimensions of a virtual bounding box enclosing the shape. The bounding box is the smallest rectangular box with edges parallel to the sheet perimeters that surrounds all points of the actual part. See figure one below for a few examples. <br></p> 
+ <div class="target_moving" id="target_mov_img_8812546372468488"> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntte72bce0f627c4f5c8814bdc40ae29886" class="docsimage sty__zxajnj__cls" data-zdeskdocid="img_8812546372468488" data-zdeskdocselectedclass="original"> 
+  <br>
+ </div> 
+ <div> 
+  <i> Fig. 1 </i> 
+  <br>
+ </div> 
+ <p> Microvellum Block Nesting optimizes the parts based on the bounding box dimensions instead of the actual irregular part sizes, and for this reason, it also calculates the yield based on the bounding box dimensions. <br></p> 
+ <p> 2.) If you are processing using True Shaped nesting, the program calculates the yield based on the actual part shapes and sizes. <br></p> 
+ <h2 id="Sawing_Sheet_Yield" class="toc_anchors"> <b> Sawing Sheet Yield </b> <br></h2> 
+ <p> Microvellum calculates the sawing sheet yield based on the formula: Yield = Part Area Sum / Sheet Usable Area. <br></p> 
+ <p> The program calculates the Part Area Sum based on the shape of the part. If the part is rectangular, the program calculates the yield based on the actual part sizes. <br></p> 
+ <p> If the part is not rectangular, the program calculates the yield based on the dimensions of a virtual bounding box enclosing the shape as described above. <br></p> 
+ <h2 id="Utilizing_the_Sheet_Yield" class="toc_anchors"> <b> Utilizing the Sheet Yield </b> <br></h2> 
+ <p> You are now able to view the sheet yield when viewing or printing the composite nest drawing, when viewing the sawing pattern layout and nested pattern layout, or you can add it to any reports utilizing PlacedSheets table data. <br></p> 
+ <p> Nest Composite Drawing Yield. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt2d919976ebce435b95371d1eaa5d690c" class="sty__qv1grq__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> Fig. 2 </i> 
+  <br>
+ </div> 
+ <p> Nest Composite Drawing Yield after moving part and updating G-Code. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttfda2faa3358f4caf8fcc967e02b808a6" class="sty__a9oc68__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> Fig. 3 </i> 
+  <br>
+ </div> 
+ <p> Nested Pattern Layout screen. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttb646d4a5908b4e4fb57d2888cb5750e0" class="docsimage sty__tfuwut__cls" data-zdeskdocid="img_238777857585472" data-zdeskdocselectedclass="original"> 
+  <br>
+ </div> 
+ <div> 
+  <i> Fig. 4 </i> 
+  <br>
+ </div> 
+ <p> Sawing Pattern Layout screen. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt6ec981f1dc9441f4a64e4cb64c205e49" class="sty__n4repu__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> Fig. 5 </i> 
+  <br>
+ </div> 
+ <p> You may also modify the Nesting Optimization or Sawing Optimization reports to display the sheet yield. Use the work order database field PlacedSheets.Yield. <br></p> 
+ <ul> 
+  <li> Open the report in the Report Designer. <br></li> 
+  <li> Insert a text component within the databand defined as PlacedSheets <br></li> 
+  <li> Add the expression to the text component: {Math.Round(PlacedSheets.Yield * 100, 2)}% <br></li> 
+  <li> Preview and verify there are no errors. Save the report. <br></li> 
+ </ul> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt6266c97e075e46b6ac6a0dd505844e4c" class="sty__sdrfop__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> Fig. 6</i>
+  <br>
+ </div>
+ <div>
+  <i> </i> 
+  <br>
+ </div> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt446b9787eb71462c9168a32fc3f3e951" class="sty__hv7of1__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> Fig. 7</i>
+  <br>
+ </div>
+ <div>
+  <i> </i> 
+  <br>
+ </div> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt5154ef9060a04e62a01ab7fb4fdf17b6" class="docsimage currimg sty__ey1vnp__cls" data-zdeskdocid="img_1036586253812457" data-zdeskdocselectedclass="original"> 
+  <br>
+ </div> 
+ <div> 
+  <i> Fig. 8 </i> 
+  <br>
+ </div> 
+ <div> 
+  <hr> 
+  <br>
+ </div> 
+<style type="text/css" data-css-purify-styler="1755096718767">.sty__zxajnj__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 1340px; height: auto}
+.sty__qv1grq__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__a9oc68__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__tfuwut__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 1340px; height: auto}
+.sty__n4repu__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__sdrfop__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__hv7of1__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ey1vnp__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 866px; height: 580px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="26 Mar 2025 01:18 PM"><span>4 months ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foptimized-sheet-yield-overview&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foptimized-sheet-yield-overview" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foptimized-sheet-yield-overview" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/optimized-sheet-yield-overview" target="_blank">https://community.microvellum.com/portal/en/kb/articles/optimized-sheet-yield-overview</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:52:00 AM</p>
+            <p><strong>Categories:</strong> Optimizer</p>
+        </div>
+    </div>
+</body>
+</html>

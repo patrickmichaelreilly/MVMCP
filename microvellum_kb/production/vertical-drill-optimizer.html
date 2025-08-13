@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__3c0xlt__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__l1ub4z__cls{font-size: 13px}
+.sty__ae477s__cls{font-size: 13px}
+.sty__dvgj0t__cls{font-size: 13px}
+.sty__btafk2__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__9uc18a__cls{font-size: 13px}
+.sty__ggn7kb__cls{font-size: 13px}
+.sty__a20rvc__cls{font-size: 13px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Vertical Drill Optimizer</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p class="MsoNormal"> The Microvellum Vertical Drill Optimizer strategy currently drills holes based on the first drill of a given diameter. The location, in x and y, orders the drill groups. Then they are grouped by diameter. <br></p> 
+ <p class="MsoNormal"> When the drill configuration, from the location of the first drill of a given diameter, physically matches the hole locations, then the holes can be drilled with multiple drills at one time. This is determined by the hole being drilled. When a hole has to be drilled by itself because the drill head configuration can’t physically drill multiples holes from that location, the optimizer then evaluates from the next hole’s location. If the drill head can physically drill multiples holes at one time, from that next location, then the optimizer groups those holes to be drilled together. <br></p> 
+ <p class="MsoNormal"> An example of drilling that would not be optimized is as follows: <br></p> 
+ <p class="MsoNormal"> The first two 8mm drills in a drill head configuration are 32mm apart. The rest of the drills are spaced 64mm apart. The holes on the part are all 64mm apart. The optimizer looks at the first hole and sees that it must be drilled by itself. It then evaluates the next hole from the first drill and sees that it also must be drilled by itself. Eventually, it determines that all holes that are 64mm apart must be drilled by themselves. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttd16d03270f5d4ee5bf68b75f4f2eebd6" class="sty__3c0xlt__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__l1ub4z__cls"> Fig. 01 – Drilling that would </span> <b> <span class="size sty__ae477s__cls"> not </span> </b> <span class="size sty__dvgj0t__cls"> be optimized </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p class="MsoNormal"> An example of drilling that would be optimized is as follows: <br></p> 
+ <p class="MsoNormal"> Using the same drill head configuration as above with a part that has some 8mm holes at 32mm apart. When evaluating a hole that is 32mm apart from the next hole, the optimizer determines these two holes can be drilled at one time. If there were holes 64mm increments apart from the second drill hole and the other 8mm drills can physically reach them while the first 8mm drill is at the hole location being evaluated, these too would be optimized to drill at one time. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntta6bd4580f7ce464293057aafb890210b" class="sty__btafk2__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__9uc18a__cls"> Fig. 02 – Drilling that </span> <b> <span class="size sty__ggn7kb__cls"> would </span> </b> <span class="size sty__a20rvc__cls"> be optimized. </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p class="MsoNormal"> It is best to stagger your drills in a way that fits your most common drill hole pattern to maximize optimization. For instance, in Figure 01, if you change the first drill in the Y-axis to a different diameter, you are left with 5 drills of the same diameter staggered 64mm apart. This would optimize with the drill pattern in Figure 01 because your staggering would be based on the first drill of that diameter. <br></p> 
+ <p class="MsoNormal"> In Figure 02, if you changed the diameter of the second drill from the bottom in the Y-axis, this would increase the drill step by one. The optimizer would see that all the holes could be drilled together except the second from the bottom. That hole would be drilled separately. <br></p> 
+<style type="text/css" data-css-purify-styler="1755096235925">.sty__3c0xlt__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__l1ub4z__cls{font-size: 13px}
+.sty__ae477s__cls{font-size: 13px}
+.sty__dvgj0t__cls{font-size: 13px}
+.sty__btafk2__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__9uc18a__cls{font-size: 13px}
+.sty__ggn7kb__cls{font-size: 13px}
+.sty__a20rvc__cls{font-size: 13px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="26 Mar 2025 01:15 PM"><span>4 months ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fvertical-drill-optimizer&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fvertical-drill-optimizer" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fvertical-drill-optimizer" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/vertical-drill-optimizer" target="_blank">https://community.microvellum.com/portal/en/kb/articles/vertical-drill-optimizer</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:43:56 AM</p>
+            <p><strong>Categories:</strong> Production</p>
+        </div>
+    </div>
+</body>
+</html>

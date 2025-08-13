@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__clh8f3__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__sz4uvt__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__7676y2__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__5xod3s__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__merjdj__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__1r5rv8__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Understanding the Hardware Tab</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p>The Hardware Tab will display all the hardware items that are in the product or subassembly. &nbsp;Selecting a hardware item will display all the parameters for the hardware item.<br></p>
+ <div>
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp2ae76ad790144ffca86b45dd9a05790a" class="sty__clh8f3__cls"> 
+  <br>
+ </div>
+ <p>Hardware is not drawn into the drawing the same way parts are drawn.&nbsp;You must have an AutoCAD drawing that is referenced for the hardware item.&nbsp;When hardware is added to the product, its AutoCAD drawing is referenced, and the hardware item is drawn into the product using the origin parameters for the hardware item.&nbsp;All hardware drawings can be stored in the MicrovellumGraphics.sdf database, or you can store them on disk in the Microvellum Data\Graphics\Hardware folder.&nbsp;If the drawing is stored in the database, it will be scaled when using metric units to draw, but if it is stored in the hardware folder, it will be used as-is.&nbsp;The program will always look for the file on disk before going to the database.&nbsp;This allows you to store metric drawings on disk, so no scaling is applied.<br></p>
+ <p>All hardware must first be created within the material file before it can be used in a product.&nbsp;Please review the Hardware Material File section for detailed information on how to setup associative hardware and non-associative hardware.<br></p>
+ <h2 class="toc_anchors" id="Hardware_Tab_______________Context_Menu"><b>Hardware Tab Context Menu</b><br></h2>
+ <p>Right-clicking in the hardware list on the right will display a context menu that will allow you to add, copy, and delete hardware items from the part properties interface.<br></p>
+ <h3 class="toc_anchors" id="Add_New_Part"><b>Add New Part</b><br></h3>
+ <div>
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp576a3e2871444e29889c19b831e2d14f" class="sty__sz4uvt__cls"> 
+  <br>
+ </div>
+ <p>When you want to add a new hardware item to your product or subassembly, you can select the <i> Add New Part&nbsp;</i>menu item.&nbsp;This will add an item in the hardware list called New Part.&nbsp;You can select this item in the list and then use the Edit button on the Hardware Part Name parameter to select a hardware item from the hardware inventory material file.<br></p>
+ <h3 class="toc_anchors" id="Copy_Selected_Hardware_Part"><b>Copy Selected Hardware Part</b><br></h3>
+ <div>
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp791b52f2a9644035a74bfc492e49ee0b" class="sty__7676y2__cls"> 
+  <br>
+ </div>
+ <p>With a hardware item selected in the list, select the <i> Copy Selected Hardware Part </i> menu item to add another hardware item to the product.<br></p>
+ <h3 class="toc_anchors" id="Delete_Selected_Hardware_Part"><b>Delete Selected Hardware Part</b><br></h3>
+ <div>
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspfda317050299476688514fdd742c8c47" class="sty__5xod3s__cls"> 
+  <br>
+ </div>
+ <p>Selecting the <i> Delete Selected Hardware Part </i> will remove the hardware item from the product or subassembly.<br></p>
+ <h3 class="toc_anchors" id="Copy_Selected_Part_to_Clipboard"><b>Copy Selected Part to Clipboard</b><br></h3>
+ <div>
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspba5dc72d346442bdbd364120b43fbeb2" class="sty__merjdj__cls"> 
+  <br>
+ </div>
+ <p>This command will allow you to save the currently selected hardware part to the Microvellum Clipboard.&nbsp;Refer to the Microvellum Clipboard topic for additional information.<br></p>
+ <h3 class="toc_anchors" id="Paste_Part_from_Clipboard"><b>Paste Part from Clipboard</b><br></h3>
+ <div>
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspf3d3c8cf785649059df867fd0f46b39f" class="sty__1r5rv8__cls"> 
+  <br>
+ </div>
+ <p>This command will allow you to select a hardware part saved to the Microvellum Clipboard and overwrite the currently selected hardware part.&nbsp;If you are trying to add a new hardware part from the Microvellum Clipboard, use the <i> Add New Part&nbsp;</i>menu item first, then a part from the clipboard.&nbsp;Refer to the Microvellum Clipboard topic for additional information.<br></p>
+ <h3 class="toc_anchors" id="Hardware_______________Parameters"><b>Hardware Parameters</b><br></h3>
+ <p>Each parameter will modify the hardware item.&nbsp;Review the parameters below.<br></p>
+ <h3 class="toc_anchors" id="Hardware_Part_Name"><b>Hardware Part Name</b><br></h3>
+ <p>The name of the hardware item.&nbsp;Selecting the edit button will allow you to change the hardware that is being used.&nbsp;The list of hardware items from your material file will be displayed.&nbsp;For a hardware item to be processed into a work order, a hardware part name needs to match a hardware inventory item from the material file.&nbsp;You can also place a minus sign in front of the hardware name, and it will force the program to skip this hardware item when processing a work order.&nbsp;This is common for hardware items that you want to draw in the drawing but not process.<br></p>
+ <h3 class="toc_anchors" id="Quantity"><b>Quantity</b><br></h3>
+ <p>The quantity of the hardware.<br></p>
+ <h3 class="toc_anchors" id="Width"><b>Width</b><br></h3>
+ <p>The width of the hardware item.&nbsp;It is very common not to have the width cell populated for hardware items, although any information entered here will be processed into the work order that can be used for reporting purposes.<br></p>
+ <h3 class="toc_anchors" id="Height"><b>Height</b><br></h3>
+ <p>The height of the hardware item.&nbsp;It is very common not to have the height cell populated for hardware items. However, any information entered here will be processed into the work order that can be used for reporting purposes.<br></p>
+ <h3 class="toc_anchors" id="Depth"><b>Depth</b><br></h3>
+ <p>The depth of the hardware item.&nbsp;It is very common not to have the depth cell populated for hardware items, although any information entered here will be processed into the work order that can be used for reporting purposes.<br></p>
+ <h3 class="toc_anchors" id="X_Origin"><b>X Origin</b><br></h3>
+ <p>A parameter used to place the hardware item within the product.&nbsp;The X origin is the value from the left of the product to the right of the product.&nbsp;Any positive number will move the hardware towards the right of the product, and any negative value will move it towards the left.<br></p>
+ <p>The placement of the hardware is always based on the back left corner of the product unless it is within a subassembly than the placement is based on the subassembly origin.<br></p>
+ <h3 class="toc_anchors" id="Y_Origin"><b>Y Origin</b><br></h3>
+ <p>A parameter used to place the hardware item within the product.&nbsp;The Y origin is the value from the back of the product to the front of the product.&nbsp;Any negative number will move the hardware towards the front of the product, while any positive number will move it towards the back of the product.<br></p>
+ <p>The placement of the hardware item is always based on the back left corner of the product unless it is within a subassembly than the placement is based on the subassembly origin.<br></p>
+ <h3 class="toc_anchors" id="Z_Origin"><b>Z Origin</b><br></h3>
+ <p>A parameter used to place the hardware item within the product.&nbsp;The Z origin is the value from the bottom of the product to the top of the product.&nbsp;Any positive value will move the hardware towards the top of the product, while any negative number will move it towards the bottom of the product.<br></p>
+ <p>The placement of the hardware item is always based on the back left corner of the product unless it is within a subassembly than the placement is based on the subassembly origin.<br></p>
+ <h3 class="toc_anchors" id="X_Rotation"><b>X Rotation</b><br></h3>
+ <p>A parameter used to determine the rotation of the hardware item along the X-axis.&nbsp;Although you can enter any value in this parameter, it is recommended to use a value between 0 through 360.&nbsp;If the hardware item is set up as a non-associative hardware item, then you can use this parameter to control the rotation.&nbsp;The X Rotation parameter will not work when a value is also used in the Associative Rotation Angle.<br></p>
+ <h3 class="toc_anchors" id="Y_Rotation"><b>Y Rotation</b><br></h3>
+ <p>A parameter used to determine the rotation of the hardware item along the Y-axis.&nbsp;Although you can enter any value in this parameter, it is recommended to use a value between 0 through 360.&nbsp; If the hardware item is set up as a non-associative hardware item, then you can use this parameter to control the rotation.&nbsp;The Y Rotation parameter will not work when a value is also used in the Associative Rotation Angle.<br></p>
+ <h3 class="toc_anchors" id="Z_Rotation"><b>Z Rotation</b><br></h3>
+ <p>A parameter used to determine the rotation of the hardware item along the Z-axis.&nbsp;Although you can enter any value in this parameter, it is recommended to use a value between 0 through 360.&nbsp; If the hardware item is set up as a non-associative hardware item, then you can use this parameter to control the rotation.&nbsp;The Y Rotation parameter will not work when a value is also used in the Associative Rotation Angle.<br></p>
+ <h3 class="toc_anchors" id="Associative_Rotation_Angle"><b>Associative Rotation Angle</b><br></h3>
+ <p>The Associative Rotation Angle is a unique parameter for hardware items that contain Associative Hardware Machining.&nbsp;This parameter will rotate the hardware item along with the hardware drawings Z-axis.&nbsp;Any value in this parameter will override the X, Y, and Z rotation parameters.&nbsp;For detailed information on setting up hardware, please refer to the Associative Hardware Tutorial.<br></p>
+<style type="text/css" data-css-purify-styler="1755096104007">.sty__clh8f3__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__sz4uvt__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__7676y2__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__5xod3s__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__merjdj__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__1r5rv8__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="06 Aug 2020 01:45 PM"><span>5 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Funderstanding-the-hardware-tab&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Funderstanding-the-hardware-tab" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Funderstanding-the-hardware-tab" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/understanding-the-hardware-tab" target="_blank">https://community.microvellum.com/portal/en/kb/articles/understanding-the-hardware-tab</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:41:44 AM</p>
+            <p><strong>Categories:</strong> Part Properties</p>
+        </div>
+    </div>
+</body>
+</html>

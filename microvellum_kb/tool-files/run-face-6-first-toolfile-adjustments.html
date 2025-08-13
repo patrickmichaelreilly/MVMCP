@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__azlyhy__cls{background: white}
+.sty__ufnynr__cls{color: rgb(34, 34, 34)}
+.sty__0drw91__cls{font-size: 11.5pt}
+.sty__d0hoif__cls{font-size: 24px}
+.sty__tq99ja__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 889px; height: 657px}
+.sty__fcgdik__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 950px; height: 118px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">"Run Face 6 First" Toolfile Adjustments</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p>In build 15.5, the software has been revised to accommodate a new method of making trim cuts.&nbsp; This revision gives the user better control over which corner gets trimmed without having to make extensive changes to the spreadsheet of the toolfile.&nbsp;<br></p>
+ <p>This also allows the user to control which way the tool is running, either clockwise or counterclockwise. Trim route direction is based on the same toolfile setting as the part border direction. That setting is "Border Route Direction."<br></p>
+ <p>In this article, we will briefly review the settings and how to control them.<br></p>
+ <h2 id="Adjust_which_corner_is_getting_the_Face_6____________Trim_cut" class="toc_anchors sty__azlyhy__cls"><b><span class="colour sty__ufnynr__cls"><span class="size sty__0drw91__cls"><span class="size sty__d0hoif__cls">Adjust which corner is getting the Face 6 Trim cut:</span></span></span></b><br></h2>
+ <p>Open a toolfile in the spreadsheet environment (Options &gt; Machining &gt; Open a Tool File in Spreadsheet...).<br></p>
+ <p>Click on the tab "Settings."&nbsp;&nbsp;<br></p>
+ <p>Find the variable in column A "UserSetOrigin" (usually found on row 33). Enter a value in column B (1 for Lower Left; 2 for Lower Right; 3 for Upper Right; 4 for Upper Left). See the example below.<br></p>
+ <p>If nothing is in that row, or it contains a different variable, enter the new variable name in column A "UserSetOrigin" for later use.&nbsp; Add the following help text in column C: "1 for Lower Left; 2 for Lower Right; 3 for Upper Right; 4 for Upper Left."<br></p>
+ <div>
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt4e73f523e2744acc82d694eae08a50ce" class="docsimage sty__tq99ja__cls" data-zdeskdocid="img_3275723606829333" data-zdeskdocselectedclass="original"> 
+  <br>
+ </div>
+ <p>If the tool compensation is incorrect on the trim cuts for Face 6, click the spreadsheet Settings tab again and find row 130.&nbsp; For most, it will probably be blank.&nbsp; Enter "ReverseToolComp (RUNFACE6)" in column A, and a value of 1 in column B to flip the tool comp. See the example below.<br></p>
+ <div>
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttd9f83674d86747f883299cfe89801530" class="currimg docsimage sty__fcgdik__cls" data-zdeskdocid="img_7330331518112483" data-zdeskdocselectedclass="original" alt="Toolfile Spreadsheet - ReverseToolComp">
+  <br>
+ </div>
+<style type="text/css" data-css-purify-styler="1755096745872">.sty__azlyhy__cls{background: white}
+.sty__ufnynr__cls{color: rgb(34, 34, 34)}
+.sty__0drw91__cls{font-size: 11.5pt}
+.sty__d0hoif__cls{font-size: 24px}
+.sty__tq99ja__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 889px; height: 657px}
+.sty__fcgdik__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 950px; height: 118px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="09 Feb 2023 02:35 PM"><span>2 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Frun-face-6-first-toolfile-adjustments&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Frun-face-6-first-toolfile-adjustments" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Frun-face-6-first-toolfile-adjustments" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/run-face-6-first-toolfile-adjustments" target="_blank">https://community.microvellum.com/portal/en/kb/articles/run-face-6-first-toolfile-adjustments</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:52:26 AM</p>
+            <p><strong>Categories:</strong> Tool Files</p>
+        </div>
+    </div>
+</body>
+</html>

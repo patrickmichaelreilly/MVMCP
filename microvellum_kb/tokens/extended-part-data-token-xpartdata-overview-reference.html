@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__wy0sj9__cls{line-height: normal}
+.sty__xfioka__cls{background-color: white}
+.sty__ruo8dx__cls{color: rgb(34, 34, 34)}
+.sty__jq3lwk__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ae51w7__cls{line-height: normal; background: white}
+.sty__9jamb4__cls{color: rgb(34, 34, 34)}
+.sty__3s95s3__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__ccqahi__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__kjligq__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 1338px; height: 325px}
+.sty__gfco4t__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__r4i009__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 391px; height: 317px}
+.sty__5ixi3i__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__mydrll__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__0ptbu2__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__z5juyu__cls{font-size: 13px}
+.sty__ttjbg8__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__bxwjwb__cls{font-size: 13px}
+.sty__gxiqci__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__mdt9f4__cls{font-size: 13px}
+.sty__b80ehi__cls{width: 750px; height: 425px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Extended Part Data Token - XPARTDATA (Overview &amp; Reference)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p>Some Microvellum users have expressed the need for a way to add custom part data to their reports. The limitation lies in the database fields that are available for this purpose in the database. <br></p>
+<p>As of the 15.6 release, there is a new token available that populates the database with custom data for that part. Once the data is in the database, you may then add to your reports. You will add this token to each part for which you need that data. <br></p>
+<p>All token parameters work the same and have the same format.&nbsp; They require two pieces of information with an optional third piece.&nbsp; Separate all segments of the data with a pipe symbol delimiter in the format: &nbsp;Field Name|Field Value|Spreadsheet Comment &nbsp;(e.g. "XD04|13.4|Part Weight"). The Field Name and Field Value data are required; the Spreadsheet Comment data is optional. <br></p>
+<p class="MsoNormal sty__wy0sj9__cls"><span class="highlight sty__xfioka__cls"><span class="colour sty__ruo8dx__cls"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;XD04|13.4|Part Weight</span></span></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b13f8fbc51d2f4e1c8149f7551f3f2154" class="sty__jq3lwk__cls"> <br>
+</div>
+<h2 class="toc_anchors sty__ae51w7__cls" id="Generic_fields_available"><b><span class="colour sty__9jamb4__cls">Generic fields available:</span></b><br></h2>
+<ul>
+ <li>XD01<br></li>
+ <li>XD02<br></li>
+ <li>XD03<br></li>
+ <li>XD04<br></li>
+ <li>XD05<br></li>
+ <li>XD06<br></li>
+ <li>XD07<br></li>
+ <li>XD08<br></li>
+ <li>XD09<br></li>
+ <li>XD10<br></li>
+ <li>XD11<br></li>
+ <li>XD12<br></li>
+ <li>XD13<br></li>
+ <li>XD14<br></li>
+ <li>XD15<br></li>
+ <li>XD16<br></li>
+ <li>XD17<br></li>
+ <li>XD18<br></li>
+</ul>
+<h2 class="toc_anchors" id="Predetermined_system_fields______available">Predetermined 'system' fields available:<br></h2>
+<ul>
+ <li>UDID (User Defined ID)<br></li>
+ <li>LOCATION1<br></li>
+ <li>LOCATION2<br></li>
+ <li>FINISHPRIORITY<br></li>
+ <li>EDGESEQUENCE<br></li>
+ <li>IRREGULARSHAPE<br></li>
+ <li>OVERPRODUCTIONQUANTITY<br></li>
+ <li>UNDERPRODUCTIONQUANTITY<br></li>
+ <li>LABELPOSITON (See section on this)<br></li>
+</ul>
+<p>The final nine names are predefined fields in the database – also known as "system" fields. That means instead of entering a comment as described above to help remember the purpose of one of the generic fields (XD01 – XD18), you would use one of these six system fields. This would be true, particularly if you require data that matches one of these system field names. <br></p>
+<div><span class="KB_New_Editor_Highlights sty__3s95s3__cls"><img src="https://img.zohostatic.com/zde/static/images/info.png" data-type="non-resize" data-image="contentStyle" class="sty__ccqahi__cls">
+  <div>
+   You must work with the tokens in the spreadsheet. They are not currently accessible from the Part Properties interface. <br>
+  </div></span>
+</div>
+<p>The parameters for this token support formulas. For example, if you want to reference the value for the width prompt in database field XD02, enter the following text string exactly:&nbsp; ="XD02|"&amp;L!Width <br></p>
+<div><img data-zdeskdocselectedclass="original" data-zdeskdocid="img_5219106446111332" class="docsimage sty__kjligq__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7be9a90f6cd34a4d318835f5cb4cecb5ac"> <br>
+</div>
+<p>These are the fields as populated to the work order database. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b3dd518bcc696454f8d7b5769400f58c5" class="sty__gfco4t__cls"> <br>
+</div>
+<p>Use the values shown above in reports and labels as needed. <br></p>
+<h2 class="toc_anchors" id="Auto_Nest_Labels_-______LABELPOSITON">Auto Nest Labels - LABELPOSITON<br></h2>
+<p>Use the LABELPOSITION data field to place your auto nest labels in pre-selected positions on your parts. <br></p>
+<p>The LABELPOSITION XPARTDATA works the same as all the XPARTADTA Fields. They require two parameters with an optional third. Each segment of the data must be separated by a pipe symbol delimiter in the format: <br></p>
+<p>&lt;field name&gt;|&lt;field value&gt;|&lt;spreadsheet comment&gt; (e.g. “LABELPOSITION|5;10;0|Part Label”). <br></p>
+<p>The Field Name and Field Value data are required; the Spreadsheet Comment data is optional. <br></p>
+<div>
+ &nbsp; &nbsp; LABELPOSITION | 5;10;0 | Part Label <br>
+</div>
+<div><img data-zdeskdocselectedclass="original" data-zdeskdocid="img_43209854602304687" class="docsimage sty__r4i009__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b3bff4371134142c996eb5eace3c07134"> <br>
+</div>
+<div>
+ <div><span class="KB_New_Editor_Highlights sty__5ixi3i__cls"><img src="https://img.zohostatic.com/zde/static/images/info.png" data-type="non-resize" data-image="contentStyle" class="sty__mydrll__cls">
+   <div>
+    Label rotation is based on the capabilities of your machine. Most machines only allow a simple rotation of the labeler head. <br>
+   </div></span>
+ </div>
+</div>
+<p>The X &amp; Y Location of an auto-label is based on the Machine Point of the individual parts. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b1f0b6b3f2b944b1ba0d73576f435aa3f" class="sty__0ptbu2__cls"> <br>
+</div>
+<div>
+ <div><i><span class="size sty__z5juyu__cls">Fig. 5 – Part Drawn in 2D </span> </i> <br>
+ </div>
+ <p><br></p>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b740ca6135af844cf820d6e78cbfcd155" class="sty__ttjbg8__cls"> <br>
+ </div>
+ <div><i><span class="size sty__bxwjwb__cls">Fig. 6 – XPARTDATA in Spreadsheet</span> </i> <br>
+ </div>
+ <p><br></p>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7ba0b82a71ee3149c795e9f5e9100b5b8e" class="sty__gxiqci__cls"> <br>
+ </div>
+ <div><i><span class="size sty__mdt9f4__cls">Fig. 7 - LabelPosition XPARTDATA Column in the Processing Center and Resulting Label Placement in the Composite DWG</span> </i> <br>
+ </div>
+ <p><br></p>
+ <p class="MsoNormal"><iframe sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-popups" width="560" height="315" src="https://www.youtube.com/embed/_Bd9uELZa9c" allowfullscreen="" class="sty__b80ehi__cls"></iframe><br></p>
+</div><style type="text/css" data-css-purify-styler="1755095887957">.sty__wy0sj9__cls{line-height: normal}
+.sty__xfioka__cls{background-color: white}
+.sty__ruo8dx__cls{color: rgb(34, 34, 34)}
+.sty__jq3lwk__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ae51w7__cls{line-height: normal; background: white}
+.sty__9jamb4__cls{color: rgb(34, 34, 34)}
+.sty__3s95s3__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__ccqahi__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__kjligq__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 1338px; height: 325px}
+.sty__gfco4t__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__r4i009__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 391px; height: 317px}
+.sty__5ixi3i__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__mydrll__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__0ptbu2__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__z5juyu__cls{font-size: 13px}
+.sty__ttjbg8__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__bxwjwb__cls{font-size: 13px}
+.sty__gxiqci__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__mdt9f4__cls{font-size: 13px}
+.sty__b80ehi__cls{width: 750px; height: 425px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="06 Aug 2020 03:08 PM"><span>5 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fextended-part-data-token-xpartdata-overview-reference&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fextended-part-data-token-xpartdata-overview-reference" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fextended-part-data-token-xpartdata-overview-reference" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/extended-part-data-token-xpartdata-overview-reference" target="_blank">https://community.microvellum.com/portal/en/kb/articles/extended-part-data-token-xpartdata-overview-reference</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:38:09 AM</p>
+            <p><strong>Categories:</strong> Tokens</p>
+        </div>
+    </div>
+</body>
+</html>

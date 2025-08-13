@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__tub0q5__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 444px; height: 279px}
+.sty__ph7qdu__cls{color: rgb(34, 34, 34)}
+.sty__lelueu__cls{list-style-type: disc}
+.sty__gzqqo2__cls{box-sizing: border-box}
+.sty__wfozuu__cls{list-style-type: disc}
+.sty__40y1df__cls{box-sizing: border-box}
+.sty__vznn89__cls{list-style-type: disc}
+.sty__01pjwc__cls{color: rgb(34, 34, 34)}
+.sty__2or67t__cls{color: rgb(34, 34, 34)}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Working in the Drawing Tokens Tab</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <h2 id="Drawing_______________Tokens_Tab" class="toc_anchors"><b>Drawing Tokens Tab</b><br></h2> 
+ <p>The Drawing Tokens tab contains the parameters to tell the program to draw this part in 2D or 3D in the drawing. Entering in a zero or leaving the parameter blank will tell the program not to draw the part in the drawing. If you do want to draw the part, you can enter in one of the available token names listed below. If you want to draw the part on a specific AutoCAD layer, you can enter a space followed by the layer name. For example, using DRAW3DBOX CabinetInterior in the 3D Draw Token parameter will draw the part on the 3D_CabinetInterior AutoCAD layer. A "3D_" or "2D_" will always be appended to the layer name, and if the layer doesn't already exist in the drawing, it will be added automatically.<br></p> 
+ <p>Some drawing tokens refer to using a 0 or 1 after the token name. You will want to add a space after the token name and then use a 0 or 1, followed by the layer name. For example, DRAW2DOOR 1, CabinetDoor will draw a 2D door token with a right swing on the CabinetDoor layer. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp6819182411c0406091c3cb5e0628ea91" class="currimg docsimage sty__tub0q5__cls" data-zdeskdocid="img_6243557824076602" data-zdeskdocselectedclass="original" alt="Drawing Tokens Tab"> 
+  <br> 
+ </div> 
+ <p class="MsoNormal"><i>Text fields available in the Drawing Tokens Tab</i><br></p> 
+ <h2 id="3D_Draw_______________Token" class="toc_anchors"><b>3D Draw Token</b><br></h2> 
+ <p>Below is a list of token names that can be added to the 3D Draw Token parameter. These tokens are used anytime a product is drawn in 3D.<br></p> 
+ <h3 id="DRAW3DBOX" class="toc_anchors"><b>DRAW3DBOX</b><br></h3> 
+ <p>This is the standard token used for most parts that need to be drawn in 3D. The parts width, length, and material thickness are used to determine the size of the part.<br></p> 
+ <h3 id="DRAW3DFRAMEDOOR" class="toc_anchors"><b>DRAW3DFRAMEDOOR</b><br></h3> 
+ <p>There are several tokens that you can use to represent different door styles. The DRAW3DFRAMEDOOR will make the part look like a frame door. This token is just for drawing purposes only. No extra machining or parts are added when using this token.<br></p> 
+ <h3 id="DRAW3DGLASSFRAMEDOOR" class="toc_anchors"><b>DRAW3DGLASSFRAMEDOOR</b><br></h3> 
+ <p>There are several tokens that you can use to represent different door styles. The DRAW3DGLASSFRAMEDOOR will make the part look like a frame door with a glass insert. This token is just for drawing purposes only. No extra machining or parts are added when using this token.<br></p> 
+ <h3 id="DRAW3DRAISEDPANELDOOR" class="toc_anchors"><b>DRAW3DRAISEDPANELDOOR</b><br></h3> 
+ <p>There are several tokens that you can use to represent different door styles. The DRAW3DRAISEDPANELDOOR will make the part look like a raised panel door. This token is just for drawing purposes only. No extra machining or parts are added when using this token.<br></p> 
+ <h3 id="DRAW3DARCHRAISEDPANELDOOR" class="toc_anchors"><b>DRAW3DARCHRAISEDPANELDOOR</b><br></h3> 
+ <p>There are several tokens that you can use to represent different door styles. The DRAW3DARCHRAISEDPANELDOOR will make the part look like an arched raised panel door. This token is just for drawing purposes only. No extra machining or parts are added when using this token.<br></p> 
+ <h3 id="DRAW3DDOUBLEARCHEDRAISEDPANELDOOR" class="toc_anchors"><b>DRAW3DDOUBLEARCHEDRAISEDPANELDOOR</b><br></h3> 
+ <p>There are several tokens that you can use to represent different door styles. &nbsp;The DRAW3DDOUBLEARCHRAISEDPANELDOOR will make the part look like a double-arched raised panel door. &nbsp;This is token is just for drawing purposes only. &nbsp;No extra machining or parts are added when using this token.<br></p> 
+ <h3 id="DRAW3DOGEEPANEL" class="toc_anchors"><b>DRAW3DOGEEPANEL</b><br></h3> 
+ <p>There are several tokens that you can use to represent different door styles. The DRAW3DOGEEPANEL will make the part look like it has an ogee edge. This token is just for drawing purposes only. No extra machining or parts are added when using this token.<br></p> 
+ <h3 id="DRAW3DRAISEDPANELDRAWERFRONT" class="toc_anchors"><b>DRAW3DRAISEDPANELDRAWERFRONT</b><br></h3> 
+ <p>There are several tokens that you can use to represent different door styles.&nbsp;The DRAW3DRAISEDPANELDRAWERFRONT will make the part it has a raised panel and should be used on drawer front parts.&nbsp;This is token is just for drawing purposes only.&nbsp;No extra machining or parts are added when using this token.<br></p> 
+ <h3 id="DRAWBLOCK" class="toc_anchors"><b>DRAWBLOCK</b><br></h3> 
+ <p>Using the DRAWBLOCK token will insert a block from a drawing you specify instead of drawing a part.&nbsp;To specify the drawing you want to insert use the Parameter 1 and Parameter 2 text fields.&nbsp;Parameter 1 will be the folder location from within the Graphics folder.&nbsp;The dwg file must also be stored within the Drawing Blocks folder.&nbsp;So the folder location will be something like "Drawing Blocks\Chairs\Stools."&nbsp;Parameter 2 will be the name of the drawing file you want to use.<br></p> 
+ <p>When inserting blocks from dwg files, the program will first use the file location specified in parameter 1 and 2.&nbsp;If the drawing file cannot be found, then the program will go to the MicrovellumGraphics.sdf file and find the file name in the database. &nbsp;A drawing stored in the database should always be stored in imperial units. &nbsp;If you don't have an imperial units drawing, you will need to store the file on disk in the Microvellum Data\Graphics folder.&nbsp;A drawing found on disk will always be used as-is and never scaled based on the unit of measure you are using.<br></p> 
+ <h3 id="DRAWAPPLIANCE" class="toc_anchors"><b>DRAWAPPLIANCE</b><br></h3> 
+ <p>The DRAWAPPLIANCE token works just like the DRAWBLOCK and will insert a block from a drawing you specify. &nbsp;The DRAWAPPLIANCE token does not allow you to create a folder structure as the DRAWBLOCK token does. &nbsp;When using the DRAWAPPLIANCE folder, the dwg file must be stored directly within the Microvellum Data/Graphics/Appliances folder or found within the MicrovellumGraphics.sdf database file. &nbsp;You must also fill in the Parameter 1 and Parameter 2 text fields. &nbsp;Parameter 1 must be populated with "Appliances," while Parameter 2 will need to be populated with the file name.<br></p> 
+ <h3 id="DRAWMOLDING" class="toc_anchors"><b>DRAWMOLDING</b><br></h3> 
+ <p>The DRAWMOLDING token will allow you to create a part that uses a set of vectors to extrude a closed polyline drawing along those sets of vector points. &nbsp;You must use Parameter 1, Parameter 2, and Parameter 3 when using the DRAWMOLDING token. &nbsp;Parameter 1 will be the file name of the drawing. &nbsp;This drawing can either be a molding drawing, type 34 from the database, or stored in the Microvellum Data/Graphics/Moldings folder on disk. &nbsp;Parameter 2 will be the vector points to extrude the drawing along. &nbsp;Each set of vectors points will include the X origin and Y origin separated by a semi-colon based on the product origin. &nbsp;A pipe symbol will separate each set of points. &nbsp;When evaluated it will look like the following: 0;0|0;-18|18;-18|18;0<br></p> 
+ <p>Parameter 3 will be the bulge list if any of the vector points need to be curved. &nbsp;You can enter in a bulge value for each set of vector points listed in Parameter 2 with each value separated by a semi-colon.<br></p> 
+ <h3 id="DRAWWALL" class="toc_anchors"><b>DRAWWALL</b><br></h3> 
+ <p>The DRAWWALL token is used to create a wall component. &nbsp;You should only use this token if you plan on creating new wall components. &nbsp;Parameter 1 will be the bulge of the wall if it is a curved wall.<br></p> 
+ <h2 id="2D_______________Elevation_Token" class="toc_anchors"><b>2D Elevation Token</b><br></h2> 
+ <p>Below is a list of token names that you can add to the 2D elevation token parameter.<br></p> 
+ <h3 id="DRAW2DBOX" class="toc_anchors"><b>DRAW2DBOX</b><br></h3> 
+ <p>This is the standard token to tell a part to be drawn on the 2D elevation.<br></p> 
+ <h3 id="DRAW2DDOOR" class="toc_anchors"><b>DRAW2DDOOR</b><br></h3> 
+ <p>Using the DRAW2DDOOR token will draw the part on the 2D elevation and include door swing lines. &nbsp;When using the DRAW2DDOOR token, specify a 0 or 1 after the token name to indicate the door swing direction. &nbsp;A 0 will draw a left swing door, 1 will draw a right-swing door.&nbsp;<span class="sty__ph7qdu__cls">You can also omit the door swing direction option and the program will not display any swing lines on the door.&nbsp;</span><br></p>
+ <ol>
+  <li class="sty__lelueu__cls"><span class="sty__gzqqo2__cls">DRAW2DDOOR 0, CabinetDoor for a Left Door swing lines</span></li>
+  <li class="sty__wfozuu__cls"><span class="sty__40y1df__cls">DRAW2DDOOR 1, CabinetDoor for a Right Door swing lines</span></li>
+  <li class="sty__vznn89__cls"><span class="sty__01pjwc__cls">DRAW2DDOOR CabinetDoor for no swing lines</span><span class="sty__2or67t__cls">​</span><br></li>
+ </ol> 
+ <h3 id="DRAW2DRAISEDPANELDOOR" class="toc_anchors"><b>DRAW2DRAISEDPANELDOOR</b><br></h3> 
+ <p>Using the DRAW2DRAISEDPANELDOOR token will draw the part on the 2D elevation in the style of a raised panel door and include door swing lines. &nbsp;You will need to specify a 0 or 1 after the token name to indicate the door swing direction. &nbsp;A 0 will draw a left-swing door, and a 1 will draw a right-swing door.<br></p> 
+ <h3 id="DRAW2DRAISEDPANELDRAWERFRONT" class="toc_anchors"><b>DRAW2DRAISEDPANELDRAWERFRONT</b><br></h3> 
+ <p>The DRAW2DRAISEDPANELDRAWERFRONT will draw the part on the 2D elevation in the style of a raised panel drawer front. &nbsp;This token should only be used on drawer front parts.<br></p> 
+ <h3 id="DRAW2DOGEEPANEL" class="toc_anchors"><b>DRAW2DOGEEPANEL</b><br></h3> 
+ <p>The DRAW2DOGEEPANEL will draw the part on the 2D elevation with ogee edges on the panel.<br></p> 
+ <h3 id="DRAW2DOGEEDOOR" class="toc_anchors"><b>DRAW2DOGEEDOOR</b><br></h3> 
+ <p>Using the DRAW2DOGEEDOOR token will draw the part on the 2D elevation in the style of an ogee door and include door swing lines. &nbsp;You will need to specify a 0 or 1 after the token name to indicate the door swing direction. &nbsp;A 0 will draw a left-swing door, and a 1 will draw a right-swing door.<br></p> 
+ <h3 id="DRAW2DGLASSDOOR" class="toc_anchors"><b>DRAW2DGLASSDOOR</b><br></h3> 
+ <p>Using the DRAW2DGLASS token will draw the part on the 2D elevation in the style of a glass door and include door swing lines. &nbsp;You will need to specify a 0 or 1 after the token name to indicate the door swing direction. &nbsp;A 0 will draw a left-swing door, and a 1 will draw a right-swing door.<br></p> 
+ <h3 id="DRAW2DFRAMEDOOR" class="toc_anchors"><b>DRAW2DFRAMEDOOR</b><br></h3> 
+ <p>Using the DRAW2DFRAMEDOOR token will draw the part on the 2D elevation in the style of a frame door and include door swing lines. &nbsp;You will need to specify a 0 or 1 after the token name to indicate the door swing direction. &nbsp;A 0 will draw a left-swing door, and a 1 will draw a right-swing door.<br></p> 
+ <h3 id="DRAW2DGLASSFRAMEDOOR" class="toc_anchors"><b>DRAW2DGLASSFRAMEDOOR</b><br></h3> 
+ <p>Using the DRAW2DGLASSFRAMEDOOR token will draw the part on the 2D elevation in the style of a glass frame door and include door swing lines. &nbsp;You will need to specify a 0 or 1 after the token name to indicate the door swing direction. &nbsp;A 0 will draw a left-swing door, and a 1 will draw a right-swing door.<br></p> 
+ <h3 id="DRAW2DARCHEDRAISEDPANELDOOR" class="toc_anchors"><b>DRAW2DARCHEDRAISEDPANELDOOR</b><br></h3> 
+ <p>Using the DRAW2DARCHEDRAISEDPANELDOOR token will draw the part on the 2D elevation in the style of an arched raised panel door and include door swing lines. &nbsp;You will need to specify a 0 or 1 after the token name to indicate the door swing direction. &nbsp;A 0 will draw a left-swing door, and a 1 will draw a right-swing door.<br></p> 
+ <h3 id="DRAW2DADJ" class="toc_anchors"><b>DRAW2DADJ</b><br></h3> 
+ <p>The DRAW2DADJ token should be used on adjustable shelf parts. &nbsp;In addition to drawing the part in the 2D elevation, it will add the text "ADJ" above the part.<br></p> 
+ <h3 id="DRAW2DFIXED" class="toc_anchors"><b>DRAW2DFIXED</b><br></h3> 
+ <p>The DRAW2DFIXED token should be used on fixed shelf parts. &nbsp;In addition to drawing the part in the 2D elevation, it will add the text "FIXED" above the part.<br></p> 
+ <h3 id="DRAW2DFE" class="toc_anchors"><b>DRAW2DFE</b><br></h3> 
+ <p>The DRAW2DFE token should be used on finished end parts. &nbsp;In addition to drawing the part in the 2D elevation, it will add the text "FE" to the left or right side of the part. &nbsp;To determine the place of the "FE" text, you will need to use a 0 or 1 after the token name with 0 placing the test to the left of the part and 1 placing the text to the right of the part.<br></p> 
+ <h2 id="Parameter_______________Text_Fields" class="toc_anchors"><b>Parameter Text Fields</b><br></h2> 
+ <p>There are three parameter text fields in the drawing tokens tab that are used for specific drawing tokens. &nbsp;They are usually used to help identify a drawing file for the token to use. &nbsp;Refer to the DRAWBLOCK and DRAWAPPLIANCE and DRAWMOLDING token sections above for detailed information on how each token uses those parameters.<br></p> 
+ <h2 id="Modifying_______________2D_Section_Drawings" class="toc_anchors"><b>Modifying 2D Section Drawings</b><br></h2> 
+ <p>Adding a token to the 3D and 2D field is the quickest way to get a part to draw, but there may be times when you need additional details or need the ability to customize the look of the entire 2D section. &nbsp;This can be done through the prompts drawing tokens. &nbsp;This allows you to use specific tokens to draw anything you would like for the plan view, elevation view, cross-section, elevation section, and plan section. &nbsp;Please refer to the Prompts Drawing Tokens section for detailed information.<br></p> 
+ <div>
+  <br>
+ </div>
+<style type="text/css" data-css-purify-styler="1755096107622">.sty__tub0q5__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 444px; height: 279px}
+.sty__ph7qdu__cls{color: rgb(34, 34, 34)}
+.sty__lelueu__cls{list-style-type: disc}
+.sty__gzqqo2__cls{box-sizing: border-box}
+.sty__wfozuu__cls{list-style-type: disc}
+.sty__40y1df__cls{box-sizing: border-box}
+.sty__vznn89__cls{list-style-type: disc}
+.sty__01pjwc__cls{color: rgb(34, 34, 34)}
+.sty__2or67t__cls{color: rgb(34, 34, 34)}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="04 Apr 2023 10:53 AM"><span>2 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fworking-in-the-drawing-tokens-tab&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fworking-in-the-drawing-tokens-tab" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fworking-in-the-drawing-tokens-tab" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/working-in-the-drawing-tokens-tab" target="_blank">https://community.microvellum.com/portal/en/kb/articles/working-in-the-drawing-tokens-tab</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:41:48 AM</p>
+            <p><strong>Categories:</strong> Part Properties</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        video { max-width: 100%; height: auto; }
+        iframe { max-width: 100%; }
+        .note { 
+            background: #fff3cd; 
+            border-left: 4px solid #ffc107; 
+            padding: 1em; 
+            margin: 1em 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a> | 
+            Engineering / Library Data / Foundation Library / Library Add-ons
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Overview &amp; Tutorials: Face Frame Images 2 (Globals &amp; Subassemblies)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p> This is the second article in the series, giving an overview of how to configure the custom face frame images in the default Microvellum shipping libraries of build 046.2 and higher. <br></p> 
+ <p> This article will focus on how to use global variables to customize these face frame images. We recommend that you do this before customizing the tokens and their parameter inside the spreadsheet. Elsewhere on the Help Center, you will find articles and videos containing tutorials on how to perform specific customizations to your library spreadsheet data beyond your global and product settings. <br></p> 
+ <h2 class="toc_anchors sty__5lwfp7__cls" id="Tutorial_1_Setting_Global_Variables_to_______________Customize_Face_Frame_Images"> <b> <span class="colour sty__skkk3c__cls"> <span class="size sty__9n9ixr__cls"> <span class="size sty__uphplg__cls"> Tutorial #1: Setting Global Variables to Customize Face Frame Images </span> </span> </span> </b> <br></h2> 
+ <p> Open a project and click “Toolbox Setup &gt; Advanced Project Setup &gt; Open Global File” to display the global variables for one of the spec groups for that project. Go to the tab Job Setup Variables and the section for User Preferences. Notice the global variables that control how the face frames are drawn in AutoCAD and displayed in the reports. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b157b36bcdd5f479180379f082e97eb80" class="sty__vin1fn__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__az8vu1__cls"> Fig. 1 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> <b> <span class="colour sty__w4jdlp__cls"> <span class="size sty__uqn43j__cls"> Face Frame Reports in Fractions </span> </span> </b> &nbsp;– check this box if you want the AutoCAD drawing and face frame report to display dimensions in fractions instead of decimals. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bebb464299b7944659df0c5a0f0c11b41" class="sty__fcdh34__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__2ig1qj__cls"> Fig. 2 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> <b> <span class="colour sty__kw1voe__cls"> <span class="size sty__tnt546__cls"> Face Frame Reports Dim Suffix </span> </span> </b> &nbsp;– enter the character suffix you want to display for your face frame dimensions. This might be double quotes as the inches symbol. It might be the text “in.” to indicate imperial measurement. Or, it might be the text “mm” to indicate metric measurement. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b6e550900da644460a05d5a7f371df93c" class="sty__d5p7fx__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__3ebuqa__cls"> Fig. 3 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> <b> <span class="colour sty__66qgnw__cls"> <span class="size sty__4jc3ro__cls"> Reverse View FF Draw Tokens </span> </span> </b> &nbsp;– uncheck this box if you only want to display the front view of the face frames in AutoCAD and reports. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b56dfc8b5394441f09ff9afa14c683188" class="sty__l5zncf__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__3kahgp__cls"> Fig. 4 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> <b> <span class="colour sty__5inf3s__cls"> <span class="size sty__h42ozn__cls"> FF Dim Text Width </span> </span> </b> &nbsp;– enter a value that approximates both the width of the AutoCAD dimension text width and the report dimension text width. This value represents the text character width, generally the distance from the leading edge of one character to the leading edge of the next character using the AutoCAD Distance command. The program multiplies this value by the number of characters in the dimension. For example, if there are seven characters in the dimension (including spaces and special characters) and this value is set to 0.5, it evaluates to a result of 3.5. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bd0ea5c69512240d7ba09e150325a9a06" class="sty__npgaia__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__ymosr1__cls"> Fig. 5a </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> This result is used to determine whether there is a need to rotate the dimension text to fit in the available opening space. The purpose of this variable is to tweak the balance of readability versus the text length at which the dimension is rotated. Generally, the larger this value, the less text may be included before the text is rotated. It does not equate with the TextStyle.WidthFactor property in AutoCAD. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b1a59fe76fefd498883592cb464caf4b8" class="sty__rfnnt5__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__3d5oiy__cls"> Fig. 5b </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> <b> <span class="colour sty__p0h0q4__cls"> <span class="size sty__g7zuer__cls"> FF Dim Text Height </span> </span> </b> &nbsp;– enter a value that matches the AutoCAD Text Style Height property. This value should equal the text character height, as shown in Figure 6. Our goal is to locate the dimensions as close as possible to the adjacent component to minimize component collisions and make a cleaner image. The program uses this value to calculate the origin of the dimension text in the additional face frame openings. The height of the text determines how close to the adjacent stile or rail the dimension can be located without overlapping the part. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b567199b8438d429e9ae13c4113b82182" class="sty__001lm7__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__y1fhqw__cls"> Fig. 6 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> <b> <span class="colour sty__36x0ct__cls"> <span class="size sty__e5217a__cls"> FF Horizontal Dim Offset </span> </span> </b> &nbsp;– enter the distance away from the face frame that the first horizontal dimension is placed in the vertical (Y-axis). Any additional dimensions will be placed that same amount away from the previous dimension. Thus, if the global value is set to 2.25, the first dimension is placed at 2.25 (1 x 2.25). The second dimension is placed at 4.5 (2 x 2.25). The third dimension is placed at 6.75 (3 x 2.25). <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b7f358a39f00f4ca3b809644400182966" class="sty__8kprbi__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__6qbqjy__cls"> Fig. 7 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> <b> <span class="colour sty__m6r9qk__cls"> <span class="size sty__uq8t3z__cls"> FF Vertical Dim Offset </span> </span> </b> &nbsp;– enter the distance away from the face frame that the first vertical dimension is placed in the horizontal (X-axis). Any additional dimensions will be placed that same amount away from the previous dimension. Thus, if the global value is set to 2.75, the first dimension is placed at 2.75 (1 x 2.75). The second dimension is placed at 5.5 (2 x 2.75). The third dimension is placed at 8.25 (3 x 2.75). Similar to Figure 7. <br></p> 
+ <h2 class="toc_anchors sty__l82bth__cls" id="Non-Standard_Cabinets"> <b> <span class="colour sty__yoli98__cls"> <span class="size sty__06rar6__cls"> <span class="size sty__cvnr2u__cls"> Non-Standard Cabinets </span> </span> </span> </b> <br></h2> 
+ <p> We have spent significant development time developing a consistent display specification for face frames belonging to non-standard cabinets such as a diagonal corner, pie-cut corner, and blind corner cabinets. This means that you will get an accurate face frame no matter how much you break up the frame into different openings. You may already know that it is possible to break up a single face frame opening into multiple smaller openings with the use of vertical splitters, horizontal splitters, and add subassemblies to those smaller openings.&nbsp; <br></p> 
+ <h2 class="toc_anchors sty__ssk02v__cls" id="Tutorial_______________2_Effect_of_Adding_Face_Frame_Splitters_and_Subassemblies_on_Face_Frames"> <b> <span class="colour sty__i2ww2s__cls"> <span class="size sty__xpx3cj__cls"> <span class="size sty__janad5__cls"> Tutorial #2: Effect of Adding Face Frame Splitters and Subassemblies on Face Frames </span> </span> </span> </b> <br></h2> 
+ <p> Begin to draw a Base Starter Horizontal FF product by displaying the prompts. Accept the default width, height, and depth dimensions. <br></p> 
+ <p> Specify 2 bay openings from the Bay Qty dropdown list on the tab Main. Click the Bay 1 tab and select 1 Door 1 Drawer 1 Rail from the list. Click the Bay 2 tab and select Vertical Opening Splitter FF from the list. <br></p> 
+ <p> Right-click and select “Calculators &gt; Face Frame Bay Calculator.” Adjust the Bay_1_Width to 14.875 and select Equal for Bay_2_Width. Then click the Calculate button, and OK. <br></p> 
+ <p> Right-click again and select Subassemblies. Right-click Vertical and select Show Subassembly Prompts. Set the “Main Tab &gt; Vertical Openings” to 2. <br></p> 
+ <p> Right-click and select “Calculators &gt; Vertical Opening Calculator.” Set the Opening_1_Height to 6 and select Equal for Opening_2_Height. Then click the Calculate button, and OK. <br></p> 
+ <p> Click OK on the various screens until the cabinet is drawn as in Figures 8 &amp; 9. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b3e1c99c034764760b53714ebe2a4f7e4" class="sty__mnpuii__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__xlpc7p__cls"> Fig. 8 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bff0a79e768dc4edba9424443d1f8e075" class="sty__xle14i__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__kgywd2__cls"> Fig. 9 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> The next step will demonstrate how to add a horizontal splitter (stile) for two drawers by picking on the corners of the opening. <br></p> 
+ <p> Display the prompts for the product, right-click, and click Subassemblies. <br></p> 
+ <p> Expand the category Opening Splitter and right-click on Horizontal Opening Splitter FF and click Add. <br></p> 
+ <p> Right-click on the splitter that is added to the list and select Pick Corners. Then pick the lower-left corner of the opening and the right upper corner. This defines the width and height of the opening in which to place the splitter. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bfcfffa2ba59d448988d4d93a0a8a0415" class="sty__477p3z__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__ys3kxb__cls"> Fig. 10 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b4fe99b58d50c4b4eb3e3c2bf65f680f1" class="sty__m4lbw8__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__num8f2__cls"> Fig. 11 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> Right-click again on the splitter subassembly just added and select Show Subassembly Prompts. <br></p> 
+ <p> Set the value for “Main Tab &gt; Horizontal Openings” to 2. <br></p> 
+ <p> Click the tab Opening 2 Options and set the Opening 2 Options to Base 2 Door and click OK. <br></p> 
+ <p> From the subassemblies list, click on the subassembly Horizontal Opening Splitter FF and set the Opening 1 and Opening 2 Options to 1 Drawer. <br></p> 
+ <p> Click OK until the cabinet is drawn. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bbae1983018624ca1869e4beadcf929b1" class="sty__o2y6da__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__ci5voq__cls"> Fig. 12 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> Because two splitter subassemblies were added to the face frame drawing that place the opening dimensions in the same vertical position, we need to adjust one more subassembly prompt value. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b2e3341babefa47db9bb6ccbc0392f6f1" class="sty__lrzi21__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__hshyze__cls"> Fig. 13 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <p> Open the subassembly prompts for the Vertical Opening Splitter FF and click the Face Frame Options tab. Uncheck the box for FF Drawing Opening 1 Dims and click OK to re-draw the cabinets and face frame. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b4574d0030c9c4b0ca6f242a5fc6f68d4" class="sty__9afm6i__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__q0sg8j__cls"> Fig. 14 </span> </i> 
+  <br>
+ </div> 
+ <p> <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b01b61e989c244610bf2b529e39abe5cb" class="sty__z70q8n__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__ls9syo__cls"> Fig. 15 </span> </i> 
+  <br>
+ </div> 
+ <h2 class="toc_anchors sty__sk0mm6__cls" id="Mass_Produce_Face_Frame_AutoCAD_Drawings"> <b> <span class="colour sty__1us1vv__cls"> <span class="size sty__5kx129__cls"> <span class="size sty__vu8png__cls"> Mass Produce Face Frame AutoCAD Drawings </span> </span> </span> </b> <br></h2> 
+ <p> If you prefer not to view and print your face frames using reports, or create them one-at-a-time in AutoCAD, we have made it possible for you to mass-produce your face frame drawings and plot them using AutoCAD. <br></p> 
+ <p> First, make sure the setting found at “Toolbox Setup &gt; Product Drawing Setup &gt; Face Frame Image Settings” is set up in the way you want them to print. A typical setting is to print them vertically (Offset X Dimension = 0; Offset Y Dimension = -200). <br></p> 
+ <p> Then, click “Draw &gt; 2D Drawings &gt; Draw Product Face Frame Tokens” on the Toolbox palette.&nbsp; Select the products to include, and then select a point to place the face frame drawings produced. <br></p> 
+ <h2 class="toc_anchors sty__32pas2__cls" id="Conclusion"> <b> <span class="colour sty__lo52u8__cls"> <span class="size sty__o44vlu__cls"> <span class="size sty__g7hxyu__cls"> Conclusion </span> </span> </span> </b> <br></h2> 
+ <p> This overview and tutorials have demonstrated the power of using AutoCAD to check your face frame drawings before printing them in a report for assembly in the shop. <br></p> 
+ <p> You learned how to verify the face frame you will be printing on the face frame report with the AutoCAD drawing. <br></p> 
+ <p> You have built a couple of custom products based on the Product Starter product. <br></p> 
+ <p> You have seen the power of the prompts to customize your face frames and the lengths to which Microvellum data developers have gone to prevent opening dimension collisions. <br></p> 
+ <p> The next article in the series will explain how to modify the drawing tokens in the spreadsheet and part properties interfaces. <br></p> 
+ <div> 
+  <iframe sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-popups allow-downloads" allowfullscreen="" src="https://www.youtube.com/embed/pAbEs7KhmFk" height="315" width="560" class="sty__j69jn5__cls"> </iframe> 
+  <br>
+ </div> 
+<style type="text/css" data-css-purify-styler="1755097114933">.sty__5lwfp7__cls{background: white}
+.sty__skkk3c__cls{color: rgb(34, 34, 34)}
+.sty__9n9ixr__cls{font-size: 11.5pt}
+.sty__uphplg__cls{font-size: 24px}
+.sty__vin1fn__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__az8vu1__cls{font-size: 13px}
+.sty__w4jdlp__cls{color: rgb(34, 34, 34)}
+.sty__uqn43j__cls{font-size: 11.5pt}
+.sty__fcdh34__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__2ig1qj__cls{font-size: 13px}
+.sty__kw1voe__cls{color: rgb(34, 34, 34)}
+.sty__tnt546__cls{font-size: 11.5pt}
+.sty__d5p7fx__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__3ebuqa__cls{font-size: 13px}
+.sty__66qgnw__cls{color: rgb(34, 34, 34)}
+.sty__4jc3ro__cls{font-size: 11.5pt}
+.sty__l5zncf__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__3kahgp__cls{font-size: 13px}
+.sty__5inf3s__cls{color: rgb(34, 34, 34)}
+.sty__h42ozn__cls{font-size: 11.5pt}
+.sty__npgaia__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ymosr1__cls{font-size: 13px}
+.sty__rfnnt5__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__3d5oiy__cls{font-size: 13px}
+.sty__p0h0q4__cls{color: rgb(34, 34, 34)}
+.sty__g7zuer__cls{font-size: 11.5pt}
+.sty__001lm7__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__y1fhqw__cls{font-size: 13px}
+.sty__36x0ct__cls{color: rgb(34, 34, 34)}
+.sty__e5217a__cls{font-size: 11.5pt}
+.sty__8kprbi__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__6qbqjy__cls{font-size: 13px}
+.sty__m6r9qk__cls{color: rgb(34, 34, 34)}
+.sty__uq8t3z__cls{font-size: 11.5pt}
+.sty__l82bth__cls{background: white}
+.sty__yoli98__cls{color: rgb(34, 34, 34)}
+.sty__06rar6__cls{font-size: 11.5pt}
+.sty__cvnr2u__cls{font-size: 24px}
+.sty__ssk02v__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__i2ww2s__cls{color: rgb(34, 34, 34)}
+.sty__xpx3cj__cls{font-size: 11.5pt}
+.sty__janad5__cls{font-size: 24px}
+.sty__mnpuii__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__xlpc7p__cls{font-size: 13px}
+.sty__xle14i__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__kgywd2__cls{font-size: 13px}
+.sty__477p3z__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ys3kxb__cls{font-size: 13px}
+.sty__m4lbw8__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__num8f2__cls{font-size: 13px}
+.sty__o2y6da__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ci5voq__cls{font-size: 13px}
+.sty__lrzi21__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__hshyze__cls{font-size: 13px}
+.sty__9afm6i__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__q0sg8j__cls{font-size: 13px}
+.sty__z70q8n__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ls9syo__cls{font-size: 13px}
+.sty__sk0mm6__cls{background: white}
+.sty__1us1vv__cls{color: rgb(34, 34, 34)}
+.sty__5kx129__cls{font-size: 11.5pt}
+.sty__vu8png__cls{font-size: 24px}
+.sty__32pas2__cls{background: white}
+.sty__lo52u8__cls{color: rgb(34, 34, 34)}
+.sty__o44vlu__cls{font-size: 11.5pt}
+.sty__g7hxyu__cls{font-size: 24px}
+.sty__j69jn5__cls{width: 750px; height: 425px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="11 May 2021 12:14 AM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-tutorials-face-frame-images-2-globals-subassemblies&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-tutorials-face-frame-images-2-globals-subassemblies" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-tutorials-face-frame-images-2-globals-subassemblies" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/overview-tutorials-face-frame-images-2-globals-subassemblies" target="_blank">https://community.microvellum.com/portal/en/kb/articles/overview-tutorials-face-frame-images-2-globals-subassemblies</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:58:38 AM</p>
+            <p><strong>Categories:</strong> Engineering > Library Data > Foundation Library > Library Add-ons</p>
+            <p><em>Note: This article was scraped separately due to video/animation content.</em></p>
+        </div>
+    </div>
+</body>
+</html>

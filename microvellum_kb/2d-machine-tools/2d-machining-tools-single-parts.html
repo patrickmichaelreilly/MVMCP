@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__jhfgba__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ortdf7__cls{font-size: 13px}
+.sty__3yeidu__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(252, 237, 158); border-right: 5px solid rgb(242, 219, 104)}
+.sty__l6v7cl__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__7nwg8n__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(252, 237, 158); border-right: 5px solid rgb(242, 219, 104)}
+.sty__zhvbdc__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__up7xjl__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__wz40sl__cls{font-size: 13px}
+.sty__zz5sja__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__z3xtpy__cls{font-size: 13px}
+.sty__mripn9__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 910px; height: 561px}
+.sty__k7vawz__cls{font-size: 13px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">2D Machining Tools (Single Parts)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><div> 
+ <div>
+   As of Microvellum Toolbox 2020 | Build 15.6.228, there are two significant changes to the way the 2D Machining Tools operate. 
+  <br> 
+ </div> 
+ <h2 class="toc_anchors" id="Updating_Machine_Token_Values"> 
+  <div>
+    Updating Machine Token Values 
+   <br> 
+  </div> </h2> 
+ <p class="MsoNormal"> The program now updates existing machine tokens differently.&nbsp; <br></p> 
+ <p class="MsoNormal"> Previously, if you drew a part in 2D and then updated it, any existing machine token values were converted to hard locked values.&nbsp;For example, suppose you had a PLINE token with formula-driven vector points. If that part was drawn in 2D and then modified in some way, or even just updated without any modifications, those vector points were no longer generated by formulas. Instead, they were converted into hard locked values, losing the formulas used in the original calculation.&nbsp; <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttacd05c57ced249e480593b1884d6e731" class="sty__jhfgba__cls"> 
+  <br> 
+ </div> 
+ <div> 
+  <i> <span class="size sty__ortdf7__cls"> Fig. 1 - Previous Build Showing Hard-Locked Values After Updating the Part in 2D </span> </i> 
+  <br> 
+ </div> 
+ <div> 
+  <br> 
+ </div> 
+ <div>
+   Currently, the program determines if the entity has been modified. If a specific machining operation has been adjusted in some way, we update the values resulting from the formula with hard locked values.&nbsp;One of the conditions that the program interprets as modifying the machining operation is when the vector point values returned from AutoCAD don’t match the values from the token. When that occurs, we assume that the entity has been modified and we overwrite the formula with hard locked values. The typical indication of this condition is a token point list formula that results in values with more than five decimal places. The rule of thumb is that the more decimal places there are, the higher the chance of having mismatching coordinate values and thus overwriting the formula with a hard locked value. As you can see in the two examples below, after updating the 2D part, the formula is overwritten with hard locked values in the current version, and the signal for this are the values with up to 14 decimal places. 
+  <br> 
+ </div> 
+ <h2 class="toc_anchors" id="Formula_sample_and_resulting_values______________________prior_to_updating___________________the_2D_part"> <b> Formula sample and resulting values <u> prior to updating </u> the 2D part: </b> <br></h2> 
+ <div> 
+  <span class="KB_New_Editor_Highlights sty__3yeidu__cls"> <img data-image="contentStyle" data-type="non-resize" src="https://img.zohostatic.com/zde/static/images/file.png" class="sty__l6v7cl__cls"> <p class="MsoNormal"> =OFFSETPOLYLINE(S_PNT_List_L,0&amp;";"&amp;0&amp;";"&amp;-Bulge&amp;";"&amp;0&amp;";"&amp;Bulge&amp;";"&amp;0&amp;";"&amp;0,Cabinet_Body_Edgeband_Thickness,"","",0,0,0) <br></p> <p class="MsoNormal"> 16.76;4.02;0|16.5;4.02;0.757|15.7500007999348;4.02000077092114;0.757|15.4178574801791;3.90013198241095;0.757|10.917727102826;0.130691414489956;0.757|10.6111;0.02;0.757|0;0.02;0.757|-0.26;0.02;0 <br></p> </span> 
+ </div> 
+ <h2 class="toc_anchors" id="Formula_sample_and_resulting_values______________________after_updating___________________the_2D_part"> <b> Formula sample and resulting values <u> after updating </u> the 2D part: </b> <br></h2> 
+ <div> 
+  <span class="KB_New_Editor_Highlights sty__7nwg8n__cls"> <img data-image="contentStyle" data-type="non-resize" src="https://img.zohostatic.com/zde/static/images/file.png" class="sty__zhvbdc__cls"> <p class="MsoNormal"> 16.76;4.02;0|16.5;4.02;0.757|15.7500007999348;4.02000077092114;0.757|15.4178574801791;3.90013198241095;0.757|10.917727102826;0.130691414489956;0.757|10.6111;0.0199999999999996;0.757|0;0.0199999999999996;0.757|-0.26;0.0199999999999996;0 <br></p> <p class="MsoNormal"> 16.76;4.02;0|16.5;4.02;0.757|15.7500007999348;4.02000077092114;0.757|15.4178574801791;3.90013198241095;0.757|10.917727102826;0.130691414489956;0.757|10.6111;0.0199999999999996;0.757|0;0.0199999999999996;0.757|-0.26;0.0199999999999996;0 <br></p> </span> 
+ </div> 
+ <p class="MsoNormal"> In all cases where the vector point values from AutoCAD match the token values, our users can now draw a part in 2D and retain the machine token formula values if those machining entities were not modified. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt0c9236a764704cdab0c3210ca2f91511" class="sty__up7xjl__cls"> 
+  <br> 
+ </div> 
+ <div> 
+  <i> <span class="size sty__wz40sl__cls"> Fig. 2 - Current Build Showing Sample Formula Retention After Updating the Part in 2D </span> </i> 
+  <br> 
+ </div> 
+ <h2 class="toc_anchors" id="Displaying_Associative_Machine_Operations"> 
+  <div> 
+   <br> 
+  </div> 
+  <div>
+    Displaying Associative Machine Operations 
+   <br> 
+  </div> </h2> 
+ <p class="MsoNormal"> In previous versions, it was possible to mistakenly modify the machining resulting from associative machine tokens. We now alert the user to the fact that certain entities originate from associative machine operations. <br></p> 
+ <p class="MsoNormal"> In previous builds, we identified all machining entities within the 2D part drawing in green and red colors of the same intensity. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttfb244d30e45d4dd38c9f0113808e5b4d" class="sty__zz5sja__cls"> 
+  <br> 
+ </div> 
+ <div> 
+  <i> <span class="size sty__z3xtpy__cls"> Fig. 3 - A Previous Build Showing All Machining Operations with the Same Color Intensity </span> </i> 
+  <br> 
+ </div> 
+ <div> 
+  <br> 
+ </div> 
+ <div>
+   In the current builds, we display the 2D entities (circles, lines, rectangles, and other polygons) resulting from associative machining in green or red colors of reduced intensity. In contrast, non-associative machining is displayed in more intense green or red colors. This color variation identifies the machine operations that have been generated as a result of associative machine tokens; this alerts you to the fact that it is ineffective to modify the 2D entities representing that machining in the 2D Machining Tools either by copying, moving, or deleting them. This is because the modifications will not be applied to the updated 3D product. That 3D product contains associative machining taken from the token itself and not the 2D part. In other words, the associative token parameters override any modified entities in the 2D Machining Tools. 
+  <br> 
+ </div> 
+ <div> 
+  <div class="target_moving" id="target_mov_img_49130156506870115"> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttfce1f89c1f6047f7833d1b1a7145829a" class="currimg docsimage sty__mripn9__cls" data-zdeskdocid="img_49130156506870115" data-zdeskdocselectedclass="original"> 
+   <br> 
+  </div> 
+ </div> 
+ <div> 
+  <i> <span class="size sty__k7vawz__cls"> Fig. 4 - The Current Build Showing Formula Retention from the Same Part Modification </span> </i> 
+  <br> 
+ </div> 
+ <div> 
+  <br> 
+ </div> 
+ <div>
+   The associative machining includes dados, shelf holes, dowel machining, and similar types of associative operations. 
+  <br> 
+ </div> 
+</div> 
+<div> 
+ <br> 
+</div><style type="text/css" data-css-purify-styler="1755096735103">.sty__jhfgba__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ortdf7__cls{font-size: 13px}
+.sty__3yeidu__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(252, 237, 158); border-right: 5px solid rgb(242, 219, 104)}
+.sty__l6v7cl__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__7nwg8n__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(252, 237, 158); border-right: 5px solid rgb(242, 219, 104)}
+.sty__zhvbdc__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__up7xjl__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__wz40sl__cls{font-size: 13px}
+.sty__zz5sja__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__z3xtpy__cls{font-size: 13px}
+.sty__mripn9__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 910px; height: 561px}
+.sty__k7vawz__cls{font-size: 13px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="10 May 2021 11:22 PM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2F2d-machining-tools-single-parts&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2F2d-machining-tools-single-parts" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2F2d-machining-tools-single-parts" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/2d-machining-tools-single-parts" target="_blank">https://community.microvellum.com/portal/en/kb/articles/2d-machining-tools-single-parts</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:52:16 AM</p>
+            <p><strong>Categories:</strong> 2D Machine Tools</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__hhamrh__cls{color: rgb(34, 34, 34); background: white}
+.sty__9phmv1__cls{color: rgb(34, 34, 34); background: white}
+.sty__jtuosr__cls{color: rgb(34, 34, 34); background: white}
+.sty__i8juyh__cls{color: rgb(34, 34, 34); background: white}
+.sty__39gdb3__cls{color: rgb(34, 34, 34); background: white}
+.sty__c3zjn8__cls{color: rgb(34, 34, 34); background: white}
+.sty__w48ku2__cls{color: rgb(34, 34, 34); background: white}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Routing Priorities (Build 15.4.1003)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p>
+   With
+   build 15.4.1003, new improvements were added to allow for better tool
+   priorities control, with a focus on improving Multi-Pass Tool priorities (aka
+   900 Tools). &nbsp;Below is an updated list of Route Tool Priorities, including
+   new Multi-Pass Tool specific priority settings.
+   
+<br></p>
+<p>
+   Priorities
+   are broken up into two primary areas,&nbsp;<b>Route Operational Priorities 
+   </b>
+   and&nbsp;<b>Route
+      Tool Priorities</b>.
+   
+<br></p>
+<div>
+   <b>
+      Route Operational Priorities</b>&nbsp;affect the priority of routing operations, not specific
+   tools priority.
+   
+<br></div>
+<ol start="1" type="1">
+   <li class="MsoNormal sty__hhamrh__cls">
+      <b>
+         <span>
+            First
+            (Highest) Priority: User-Defined Priorities.&nbsp;</span></b><span>These priorities are determined
+         by onscreen selections using the&nbsp;"2D Machining Tools &gt; Nest
+         Tools" option to "Assign Priorities to Routes."
+         &nbsp;This&nbsp;function is used for the composite.dwg (nest) or the
+         parts.dwg (single part). &nbsp;This would be used in conjunction with
+         either "Update Existing GCode File From Drawing" or "Make
+         New GCode File From Drawing" to create GCode.
+      </span>
+      
+   <br></li>
+   <li class="MsoNormal sty__9phmv1__cls">
+      <b>
+         <span>
+            Second
+            Priority: Machine Token Priority.</span></b><span>&nbsp;Routing
+         machine tokens have a "Sequence" or "Priority"
+         parameter. &nbsp;This machine token parameter value will be recognized as the second-highest level of routing priority.
+      </span>
+      
+   <br></li>
+   <li class="MsoNormal sty__jtuosr__cls">
+      <b>
+         <span>
+            Third
+            Priority: Toolfile Tool Priority.</span></b><span>&nbsp;Within
+         the Toolfile, each Router Tool has a "Tool Priority Number."
+         &nbsp;This option is enabled by selecting "Allow Tool Priority
+         Setting" in the Settings Tab of the Toolfile. &nbsp;When this option is enabled, you are required to assign a priority to all tools. Otherwise,
+         it will not function.
+      </span>
+      
+   <br></li>
+   <li class="MsoNormal sty__i8juyh__cls">
+      <b>
+         <span>
+            Fourth
+            (Lowest) Priority:&nbsp;Minimizing Tool Changes. 
+         </span>
+      </b>
+      <span>
+         Minimizing tool changes are
+         being used throughout the route optimization process without having to
+         adjust settings. &nbsp;Ultimately though, each of the superior priorities
+         can and will trump the minimization of tool changes if it is required by
+         the operation and priorities set.
+      </span>
+      
+   <br></li>
+</ol>
+<p>
+   <b>
+      Route Tool Priorities 
+   </b>
+   affect specific tool priorities and will work in conjunction with the Route Operational Priorities. By default, 900
+   Tools (Multi-Pass, Step, and Incremental Step) are prioritized over
+   non-900 route tools. All tools are affected by their assigned Route
+   Operational Priority, as seen above.
+   
+<br></p>
+<div>
+   There
+   are three new 900 Tool Priority Options. &nbsp;Each of these settings is assigned per 900 Tool to allow for additional control over their function.
+   
+<br></div>
+<ul>
+   <li class="MsoNormal sty__39gdb3__cls">
+      <b>
+         <span>
+            Reduce Tool
+            Changes:&nbsp;</span></b><span>Tools used within a Multi-Pass Tool (900 Tool) will be optimized with other operations to reduce tool changes.
+      </span>
+      
+   <br></li>
+   <li class="MsoNormal sty__c3zjn8__cls">
+      <b>
+         <span>
+            Group Tool
+            Operations:
+</span></b><span>Tools with the same Common Tool Name (i.e., 900, 901, 902, etc.) will be kept together. &nbsp;For example, if we have tool 901 used in on two routes and
+         tool 902 used on two routes, this will group both route operations using
+         901 together and then both route operations using 902 together.
+      </span>
+      
+   <br></li>
+   <li class="MsoNormal sty__w48ku2__cls">
+      <b>
+         <span>
+            Segregate
+            Tool Operations:</span></b><span>&nbsp;Each route operation using a Multi-Pass Tool (900 Tool) with this setting will be run in sequence from top to bottom (depth) of the route, then proceed on to the next operation. &nbsp;This may increase tool changes significantly.
+      </span>
+      
+   <br></li>
+</ul><div><br></div><style type="text/css" data-css-purify-styler="1755096744086">.sty__hhamrh__cls{color: rgb(34, 34, 34); background: white}
+.sty__9phmv1__cls{color: rgb(34, 34, 34); background: white}
+.sty__jtuosr__cls{color: rgb(34, 34, 34); background: white}
+.sty__i8juyh__cls{color: rgb(34, 34, 34); background: white}
+.sty__39gdb3__cls{color: rgb(34, 34, 34); background: white}
+.sty__c3zjn8__cls{color: rgb(34, 34, 34); background: white}
+.sty__w48ku2__cls{color: rgb(34, 34, 34); background: white}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="09 Nov 2020 04:47 PM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Frouting-priorities-build-15-4-1003&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Frouting-priorities-build-15-4-1003" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Frouting-priorities-build-15-4-1003" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/routing-priorities-build-15-4-1003" target="_blank">https://community.microvellum.com/portal/en/kb/articles/routing-priorities-build-15-4-1003</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:52:25 AM</p>
+            <p><strong>Categories:</strong> Tool Files</p>
+        </div>
+    </div>
+</body>
+</html>

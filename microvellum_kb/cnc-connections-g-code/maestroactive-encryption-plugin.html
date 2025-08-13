@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__s7x2vh__cls{line-height: normal; background: white}
+.sty__zntn2v__cls{color: rgb(34, 34, 34)}
+.sty__mwj5cz__cls{line-height: normal; background: white}
+.sty__bmzk21__cls{color: rgb(34, 34, 34)}
+.sty__1wftmz__cls{line-height: normal; background: white}
+.sty__96zetx__cls{color: rgb(34, 34, 34)}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">MaestroActive Encryption Plugin</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><h2 id="Description" class="toc_anchors sty__s7x2vh__cls"><b><span class="colour sty__zntn2v__cls">Description </span> </b> <br></h2><p>This
+   article announces Microvellum support for the CPRG file format required by some
+   SCM beam saws. The beam saws covered by this article will be running the
+   MaestroActive controller and not the older MaestroCut controller software. <br></p><h2 id="MaestroActive_and_the_New_CPRG_________Format" class="toc_anchors sty__mwj5cz__cls"><b><span class="colour sty__bmzk21__cls">MaestroActive and the New CPRG
+         Format </span> </b> <br></h2><p>CPRG
+   is is an encrypted file format of the older XPRG format used by MaestroCut that
+   Microvellum already supports. For Microvellum to be compatible with saws using
+   the MastroActive control software, a plugin must be installed that will convert
+   the XPRG output into the new CPRG file type. <br></p><p>SCM
+   saws using the new MaestroActive control software can only import files in two
+   formats, the new CPRG format, and PTX v1.14. The standard Microvellum PTX
+   output is not an option with these saws, as it is PTX v1.08, and no longer
+   supported on these machines running the MaestroActive controller. <br></p><h2 id="MaestroActive_Encryption_Plugin" class="toc_anchors sty__1wftmz__cls"><b><span class="colour sty__96zetx__cls">MaestroActive Encryption Plugin </span> </b> <br></h2><p>To
+   export the CPRG format, the MaestroActive Encryption Plugin must be installed.
+   This install will place a DLL file named “En.dll” in the Microvellum Custom
+   Posts folder. When the Microvellum saw optimizer is processing a work order with the “MaestroCutXML” output type and the En.dll is present, it will convert the standard XPRG format into the encrypted CPRG format. <br></p><p>To
+   discontinue exporting to the CPRG format and return to the XPRG format, delete
+   the En.dll out of the Custom Posts folder. <br></p><style type="text/css" data-css-purify-styler="1755096767465">.sty__s7x2vh__cls{line-height: normal; background: white}
+.sty__zntn2v__cls{color: rgb(34, 34, 34)}
+.sty__mwj5cz__cls{line-height: normal; background: white}
+.sty__bmzk21__cls{color: rgb(34, 34, 34)}
+.sty__1wftmz__cls{line-height: normal; background: white}
+.sty__96zetx__cls{color: rgb(34, 34, 34)}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="26 Mar 2025 01:06 PM"><span>4 months ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fmaestroactive-encryption-plugin&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fmaestroactive-encryption-plugin" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fmaestroactive-encryption-plugin" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/maestroactive-encryption-plugin" target="_blank">https://community.microvellum.com/portal/en/kb/articles/maestroactive-encryption-plugin</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:52:48 AM</p>
+            <p><strong>Categories:</strong> CNC Connections & G-Code</p>
+        </div>
+    </div>
+</body>
+</html>

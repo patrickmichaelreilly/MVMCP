@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        video { max-width: 100%; height: auto; }
+        iframe { max-width: 100%; }
+        .note { 
+            background: #fff3cd; 
+            border-left: 4px solid #ffc107; 
+            padding: 1em; 
+            margin: 1em 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a> | 
+            Engineering / Projects / Project Import
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Overview: XLS Project Import</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p>Some Microvellum Users build projects in an Excel spreadsheet instead of creating the project and adding the products inside Toolbox. Microvellum can import an Excel project spreadsheet. It results in a project that contains all the necessary elements for creating manufacturing and reporting data.<br></p> 
+ <p>The file attached to this article is an example of the contents and formatting required for the source import file. You may use any Excel commands, controls, or formulas when working with this source file.<br></p> 
+ <p>There are a few requirements for this import process to produce the necessary data within Microvellum.<br></p> 
+ <ul> 
+  <li class="MsoNormal sty__1iuvh0__cls"><span>The data entered on the spreadsheet must match the Microvellum Library in the current configuration.</span><br></li> 
+  <li class="MsoNormal sty__cbekqq__cls"><span>The existing worksheets on the import spreadsheet template must not be deleted.</span><br></li> 
+  <li class="MsoNormal sty__1ww1rf__cls"><span>It is ok to add worksheets to the import spreadsheet, but leave the first six as they are found on the template.</span><br></li> 
+ </ul> 
+ <p>Worksheets (sheet tabs)<br></p> 
+ <p><b><u><span class="colour sty__hqiws1__cls">ORDER</span></u></b><b><span class="colour sty__667fvh__cls">.</span></b><span class="colour sty__1pbb3e__cls">&nbsp;This worksheet contains the source datasheet for the project. This data is sent to the sheet "Order Data." Think of this sheet as the user interface for the project import utility.</span><br></p> 
+ <p>Enter all the products to be included in the project here, along with the prompt values that you want to be set for the project that deviate from the prompt default. The headings in columns A – P cannot be changed. Starting at column Q, you define the prompts that you intend to be set to a value that is different than normal in the imported project. To get the prompts to match, you must first add them to column A in the sheet Mapping.<br></p> 
+ <p><u><span class="colour sty__ok3r0z__cls">Cell A1</span></u><span class="colour sty__y8wi8d__cls">:&nbsp;<b>Project Name</b>. Enter the project name for the import project. (Required)</span><br></p> 
+ <p><u><span class="colour sty__p7exdo__cls">Column A</span></u><span class="colour sty__eembwu__cls">:&nbsp;<b>Product Quantity</b>. Enter the product quantity for each item in the project. (Required)</span><br></p> 
+ <p><u><span class="colour sty__veakzn__cls">Column B</span></u><span class="colour sty__viiff1__cls">:&nbsp;<b>Product Description. </b> &nbsp;Select a product from the dropdown list of products. This list is an external reference to the items located on the sheet "Products." The reason for the dropdown list is that the product name in this column is case sensitive and must be spelled as it is in the matching product library. When the Import function is activated, the product is added to the project if a match is found between this name and an identical name in the library. (Required)</span><br></p> 
+ <p><u><span class="colour sty__6g4awr__cls">Column C</span></u><span class="colour sty__3fwz3j__cls">:&nbsp;<b>Product Width</b>. Enter the product width for that product. (Required)</span><br></p> 
+ <p><u><span class="colour sty__fwz9zs__cls">Column D</span></u><span class="colour sty__f1syde__cls">:&nbsp;<b>Product Height</b>. Enter the product height for that product. (Required)</span><br></p> 
+ <p><u><span class="colour sty__6772w8__cls">Column E</span></u><span class="colour sty__nad78o__cls">:&nbsp;<b>Product Depth</b>. Enter the product depth for that product. (Required)</span><br></p> 
+ <p><u><span class="colour sty__46tlz6__cls">Column F</span></u><span class="colour sty__ufi404__cls">:&nbsp;<b>Spec Group</b>. Enter the name of the spec group assigned to that product. (Required)</span><br></p> 
+ <p><u><span class="colour sty__z62p3v__cls">Column G</span></u><span class="colour sty__adhu8e__cls">:&nbsp;<b>Comment</b>. Enter product comments as needed. (Optional)</span><br></p> 
+ <p><u><span class="colour sty__fzrnro__cls">Column H</span></u><span class="colour sty__5keqyw__cls">:&nbsp;<b>Parent1</b>. Enter the location or room name to which the product belongs. (Optional)</span><br></p> 
+ <p><u><span class="colour sty__j1m052__cls">Columns I – P</span></u><span class="colour sty__xu7ccg__cls">:&nbsp;<b>(No Longer Used)</b></span><br></p> 
+ <p><u><span class="colour sty__d1dm4y__cls">Columns Q – BZ</span></u><span class="colour sty__twkijo__cls">:&nbsp;<b>Prompt Names and Values </b>that differ from the default library values that you want automatically populated in the new project. The prompt names on row 3 are linked to rows 17 and greater on the sheet "Mapping." They are case sensitive, must contain the same underscore characters as in the library, and they must be spelled the same. (Optional)</span><br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp267536f6a871456d9f7ffbb05471cade" class="sty__urpyg9__cls"> 
+  <br> 
+ </div> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp9746697233a8476aa90670ba46c40ffe" class="sty__hik9sv__cls"> 
+  <br> 
+ </div> 
+ <p><b><u><span class="colour sty__5q4jm1__cls">PRODUCTS</span></u></b><b><span class="colour sty__pyy2vp__cls">. </span></b><span class="colour sty__plyjve__cls">This worksheet contains the source data for the dropdown lists on the Order sheet. The Microvellum default template file contains a list of products on this sheet. You may modify this list of products to match your library product names.</span><br></p> 
+ <p><u><span class="colour sty__5xomz6__cls">Column A</span></u><span class="colour sty__it6d2h__cls">: Enter the list of products that will display in the dropdown lists on the sheet "Order." The names here are case sensitive and must be spelled exactly as it is in the&nbsp;matching product library.</span><br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp7e8c005ba9a141a79466e476b534ed63" class="sty__h2qe52__cls"> 
+  <br> 
+ </div> 
+ <p><b><u><span class="colour sty__yi24cz__cls">JOB DATA</span></u></b><b><span class="colour sty__jcrt3g__cls">.</span></b><span class="colour sty__mtd9zp__cls">&nbsp;The Import function accesses data on this sheet. It references the source data sheet "Order" for the project name. You will not need to make modifications to this sheet.</span><br></p> 
+ <p><u><span class="colour sty__dylfwy__cls">Cell A1</span></u><span class="colour sty__uaplqo__cls">: The text string "Job Name" identifies the data in the cell to the right.</span><br></p> 
+ <p><u><span class="colour sty__qe7fk0__cls">Cell B1</span></u><span class="colour sty__eypkgb__cls">: This cell contains an external reference to the project name on the sheet "Order."</span><br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp2f5c26f7b0d64337a9dc424c9daad7f6" class="sty__f3fzpo__cls"> 
+  <br> 
+ </div> 
+ <p><b><u><span class="colour sty__2evxm8__cls">ORDER DATA</span></u></b><span class="colour sty__g928ly__cls">.&nbsp;The Import function accesses data on this sheet. It references the source data sheet "Order" for the product data. You will not need to make modifications to this sheet. Just confirm that there are enough rows on this sheet to match the products entered in the Order sheet. If you notice there are not enough, simply copy the formulas down from the previous row into the new rows.</span><br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspd4fd3c3d424b4824abfe53ad55e3bb27" class="sty__ir477v__cls"> 
+  <br> 
+ </div> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp8589a2cfefb647d0a200615722605960" class="sty__fjhzye__cls"> 
+  <br> 
+ </div> 
+ <p><b><u><span class="colour sty__c9b681__cls">MAPPING</span></u></b><b><span class="colour sty__q1zxed__cls">. </span></b><span class="colour sty__boqjjv__cls">This sheet contains the Prompt Names and Values that differ from the default library values that you want automatically populated in the new project. To get the prompts to populate correctly to the sheet "Order," you must first add them to column A in this sheet.</span><br></p> 
+ <p><u><span class="colour sty__lhif5i__cls">Column A</span></u><br></p> 
+ <p><u><span class="colour sty__uuepbt__cls">Rows 1 – 6</span></u><span class="colour sty__txtv7n__cls">: Prompts displayed in red are required and may not be modified.</span><br></p> 
+ <p><u><span class="colour sty__apwnjl__cls">Rows 7 – 8</span></u><span class="colour sty__wsx19p__cls">: Prompts displayed in yellow are optional.</span><br></p> 
+ <p><u><span class="colour sty__81g2tb__cls">Rows 9 – 16</span></u><span class="colour sty__873e4p__cls">: Prompts displayed in blue are no longer used.</span><br></p> 
+ <p><u><span class="colour sty__r5k3h5__cls">Rows 17 and greater</span></u><span class="colour sty__coykvl__cls">: Prompts displayed in white are prompt names and values that differ from the default library values that you want automatically populated in the new project. The prompt names on row 17 and greater are linked to those on the sheet "Order" columns Q and greater. They are case sensitive, must contain the same underscore characters as in the library, and they must be spelled the same. They may be on this sheet as needed. Make sure that name is displayed in the corresponding column in the sheet "Order." If not, add an external reference on that sheet to the correct cell here.</span><br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspd3a95726269e4077969779b561105593" class="sty__86k4ho__cls"> 
+  <br> 
+ </div> 
+ <p><b><u><span class="colour sty__kjahtz__cls">GLOBAL VARIABLES</span></u></b><b><span class="colour sty__jkon31__cls">.</span></b><span class="colour sty__2ohynv__cls">&nbsp;This sheet is to support backward compatibility to v67. Version 7 import files do not include this sheet.</span><br></p> 
+ <p><b><u><span class="colour sty__czfgt3__cls">PROJECT VARIABLES</span></u></b><b><span class="colour sty__0q2wkx__cls">. </span></b><span class="colour sty__7o3p9w__cls">Datasheet used in the import process for updating various data to the factory database. The data includes User Defined Project Properties (UDPP), global variables, project wizard, and door wizard data. It does not create or add data to a UDPP record if it does not already exist.</span><br></p> 
+ <p><u><span class="colour sty__7evux2__cls">Column A</span></u><span class="colour sty__xh5k6y__cls">:&nbsp;<b>Variable Type</b>. Enter one of the following - Project Property, Global Variable, Project Wizard, or Door Wizard. The order of the variables in the list is not important, and you may assign different values using the same variable name in different spec groups. It is possible to modify any of the existing User Defined Project Properties, and 11 of the Project level properties using the Project Property variable type. The 11 project-level properties are&nbsp; Architect, Contractor, Draftsman, Estimator, GeneralContact, JobAddress, JobEMail, JobFax, JobNumber, JobPhone, ProjectManager.</span><br></p> 
+ <p><u><span class="colour sty__hsd2ys__cls">Column B</span></u><span class="colour sty__lvj05s__cls">:&nbsp;<b>Variable Name.&nbsp;</b>Enter the name of the variable exactly as it appears in the target file (global, project wizard, door wizard, or project properties). It is case sensitive, and you must include any underscores. They must match the names in the target spec group files.</span><br></p> 
+ <p><u><span class="colour sty__lo2w5y__cls">Column C</span></u><span class="colour sty__v15vk8__cls">:&nbsp;<b>Value</b>. Enter the value you want to assign to the target variable defined in that row.</span><br></p> 
+ <p><u><span class="colour sty__9g7ub6__cls">Column D</span></u><span class="colour sty__hghduk__cls">:&nbsp;<b>Specification Group</b>. Enter the spec group to modify, or leave it blank to update all spec groups.</span><br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspfae5dd9c09d74578bab3cd13200d6350" class="sty__by0zv8__cls"> 
+  <br> 
+ </div> 
+ <p>Once this file is configured as needed and saved to a known location, you are ready to import the project. Click "Toolbox Setup &gt; Import XLS File" and select the XLS file from your known location.<br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspbd9712a8644440de860b4a04c4edf8f2" class="sty__h51her__cls"><br></div><div><br></div><div><br></div><div><b>In case there is any other confusion on XLS importing in Microvellum, please watch the following video:</b><br></div><div><b>​</b><iframe sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-popups allow-downloads allow-popups-to-escape-sandbox" allowfullscreen="" src="https://player.vimeo.com/video/960704693" height="360" width="640"></iframe><b>​</b><br></div> 
+<style type="text/css" data-css-purify-styler="1755097145146">.sty__1iuvh0__cls{color: rgb(34, 34, 34); background: white}
+.sty__cbekqq__cls{color: rgb(34, 34, 34); background: white}
+.sty__1ww1rf__cls{color: rgb(34, 34, 34); background: white}
+.sty__hqiws1__cls{color: rgb(34, 34, 34)}
+.sty__667fvh__cls{color: rgb(34, 34, 34)}
+.sty__1pbb3e__cls{color: rgb(34, 34, 34)}
+.sty__ok3r0z__cls{color: rgb(34, 34, 34)}
+.sty__y8wi8d__cls{color: rgb(34, 34, 34)}
+.sty__p7exdo__cls{color: rgb(34, 34, 34)}
+.sty__eembwu__cls{color: rgb(34, 34, 34)}
+.sty__veakzn__cls{color: rgb(34, 34, 34)}
+.sty__viiff1__cls{color: rgb(34, 34, 34)}
+.sty__6g4awr__cls{color: rgb(34, 34, 34)}
+.sty__3fwz3j__cls{color: rgb(34, 34, 34)}
+.sty__fwz9zs__cls{color: rgb(34, 34, 34)}
+.sty__f1syde__cls{color: rgb(34, 34, 34)}
+.sty__6772w8__cls{color: rgb(34, 34, 34)}
+.sty__nad78o__cls{color: rgb(34, 34, 34)}
+.sty__46tlz6__cls{color: rgb(34, 34, 34)}
+.sty__ufi404__cls{color: rgb(34, 34, 34)}
+.sty__z62p3v__cls{color: rgb(34, 34, 34)}
+.sty__adhu8e__cls{color: rgb(34, 34, 34)}
+.sty__fzrnro__cls{color: rgb(34, 34, 34)}
+.sty__5keqyw__cls{color: rgb(34, 34, 34)}
+.sty__j1m052__cls{color: rgb(34, 34, 34)}
+.sty__xu7ccg__cls{color: rgb(34, 34, 34)}
+.sty__d1dm4y__cls{color: rgb(34, 34, 34)}
+.sty__twkijo__cls{color: rgb(34, 34, 34)}
+.sty__urpyg9__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__hik9sv__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__5q4jm1__cls{color: rgb(34, 34, 34)}
+.sty__pyy2vp__cls{color: rgb(34, 34, 34)}
+.sty__plyjve__cls{color: rgb(34, 34, 34)}
+.sty__5xomz6__cls{color: rgb(34, 34, 34)}
+.sty__it6d2h__cls{color: rgb(34, 34, 34)}
+.sty__h2qe52__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__yi24cz__cls{color: rgb(34, 34, 34)}
+.sty__jcrt3g__cls{color: rgb(34, 34, 34)}
+.sty__mtd9zp__cls{color: rgb(34, 34, 34)}
+.sty__dylfwy__cls{color: rgb(34, 34, 34)}
+.sty__uaplqo__cls{color: rgb(34, 34, 34)}
+.sty__qe7fk0__cls{color: rgb(34, 34, 34)}
+.sty__eypkgb__cls{color: rgb(34, 34, 34)}
+.sty__f3fzpo__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__2evxm8__cls{color: rgb(34, 34, 34)}
+.sty__g928ly__cls{color: rgb(34, 34, 34)}
+.sty__ir477v__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__fjhzye__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__c9b681__cls{color: rgb(34, 34, 34)}
+.sty__q1zxed__cls{color: rgb(34, 34, 34)}
+.sty__boqjjv__cls{color: rgb(34, 34, 34)}
+.sty__lhif5i__cls{color: rgb(34, 34, 34)}
+.sty__uuepbt__cls{color: rgb(34, 34, 34)}
+.sty__txtv7n__cls{color: rgb(34, 34, 34)}
+.sty__apwnjl__cls{color: rgb(34, 34, 34)}
+.sty__wsx19p__cls{color: rgb(34, 34, 34)}
+.sty__81g2tb__cls{color: rgb(34, 34, 34)}
+.sty__873e4p__cls{color: rgb(34, 34, 34)}
+.sty__r5k3h5__cls{color: rgb(34, 34, 34)}
+.sty__coykvl__cls{color: rgb(34, 34, 34)}
+.sty__86k4ho__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__kjahtz__cls{color: rgb(34, 34, 34)}
+.sty__jkon31__cls{color: rgb(34, 34, 34)}
+.sty__2ohynv__cls{color: rgb(34, 34, 34)}
+.sty__czfgt3__cls{color: rgb(34, 34, 34)}
+.sty__0q2wkx__cls{color: rgb(34, 34, 34)}
+.sty__7o3p9w__cls{color: rgb(34, 34, 34)}
+.sty__7evux2__cls{color: rgb(34, 34, 34)}
+.sty__xh5k6y__cls{color: rgb(34, 34, 34)}
+.sty__hsd2ys__cls{color: rgb(34, 34, 34)}
+.sty__lvj05s__cls{color: rgb(34, 34, 34)}
+.sty__lo2w5y__cls{color: rgb(34, 34, 34)}
+.sty__v15vk8__cls{color: rgb(34, 34, 34)}
+.sty__9g7ub6__cls{color: rgb(34, 34, 34)}
+.sty__hghduk__cls{color: rgb(34, 34, 34)}
+.sty__by0zv8__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__h51her__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+</style></div></div><div><div><h3 class="Attachment__attachmentHeading">Attachments :</h3><div><div class="Attachment__attachRow commonStyle__inlineBlock commonStyle__maxW100per" data-id="attachment_listitem"><div data-id="_down_u5iy1deae9f5e2f164e429977ec0789f2cf67" class="Attachment__downloadIcon commonStyle__cursor commonStyle__fRight" title="Download"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__grey Icon__hoverbrand" alt="Download"><use xlink:href="#download"></use></svg></div><div class="Attachment__attachIcon commonStyle__fLeft commonStyle__positionRel Attachment__cursor commonStyle__cursor"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__large Icon__grey" alt="Template_v7_15_5_Project_Import_File.zip"><use xlink:href="#zip"></use></svg></div><div class="Attachment__attachProperty commonStyle__overflowDotted commonStyle__displayBlock"><div data-id="u5iy1deae9f5e2f164e429977ec0789f2cf67__attachName" class="Attachment__attachName commonStyle__displayBlock commonStyle__overflowDotted Attachment__cursor commonStyle__cursor">Template_v7_15_5_Project_Import_File.zip</div><div class="Attachment__attachSize">140 KB</div></div></div></div><div><div class="Attachment__attachRow commonStyle__inlineBlock commonStyle__maxW100per" data-id="attachment_listitem"><div data-id="_down_u5iy1597cd91d5a0446a8a86f5bebd00b6c6b" class="Attachment__downloadIcon commonStyle__cursor commonStyle__fRight" title="Download"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__grey Icon__hoverbrand" alt="Download"><use xlink:href="#download"></use></svg></div><div class="Attachment__attachIcon commonStyle__fLeft commonStyle__positionRel Attachment__cursor commonStyle__cursor"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__large Icon__grey" alt="ImportXLS.zip"><use xlink:href="#zip"></use></svg></div><div class="Attachment__attachProperty commonStyle__overflowDotted commonStyle__displayBlock"><div data-id="u5iy1597cd91d5a0446a8a86f5bebd00b6c6b__attachName" class="Attachment__attachName commonStyle__displayBlock commonStyle__overflowDotted Attachment__cursor commonStyle__cursor">ImportXLS.zip</div><div class="Attachment__attachSize">145 KB</div></div></div></div></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="17 Jun 2024 05:18 PM"><span>1 year ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-xls-project-import&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-xls-project-import" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-xls-project-import" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/overview-xls-project-import" target="_blank">https://community.microvellum.com/portal/en/kb/articles/overview-xls-project-import</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:59:08 AM</p>
+            <p><strong>Categories:</strong> Engineering > Projects > Project Import</p>
+            <p><em>Note: This article was scraped separately due to video/animation content.</em></p>
+        </div>
+    </div>
+</body>
+</html>

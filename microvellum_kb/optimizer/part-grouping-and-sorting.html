@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__ei2oos__cls{margin: 20px; border-radius: 3px; border: 1px solid rgb(238, 238, 238); display: inline-block}
+.sty__xbzno1__cls{padding: 0px; max-width: 100%; box-sizing: border-box; height: auto}
+.sty__hosm7q__cls{position: relative; display: block; text-align: left; padding: 0px 10px 10px; color: rgb(153, 153, 153)}
+.sty__wovwzd__cls{list-style-type: disc}
+.sty__2dz168__cls{list-style-type: disc}
+.sty__lahnos__cls{list-style-type: disc}
+.sty__i32rwi__cls{list-style-type: disc}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Part Grouping and Sorting (Beta Optimizer)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><div>As of <a href="https://community.microvellum.com/portal/en/kb/articles/toolbox-release-notes-build-25-1-0325-641" target="_blank" rel="noopener noreferrer">Toolbox build 25.1.0325.641</a>, Microvellum's new Beta Optimizer allows users to sort and group parts with greater degrees of specificity than with the legacy optimizer. This is possible due to an overhaul in the Part Sorting and Grouping interface, which introduces 3 different levels of sorting and grouping during optimization.<br></div><div><br></div><div><div class="target_moving"><div id="desc_img_6331081494334245" contenteditable="false" class="KB_Editor_ImageDiscBdr sty__ei2oos__cls"><img data-zdeskdocselectedclass="original" class="docsimage sty__xbzno1__cls" data-zdeskdocid="img_6331081494334245" src="https://community.microvellum.com/galleryDocuments/edbsnbbe22ca469b446875ee95356a51185ab8a427401a9d453278dc9f82c67e06834cc371c8a56ea3ad1836e5ebcb503d40a?inline=true"><span class="KB_Editor_Quotedisc sty__hosm7q__cls"><span class="inner">Fig. 1: The Beta Part Sorting and Grouping section.</span></span></div></div><div>Part sorting and grouping now allows for 3 separate levels of sorting, each represented within the processing station UI. The top sorting/grouping selection represents the highest level that parts will sort by, with the center and bottom options being subsequent sorting and grouping parameters. If one were to select the same options between two levels of part sorting and grouping, the higher level one would be enabled, while the lower level one would be removed.&nbsp;<br></div><div><br></div><div><b>Group Type:</b> After parts have been sorted and sequenced for optimization, one can then set the strategy used when placing parts on individual sheets. Group type refers to the grouping and ‘overlap’ between parts with different sort values. Users will have a choice of placing parts on a <b>new sheet</b>, on the <b>same current sheet</b>, or on a<b> previous sheet</b>, with a selection of how up the stack one goes when selecting the previous sheet (from 2-10 sheets prior).<br></div><div><br></div><div>For example, assume an operation requires the optimization of 3 products, each with unique item numbers of 1.01, 1.02 and 1.03 and each requiring 10 parts per product. Sorting by item number and in ascending order on the top sort only, the optimizer will place all of 1.01’s 10 parts individually on as many sheets as necessary until all are placed, then 1.02’s 10 parts will be placed.&nbsp; Each part will be attempted on the first sheet, then the second and so on until an empty space large enough to place the part is found.&nbsp; The group type dictates what happens between the last part of 1.01 and all of 1.02’s parts.</div><div>If the last part of 1.01 is placed on sheet 3, the selected group type will dictate the following:<br></div><ol><li class="sty__wovwzd__cls"><b>New Sheet:</b> 1.02’s parts will be forced onto sheet 4 or higher forcing no overlap of parts.</li><li class="sty__2dz168__cls"><b>Same Sheet: </b>1.02's parts will be forced onto sheet 3 or higher, making a 1 sheet overlap possible.</li><li class="sty__lahnos__cls"><b>Previous Sheet:</b> 1.02’s parts will be forced onto sheet 2 or higher, making a 2 sheet overlap possible.</li><li class="sty__i32rwi__cls"><b>Previous 2 Sheets: </b>1.02’s parts will be forced onto sheet 1 or higher, making a 3 sheet overlap possible.</li></ol><div>All of 1.03’s parts will be placed according to the group type and based on the last part of 1.02 regardless of any of 1.01’s parts.</div><div>All grouping options work independently of each other and can create poor yield if used excessively with highly restrictive grouping types and/or low numbers of parts.<br></div></div><div><br></div><style type="text/css" data-css-purify-styler="1755096733332">.sty__ei2oos__cls{margin: 20px; border-radius: 3px; border: 1px solid rgb(238, 238, 238); display: inline-block}
+.sty__xbzno1__cls{padding: 0px; max-width: 100%; box-sizing: border-box; height: auto}
+.sty__hosm7q__cls{position: relative; display: block; text-align: left; padding: 0px 10px 10px; color: rgb(153, 153, 153)}
+.sty__wovwzd__cls{list-style-type: disc}
+.sty__2dz168__cls{list-style-type: disc}
+.sty__lahnos__cls{list-style-type: disc}
+.sty__i32rwi__cls{list-style-type: disc}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="11 Apr 2025 11:14 AM"><span>4 months ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fpart-grouping-and-sorting&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fpart-grouping-and-sorting" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fpart-grouping-and-sorting" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/part-grouping-and-sorting" target="_blank">https://community.microvellum.com/portal/en/kb/articles/part-grouping-and-sorting</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:52:14 AM</p>
+            <p><strong>Categories:</strong> Optimizer</p>
+        </div>
+    </div>
+</body>
+</html>

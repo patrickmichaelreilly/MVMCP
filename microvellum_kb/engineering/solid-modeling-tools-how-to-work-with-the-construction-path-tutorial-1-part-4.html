@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__4bz8ph__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 288px; height: 654px}
+.sty__ivgk6u__cls{font-size: 13px}
+.sty__zfqauk__cls{list-style-type: decimal}
+.sty__tfewid__cls{list-style-type: decimal}
+.sty__lyagbz__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 985px; height: 864px}
+.sty__u6fhsd__cls{font-size: 13px}
+.sty__7dy2n1__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 984px; height: 861px}
+.sty__ze0yp8__cls{font-size: 13px}
+.sty__2x20xo__cls{list-style-type: decimal}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Solid Modeling Tools - How to Work with the Construction Path (Tutorial 1: Part 4)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p> This article continues from <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/en/kb/articles/solid-modeling-tools-how-to-use-the-smart-layer-manager-tutorial-1-part-3"> Solid Modeling Tools - How to use the Smart Layer Manager </a> &nbsp;and provides information for working with the Construction Path.&nbsp; <br></p> 
+ <div> 
+  <hr> 
+  <br>
+ </div> 
+ <p> Several factors influence how your custom product appears in relation to the construction path polyline. After drawing the 3D objects, the section drawing will display three concentric circles on the section to identify the location of the construction path. In general, this origin point is the left-most point of any vertical entity. This does not include any extruded parts that may be further to the left than the vertical entity. It is also the bottom edge of the lowest entity, the lowest point of the product. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspe6c91eb2062745e9b8c1f04504464a61" class="docsimage sty__4bz8ph__cls" data-zdeskdocid="img_6686921214831212" data-zdeskdocselectedclass="original" alt="Figure 11 - Three Concentric Circles"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__ivgk6u__cls"> Fig. 01 - Three Concentric Circles </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <ol> 
+  <li class="sty__zfqauk__cls"> Moving the construction path will move the 3D objects associated with that path. In the next step, the construction path polyline is not located at 0,0 for its origin, and we will move it to that coordinate. <br></li> 
+  <p> Activate the Tree View tab in the SMT palette and expand the tree structure. Uncheck the checkbox for your product name (e.g., Sample Product 1), and then check the checkbox for Construction Path to view it by itself. Enter MOVE at the command prompt and select the construction path. Click the point on the line to serve as the base point for the move; in other words, the point that will be located at the coordinates you enter next. Enter #0,0 at the command prompt and hit Enter. The polyline base point will be moved to X = 0, Y = 0. <br></p> 
+  <p> For more information on entering coordinates, see the paragraph below. <br></p> 
+  <p> Preceding the coordinates with the&nbsp; <b> #&nbsp; </b> symbol specifies that you want to move the object to an&nbsp; <b> <u> absolute </u> </b> &nbsp;position. Entering&nbsp; <b> #0,0&nbsp; </b> specifies the new point as 0 in X, 0 in Y. Preceding the coordinates with the&nbsp; <b> @&nbsp; </b> symbol specifies that you want to move the object to a&nbsp; <b> <u> relative </u> </b> &nbsp;position. Entering&nbsp; <b> @2,0&nbsp; </b> specifies the new point as a point two units in the&nbsp; <i> X </i> &nbsp;direction from the last point entered (relative to the current UCS). <br></p> 
+  <p> See&nbsp; <a rel="noopener noreferrer" href="https://knowledge.autodesk.com/support/autocad-lt/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/AutoCAD-LT/files/GUID-AABA8FE7-0E86-4046-96D5-CF5464D5FAC6-htm.html" target="_blank"> About Entering 3D Cartesian Coordinates </a> &nbsp;for an explanation of an AutoCAD coordinate entry system. <br></p> 
+  <li class="sty__tfewid__cls"> Reversing the direction of the polyline defining the construction path changes the orientation of the 3D product in the drawing by 180°. In this tutorial, the construction path was drawn from left to right, in the X positive direction.&nbsp; <br></li> 
+  <p> The ‘left-hand rule’ may help you recall how the product is drawn relative to the construction path. With your index finger of your left hand pointing straight ahead, and your thumb at right angles to your index finger, face your palm to the ground. Your index finger is the direction of the construction path, and your thumb is the side of the path that the product will be drawn. This applies in the X or Y axes, positive or negative. Draw your construction path accordingly. <br></p> 
+  <p> Activate the Tree View tab in the SMT palette and expand the tree structure. Right-click on Construction Path display the context menu - click Reverse to change the direction of the polyline to Right to Left (or X negative). <br></p> 
+  <p> After reversing it once, repeat the command to change it back to Left to Right (X positive) as it was initially. <br></p> 
+  <p> See the figures below for the effects of using this command on the 3D product. <br></p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspdf83630e09d44003b69d10ec6a926ee2" class="docsimage sty__lyagbz__cls" data-zdeskdocid="img_1484512303307961" data-zdeskdocselectedclass="original" alt="Figure 12 - X Positive"> 
+   <br>
+  </div> 
+  <div> 
+   <i> <span class="size sty__u6fhsd__cls"> Fig. 02 - (X positive) </span> </i> 
+   <br>
+  </div> 
+  <div> 
+   <br>
+  </div> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocsspfb9881244c5e4df197913707efdc48a0" class="docsimage sty__7dy2n1__cls" data-zdeskdocid="img_4785403185852015" data-zdeskdocselectedclass="original" alt="Figure 13 - X Negative"> 
+   <br>
+  </div> 
+  <div> 
+   <i> <span class="size sty__ze0yp8__cls"> Fig. 03 - (X negative) </span> </i> 
+   <br>
+  </div> 
+  <div> 
+   <br>
+  </div> 
+  <li class="sty__2x20xo__cls"> Save and close the drawing. Close Toolbox. <br></li> 
+ </ol> 
+ <p> The next article in this tutorial series will show you how to restore products from your drawing when you restart Toolbox. You will also learn how to manipulate your active sections (profiles) to achieve the desired results in your custom product. <br></p> 
+ <div> 
+  <hr> 
+  <br>
+ </div> 
+ <p> See&nbsp; <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/kb/articles/solid-modeling-tools-restore-product-sections-tree-structure-tutorial-2"> Solid Modeling Tools - Restore Product, Sections, Tree Structure (Tutorial 2) </a> &nbsp;in the Microvellum Knowledge Network for the next tutorial in the series.&nbsp; <br></p> 
+ <div> 
+  <br>
+ </div> 
+<style type="text/css" data-css-purify-styler="1755095446661">.sty__4bz8ph__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 288px; height: 654px}
+.sty__ivgk6u__cls{font-size: 13px}
+.sty__zfqauk__cls{list-style-type: decimal}
+.sty__tfewid__cls{list-style-type: decimal}
+.sty__lyagbz__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 985px; height: 864px}
+.sty__u6fhsd__cls{font-size: 13px}
+.sty__7dy2n1__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 984px; height: 861px}
+.sty__ze0yp8__cls{font-size: 13px}
+.sty__2x20xo__cls{list-style-type: decimal}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="10 May 2021 04:36 PM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fsolid-modeling-tools-how-to-work-with-the-construction-path-tutorial-1-part-4&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fsolid-modeling-tools-how-to-work-with-the-construction-path-tutorial-1-part-4" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fsolid-modeling-tools-how-to-work-with-the-construction-path-tutorial-1-part-4" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/solid-modeling-tools-how-to-work-with-the-construction-path-tutorial-1-part-4" target="_blank">https://community.microvellum.com/portal/en/kb/articles/solid-modeling-tools-how-to-work-with-the-construction-path-tutorial-1-part-4</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:30:47 AM</p>
+            <p><strong>Categories:</strong> Engineering</p>
+        </div>
+    </div>
+</body>
+</html>

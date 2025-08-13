@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__0qt16x__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__5a8n4u__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__4m2vd3__cls{list-style-type: disc}
+.sty__6kp50t__cls{list-style-type: disc}
+.sty__vx40vh__cls{list-style-type: disc}
+.sty__s1orwc__cls{list-style-type: disc}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Replace Products: Prompt Override</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><div>
+   <div>
+      We have added the ability to skip a prompt when using the&nbsp;<i>Replace Product&nbsp;</i>command.&nbsp; If you don't want to use the original product's prompt value, you can set an optional control type on that product's prompts page.<br>
+   </div>
+   <div>
+      &nbsp;
+      <img src="https://community.microvellum.com/galleryDocuments/edbsn76c7869a3d220dab728111c2a058b8ed639006b445be9d070ddaec14da335c047cc30433a5f00eb7c44a76cda05f90ae?inline=true" class="sty__0qt16x__cls">
+      <br>
+   </div>
+   <div>
+      On the prompts page, the column named Use Last Value, controls whether a prompt will use the original product prompts value or use&nbsp;its&nbsp;default library value.&nbsp;&nbsp;This column accepts two values separated by a pipe symbol “|”.&nbsp; The first value is still used for the Use Last Value feature and if it contains a value of 1 it will use the value of the last product&nbsp;when it is added to a project.&nbsp; If&nbsp;the cell contains a pipe symbol followed by a “1”, the&nbsp;<i>Replace Product&nbsp;</i>command will skip this prompt and use the default library prompt value.&nbsp; &nbsp;Any values entered besides a 1 will result in the default value of&nbsp;0|0 being used.&nbsp;&nbsp;<span>All the valid inputs for this cell are listed below.</span></div>
+   <div>
+      &nbsp;
+      <img src="https://community.microvellum.com/galleryDocuments/edbsnd7e2f02c9bb923249168411cd5be1060c9bbc24e1f6e5395c0eb715ccf97953600f57b5888921b5f41a9bec480272eff?inline=true" class="sty__5a8n4u__cls">
+      <br>
+   </div>
+   <ol>
+      <li class="sty__4m2vd3__cls">
+         Blank Cell&nbsp;or&nbsp;<b>“0|0”</b>&nbsp;= Will&nbsp;<b>NOT&nbsp;</b>use Last Value when adding a new product from the library.&nbsp; The&nbsp;<i>Replace Product&nbsp;</i>command will use the original product's prompt value.&nbsp;
+         <br>
+      </li>
+   </ol>
+   <ol>
+      <li class="sty__6kp50t__cls">
+         <b>
+            “1|0”&nbsp;</b>= Will use the Last Value when adding a new product from the library.&nbsp; The R<i>eplace Product&nbsp;</i>command will use the original product's prompt value.&nbsp;
+         <br>
+      </li>
+   </ol>
+   <ol>
+      <li class="sty__vx40vh__cls">
+         <b>
+            “0|1”&nbsp;</b>= Will&nbsp;<b>NOT
+</b>use the Last Value when adding a new product from the library.&nbsp; The&nbsp;<i>Replace Product&nbsp;</i>command will&nbsp;NOT&nbsp;use the original product's prompt value.&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+         <br>
+      </li>
+   </ol>
+   <ol>
+      <li class="sty__s1orwc__cls">
+         <b>
+            “1|1”&nbsp;</b>= Will&nbsp;use the Last Value when adding a new product from the library.&nbsp; The&nbsp;<i>Replace Product&nbsp;</i>command will&nbsp;<b>NOT&nbsp;</b>use the original product's prompt value.
+      </li>
+   </ol>
+</div>
+<div>
+   For a comprehensive overview of prompt control types, see&nbsp;<a rel="noopener noreferrer" href="https://community.microvellum.com/portal/en/kb/articles/reference-control-type-and-other-prompt-properties">Reference: Control Types and Other Prompt Properties</a>.
+</div>
+<style type="text/css" data-css-purify-styler="1755096063531">.sty__0qt16x__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__5a8n4u__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__4m2vd3__cls{list-style-type: disc}
+.sty__6kp50t__cls{list-style-type: disc}
+.sty__vx40vh__cls{list-style-type: disc}
+.sty__s1orwc__cls{list-style-type: disc}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="26 Oct 2021 11:34 AM"><span>3 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Freplace-products-prompt-override&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Freplace-products-prompt-override" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Freplace-products-prompt-override" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/replace-products-prompt-override" target="_blank">https://community.microvellum.com/portal/en/kb/articles/replace-products-prompt-override</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:41:04 AM</p>
+            <p><strong>Categories:</strong> Product Creation and Editing</p>
+        </div>
+    </div>
+</body>
+</html>

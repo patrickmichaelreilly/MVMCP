@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__amkz5p__cls{line-height: normal; background: white}
+.sty__st4vbc__cls{line-height: normal; background: white}
+.sty__fwpvya__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__rl168l__cls{font-size: 13px}
+.sty__k8m5a7__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__uidg8l__cls{font-size: 13px}
+.sty__te92zc__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__31zxlx__cls{font-size: 13px}
+.sty__x7uj8j__cls{line-height: normal; background: white}
+.sty__azhtul__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__7bmigr__cls{font-size: 13px}
+.sty__19dr85__cls{line-height: normal; background: white}
+.sty__istkvh__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__801660__cls{font-size: 13px}
+.sty__7fyzly__cls{line-height: normal; background: white}
+.sty__p68qfh__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__f62vek__cls{font-size: 13px}
+.sty__wjonj9__cls{line-height: normal; background: white}
+.sty__fclc47__cls{line-height: normal; background: white}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">BlueCell XML Import from Microvellum (Reference)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p> This article is a reference of the BlueCell® processing station properties as well as for the XML parts file SheetGroup and PartGroup elements produced by Microvellum. <br></p> 
+ <p> Think of the BlueCell processing station as the configuration mapping function of the BlueCell import, and the XML file as the communication device between Microvellum and the BlueCell.&nbsp;The XML file contains everything that BlueCell needs to know about the Microvellum project and work order to optimize the parts and material. <br></p> 
+ <p> This reference assumes that you have read and understand the information in the <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/kb/articles/bluecell-xml-import-from-microvellum-overview" target="_blank"> BlueCell Overview</a>&nbsp;and <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/kb/articles/create-and-configure-a-bluecell-processing-station-in-microvellum" target="_blank"> Tutorial</a>&nbsp;articles in the Microvellum Knowledge Network. Create a BlueCell processing station and process a work order with that station. The XML files, as shown in this reference, are created as examples of files produced by such a station. <br></p> 
+ <h2 class="toc_anchors sty__amkz5p__cls" id="BlueCell_Processing_Station_________Properties"> BlueCell Processing Station Properties <br></h2> 
+ <h3 class="toc_anchors sty__st4vbc__cls" id="Processing_Station__________Associates_tab"> Processing Station &gt; Associates tab <br></h3> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt9d59ae1d829b4377ada050f0491d97e6" class="sty__fwpvya__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__rl168l__cls"> Fig. 01 – Associates Tab </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <ul> 
+  <li> <b> Add Associate</b>&nbsp;– Click to add a row for a new secondary machining associate. <br></li> 
+  <li> <b> Delete Associate</b>&nbsp;– Click to delete a row for a new secondary machining associate. <br></li> 
+  <li> <b> Index</b>&nbsp;– Enter a number that represents the priority of data to appear on the labels. In other words, if you have multiple machines that produce the same type of G-Code, such as multiple point-to-point machines or multiple edgeboring machines, the lower this number, the higher that Associate will be in priority for displaying its data on the labels. This data is displayed in the XML file in a single row as a pipe-delimited list of values. The first value in the list is the one with the lowest index number of the group. <br></li> 
+  <li> <b> Type</b>&nbsp;– Select a machine type from the list that matches the machine on the row that you’re editing. <br></li> 
+  <li> <b> Name</b>&nbsp;– Select a processing station name from the list of existing stations. <br></li> 
+ </ul> 
+ <h3 class="toc_anchors" id="Processing_Station__Files__________Pictures_tab"> Processing Station &gt; Files &amp; Pictures tab <br></h3> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt63e8f71b1d3a4d0b9fc681fb35d6be32" class="sty__k8m5a7__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__uidg8l__cls"> Fig. 02 – Files &amp; Pictures Tab </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <ul> 
+  <li> <b> File Location</b>&nbsp;– Click the Browse button to select a folder to contain the XML file that is produced when processing with the BlueCell processing station. <br></li> 
+  <li> <b> Part Picture File Location</b>&nbsp;– Click the Browse button to select a folder to contain the part picture that is produced when processing with the BlueCell processing station. This part picture is often used on the labels produced by BlueCell. <br></li> 
+  <li> <b> Picture Type</b>&nbsp;– Select the type of picture required by your BlueCell software. <br></li> 
+  <li> <b> Pixel Size</b>&nbsp;– Select the resolution of the picture in pixels required by your BlueCell software. <br></li> 
+  <li> <b> Zoom Factor</b>&nbsp;– Select the magnification of the picture required by your BlueCell software. <br></li> 
+  <li> <b> Use Legacy WMF Format</b>&nbsp;– Not applicable for BlueCell. (Check the box if you are using a version of CutRite that requires a legacy graphics format. Does not apply to EMF picture types.) <br></li> 
+ </ul> 
+ <h3 class="toc_anchors" id="Processing_Station__Custom______Settings_tab"> Processing Station &gt; Custom Settings tab <br></h3> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttf1fcda3fd8844342b848953e013c7eea" class="sty__te92zc__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__31zxlx__cls"> Fig. 03 – Custom Settings Tab </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <ul> 
+  <li> <b> Available Values box</b>&nbsp;– Select values from this box to enter in the User Values box to the right. These are the field values from the Parts table that are available to be passed to the BlueCell XML file for use by the optimizer in labels. <br></li> 
+  <li> <b> Add button</b>&nbsp;– Select single or multiple values in the Available Values box on the left and click this button to add them to the User Values box on the right. <br></li> 
+  <li> <b> Delete button</b>&nbsp;– Select single or multiple values in the Used Values box on the right and click this button to delete them from that list. <br></li> 
+  <li> <b> Used Values box</b>&nbsp;–This box is empty by default. Add values to this box from the Available Values box to the left by using the Add button. The values in this box will be populated in the order they appear in this box to the XML file fields starting at “UserText07” and continuing through “UserText20.” <br></li> 
+  <li> <b> Move Up button</b>&nbsp;– Select a single value in the Used Values box on the right and click this button to move that selection up in the list. This also changes the field this value is mapped to in the XML file. <br></li> 
+  <li> <b> Move Down button</b>&nbsp;– Select a single value in the Used Values box on the right and click this button to move that selection down in the list. This also changes the field this value is mapped to in the XML file. <br></li> 
+ </ul> 
+ <h2 class="toc_anchors sty__x7uj8j__cls" id="BlueCell_XML_File_Produced_by_________Microvellum"> BlueCell XML File Produced by Microvellum <br></h2> 
+ <p> The XML file contains non-optimized parts and sheet information for import in the BlueCell program. The sections of that XML are displayed in the figures below. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt2012032e1ff54a12906107442fbca4f6" class="sty__azhtul__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__7bmigr__cls"> Fig. 04 - Sample XML Header and Format </span> </i> 
+  <br>
+ </div> 
+ <h2 class="toc_anchors sty__19dr85__cls" id="Sheet_Group_Element"> Sheet Group Element <br></h2> 
+ <p> The SheetGroup XML element is populated with all sheet information for the materials selected from the Processing Station. The sample file below contains the material “.6875 Core Liner-PL1 Solid,” which was added to the Sheet Group element. <br></p> 
+ <p> A new Sheet element is added to the SheetGroup element for each sheet sizes available for any single material as defined in Microvellum. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt9e9515154b894928a94f459e1fabbbf0" class="sty__istkvh__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__801660__cls"> Fig. 05 - XML Element for Sheet Group </span> </i> 
+  <br>
+ </div> 
+ <h2 class="toc_anchors sty__7fyzly__cls" id="Part_Group_Element"> Part Group Element <br></h2> 
+ <p> The PartGroup XML element is populated with all part information for the parts selected from the Processing Station. In the sample file, the Base Bottom was selected, so a new Part element was added to the PartGroup element that contains all the data for that part. <br></p> 
+ <p> To populate Single Part G-Code and Horizontal or Edgebore Barcodes into the BlueCell parts file, the processing station associates must be set up as described elsewhere in the Microvellum Knowledge Network. Each processing station associate will generate a set of barcodes for the BlueCell XML file. These are added to that file as a string using the pipe character (“|”) as a delimiter in the order of the Associates property “Index.” <br></p> 
+ <p> If using one Single Part G-Code processing stations and two HBore processing stations, the expected results will look like the following data. See figure 3 for the file output.&nbsp;</p> 
+ <blockquote> 
+  <div>
+    .UserText01 = *HBoreBarcodeBottom* 
+   <br>
+  </div> 
+  <div>
+    .UserText02 = *HBoreBarcodeLeft* 
+   <br>
+  </div> 
+  <div>
+    .UserText03 = *HBoreBarcodeRight* 
+   <br>
+  </div> 
+  <div>
+    .UserText04 = *HBoreBarcodeTop* 
+   <br>
+  </div> 
+  <div>
+    .UserText05 = *Face5Barcode* | *Face5Barcode* 
+   <br>
+  </div> 
+  <div>
+    .UserText06 = *Face6Barcode* |*Face6Barcode* 
+   <br>
+  </div> 
+ </blockquote> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttdc0a2799a45349928f8540e924461894" class="sty__p68qfh__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__f62vek__cls"> Fig. 06 – XML Element for Parts Group </span> </i> 
+  <br>
+ </div> 
+ <h2 class="toc_anchors sty__wjonj9__cls" id="Processing_Station_Associates"> Processing Station Associates <br></h2> 
+ <p> To populate the BlueCell Parts File with single part G-Code and horizontal barcodes data, processing station associates must be set up. Each processing station associate will generate a set of barcodes for the BlueCell XML file and will be populated using a "|" delimiter in the order of Indexes set to the associates. For more information, see the appropriate section above. <br></p> 
+ <p> If you are processing with one Single Part G-Code type station and two Horizontal Boring or Edgebore type station, the XML file contains these processing station associate values in the XML fields UserText01 – UserText06 as shown below. <br></p> 
+ <blockquote> 
+  <div>
+    .UserText01 = *HBoreBarcodeBottom* 
+   <br>
+  </div> 
+  <div>
+    .UserText02 = *HBoreBarcodeLeft* 
+   <br>
+  </div> 
+  <div>
+    .UserText03 = *HBoreBarcodeRight* 
+   <br>
+  </div> 
+  <div>
+    .UserText04 = *HBoreBarcodeTop* 
+   <br>
+  </div> 
+  <div>
+    .UserText05 = *Face5Barcode*|*Face5Barcode* 
+   <br>
+  </div> 
+  <div>
+    .UserText06 = *Face6Barcode*|*Face6Barcode* 
+   <br>
+  </div> 
+ </blockquote> 
+ <h2 class="toc_anchors sty__fclc47__cls" id="BlueCell_Output_Units"> BlueCell Output Units <br></h2> 
+ <p> BlueCell output units are dependent on the Library Units and Convert to Metric Settings. <br></p> 
+ <blockquote> 
+  <div>
+    If the “Library Units” = Imperial, and “Convert to Metric” = False 
+   <br>
+  </div> 
+  <div>
+    Then, the “Output Units” = Imperial 
+   <br>
+  </div> 
+  <div>
+    If the “Library Units” = Imperial, and “Convert to Metric” = True 
+   <br>
+  </div> 
+  <div>
+    Then, the “Output Units” = Metric 
+   <br>
+  </div> 
+  <div>
+    If the “Library Units” = Metric, and “Convert to Metric” = False 
+   <br>
+  </div> 
+  <div>
+    Then, the “Output Units” = Metric 
+   <br>
+  </div> 
+ </blockquote>
+ <div>
+  <br>
+ </div>
+<style type="text/css" data-css-purify-styler="1755096770834">.sty__amkz5p__cls{line-height: normal; background: white}
+.sty__st4vbc__cls{line-height: normal; background: white}
+.sty__fwpvya__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__rl168l__cls{font-size: 13px}
+.sty__k8m5a7__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__uidg8l__cls{font-size: 13px}
+.sty__te92zc__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__31zxlx__cls{font-size: 13px}
+.sty__x7uj8j__cls{line-height: normal; background: white}
+.sty__azhtul__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__7bmigr__cls{font-size: 13px}
+.sty__19dr85__cls{line-height: normal; background: white}
+.sty__istkvh__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__801660__cls{font-size: 13px}
+.sty__7fyzly__cls{line-height: normal; background: white}
+.sty__p68qfh__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__f62vek__cls{font-size: 13px}
+.sty__wjonj9__cls{line-height: normal; background: white}
+.sty__fclc47__cls{line-height: normal; background: white}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="09 Nov 2022 04:51 PM"><span>2 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fbluecell-xml-import-from-microvellum-reference&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fbluecell-xml-import-from-microvellum-reference" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fbluecell-xml-import-from-microvellum-reference" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/bluecell-xml-import-from-microvellum-reference" target="_blank">https://community.microvellum.com/portal/en/kb/articles/bluecell-xml-import-from-microvellum-reference</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:52:51 AM</p>
+            <p><strong>Categories:</strong> Third Party Optimization</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__yy457w__cls{list-style-type: decimal}
+.sty__e5oe2v__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ylc587__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__nzz051__cls{list-style-type: decimal}
+.sty__npl0au__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__t3awfk__cls{list-style-type: decimal}
+.sty__ocyku4__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__dkx29o__cls{list-style-type: decimal}
+.sty__5yr4hq__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__c9mw6a__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__7x67aq__cls{list-style-type: decimal}
+.sty__6u86lb__cls{font-size: 14.6667px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Issue: Errors &amp; Slow Performance of Microvellum OEM or AutoCAD</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p> When using AutoCAD, you may notice errors, slow performance, or sometimes, the application may crash. The Windows "Page File" size may cause this. This article presents the optimal setting for this file when using Microvellum OEM, or Microvellum with an AutoCAD Standard version. Before we do that, here is a short bit of information about the reason for the existence of the file. <br></p> 
+ <h2 id="What_is_a_page_file" class="toc_anchors"> What is a page file? <br></h2> 
+ <p> As many computer users know, Windows has an internal memory that holds and manipulates data. This memory is commonly called RAM, and the amount of it varies significantly between computers. The memory amount of RAM has a finite limit, and as the computer is doing its work, that limit may be approached. As that happens and a low memory condition is imminent, Windows will move some data out of RAM and into a hidden file on the computer hard drive known as the "Page File." <br></p> 
+ <p> Without a page file, if the available RAM is exhausted, Windows can no longer allocate memory for data processing, and all work stops. The application crashes, and sometimes even Windows can be affected by becoming unstable. Bottom line: It is important to have a page file that is appropriately sized! <br></p> 
+ <h2 id="Issue" class="toc_anchors"> Issue <br></h2> 
+ <p> Windows usually manages the page file size, but when using Microvellum and AutoCAD, that may not be the best option. AutoCAD, in particular, uses the page file extensively for memory and processing. If Windows is allowed to manage the page file size, it may be in the process of adjusting the page file size when AutoCAD needs to access it to store information. Guess what? AutoCAD is forced to wait until Windows if finished – and thus the slow performance, unhandled exceptions, and fatal errors. <br></p> 
+ <h2 id="What_to_Do" class="toc_anchors"> What to Do <br></h2> 
+ <p> Size your page file. Some forums or blogs with a focus on tweaking Windows suggest that you disable the page file for security reasons. We don't recommend that for the reasons discussed above. Instead, set its size as described below. <br></p> 
+ <ol> 
+  <li class="sty__yy457w__cls"> Press the Windows key and enter "advanced system settings" in the search bar. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=nuxy50043ced173b845b69bddbf6c9c0ad344" class="sty__e5oe2v__cls"> 
+   <br>
+  </div> 
+  <p> Alternatively, open the Control Panel app and click the "System" icon. In the System screen that is displayed, click the link for "Advanced system settings." <br></p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=nuxy5020e804db54e45268cfa94ff51751357" class="sty__ylc587__cls"> 
+   <br>
+  </div> 
+  <li class="sty__nzz051__cls"> In the System Properties screen, click the Advanced tab and then the Settings button. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=nuxy50672b4fa7bf9403ea5301edb2216a9a2" class="sty__npl0au__cls"> 
+   <br>
+  </div> 
+  <li class="sty__t3awfk__cls"> In the Performance Options screen, click the Advanced tab, and then the Change button in the Virtual Memory section. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=nuxy599ffc8f4bf9a4481b7b7c7ba14a7ff36" class="sty__ocyku4__cls"> 
+   <br>
+  </div> 
+  <li class="sty__dkx29o__cls"> In the Virtual Memory screen, uncheck the checkbox "Automatically manage paging file size for all drives." <br></li> 
+  <p> Select the C: drive and click the option button for "Custom size:" <br></p> 
+  <p> Enter the value Windows displays for the Recommended file size in the two boxes, "Initial size," and "Maximum size." <br></p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=nuxy5be363affe7964e378d0fb98810e0707b" class="sty__5yr4hq__cls"> 
+   <br>
+  </div> 
+  <p> If the "Currently allocated" value is greater than the "Minimum allowed" value and your remaining hard drive space (Space available) allows it, it is recommended practice that you enter the value for "Currently allocated" in the two boxes, "Initial size," and "Maximum size." <br></p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=nuxy5c7ea1352ed2949d4bd16d5553eda6b9d" class="sty__c9mw6a__cls"> 
+   <br>
+  </div> 
+  <li class="sty__7x67aq__cls"> <span class="size sty__6u86lb__cls"> Click Set, and OK. </span> <br></li> 
+ </ol>
+<style type="text/css" data-css-purify-styler="1755096045336">.sty__yy457w__cls{list-style-type: decimal}
+.sty__e5oe2v__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ylc587__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__nzz051__cls{list-style-type: decimal}
+.sty__npl0au__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__t3awfk__cls{list-style-type: decimal}
+.sty__ocyku4__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__dkx29o__cls{list-style-type: decimal}
+.sty__5yr4hq__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__c9mw6a__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__7x67aq__cls{list-style-type: decimal}
+.sty__6u86lb__cls{font-size: 14.6667px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="23 Oct 2020 01:29 PM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fissue-errors-slow-performance-of-microvellum-oem-or-autocad&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fissue-errors-slow-performance-of-microvellum-oem-or-autocad" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fissue-errors-slow-performance-of-microvellum-oem-or-autocad" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/issue-errors-slow-performance-of-microvellum-oem-or-autocad" target="_blank">https://community.microvellum.com/portal/en/kb/articles/issue-errors-slow-performance-of-microvellum-oem-or-autocad</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:40:46 AM</p>
+            <p><strong>Categories:</strong> Troubleshooting</p>
+        </div>
+    </div>
+</body>
+</html>

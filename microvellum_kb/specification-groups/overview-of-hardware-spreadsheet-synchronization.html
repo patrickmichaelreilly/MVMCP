@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__x2bu9u__cls{line-height: normal; background: white}
+.sty__a7cer5__cls{color: rgb(34, 34, 34)}
+.sty__7rrl23__cls{font-size: 18pt}
+.sty__d4blu0__cls{line-height: normal; background: white}
+.sty__xnw9yu__cls{color: rgb(34, 34, 34)}
+.sty__vqjnyh__cls{font-size: 18pt}
+.sty__i5muqy__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 738px; height: auto}
+.sty__ucy7jf__cls{color: rgb(34, 34, 34)}
+.sty__aybcsx__cls{font-size: 11.5pt}
+.sty__6e8ehc__cls{font-size: 13px}
+.sty__mp1c1d__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 738px; height: 654px}
+.sty__lfpbfp__cls{font-size: 13px}
+.sty__agjo3j__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 637.5px; height: auto}
+.sty__93e6ob__cls{color: rgb(34, 34, 34)}
+.sty__32b4gr__cls{font-size: 11.5pt}
+.sty__w6elta__cls{font-size: 13px}
+.sty__hy73vk__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 520px; height: auto}
+.sty__oib9jk__cls{color: rgb(34, 34, 34)}
+.sty__klfvu6__cls{font-size: 11.5pt}
+.sty__y943ft__cls{font-size: 13px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Overview of Hardware Spreadsheet Synchronization</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p> Our goal at Microvellum is to produce software that runs as efficiently as possible. We are continuously looking for ways to streamline the process and reduce the time it takes to load spec groups and save valuable performance resources. One example of this is our work to streamline the material files. <br></p> 
+ <p> For example, perhaps you have thousands of drawer slides that exist only to supply a value for pricing or costing purposes. You don’t need to draw them or use machine tokens from them, and if they are synchronized along with all the materials, it increases spec group loading time. <br></p> 
+ <h2 class="toc_anchors sty__x2bu9u__cls" id="Why_Is_Synchronization_Necessary"> <span class="colour sty__a7cer5__cls"> <span class="size sty__7rrl23__cls"> Why Is Synchronization Necessary? </span> </span> <br></h2> 
+ <p> Why is it necessary to sync data, and what is being synced? To answer that question, you must understand a little bit about the relationship between two components of the software. <br></p> 
+ <p> To benefit from the customization benefits of spreadsheets, and the storage and retrieval power of databases, Microvellum uses a combination of the two when working with library data. Synchronization is necessary for obvious reasons to keep the data consistent between the two sources of data. The data syncs anytime the spec group is accessed. <br></p> 
+ <p> Synchronizing this type of data between the material file in the database and the working spreadsheet is one area that takes a significant amount of time for large spec groups. Not all of this data requires synchronization. If the data does not change often, unproductive seconds are spent waiting for the program to ‘sync’ that data. Also, some data may improperly overwrite existing data. The program should not ‘sync’ ALL data. <br></p> 
+ <h2 class="toc_anchors sty__d4blu0__cls" id="Skip_a_Material_When_Syncing_the_Database_and_________Spreadsheet"> <span class="colour sty__xnw9yu__cls"> <span class="size sty__vqjnyh__cls"> Skip a Material When Syncing the Database and Spreadsheet </span> </span> <br></h2> 
+ <p> Microvellum build 15.6.2201, or greater, contains the ability to set a property that prevents any single material from syncing between the database and the program library spreadsheet. Check the box “Skip Spreadsheet Sync” inside the Edit Material screen to enable this feature. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b1b566adf28d94c7bb5a192e4d9c1ea9a" class="docsimage sty__i5muqy__cls" data-zdeskdocid="img_1818349886635089" data-zdeskdocselectedclass="original"> 
+  <br>
+ </div> 
+ <div>
+  <i> <span class="colour sty__ucy7jf__cls"> <span class="size sty__aybcsx__cls"> <span class="size sty__6e8ehc__cls"> Fig. 1 – Hardware Material with No “Skip Spreadsheet Sync” Checkbox Displayed</span></span></span></i>
+ </div> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b6a4919f6c05e4e0494e5e8d85a2f892d" class="docsimage sty__mp1c1d__cls" data-zdeskdocid="img_8978986880678472" data-zdeskdocselectedclass="original"> 
+  <br>
+ </div> 
+ <div>
+  <i> <span class="size sty__lfpbfp__cls"> Fig. 2 – Hardware Material with “Skip Spreadsheet Sync” Checkbox Displayed</span></i>
+ </div> 
+ <p> The ability to prevent synchronization for any specific material is limited to Hardware only. This category of material does not change on a project basis as do other types of materials. Some hardware materials and most other materials involve part thickness and formulas, and if the program skipped those, it could cause issues elsewhere in a project. But for hardware materials that allow it, you may use the property to tell Microvellum to skip that material from syncing into the spreadsheet. This helps reduce the time it takes to load spec groups. <br></p> 
+ <p> The program does not display the box to skip syncing for any formula-driven hardware materials and any items that have hardware machine tokens assigned to them. <br></p> 
+ <p> To display the “Skip Spreadsheet Sync” checkbox when adding a new project-level material, save the material, and reopen it. Then if you want to maximize performance, check the box and click OK. <br></p> 
+ <p> The value for “Skip Spreadsheet Sync” is not stored in the spreadsheet, so you cannot edit that property for multiple materials there. Instead, use the Edit Multiple Materials interface to change that property for multiple materials at once. <br></p> 
+ <div> 
+  <img data-zdeskdocselectedclass="best" data-zdeskdocid="img_07169600875858917" class="docsimage sty__agjo3j__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b8c484683d04b4f609329f914de05f2f7"> 
+  <br>
+ </div> 
+ <div>
+  <i> <span class="colour sty__93e6ob__cls"> <span class="size sty__32b4gr__cls"> <span class="size sty__w6elta__cls"> Fig. 3 – Edit Multiple Materials Access</span></span></span></i>
+ </div> 
+ <div> 
+  <img data-zdeskdocselectedclass="best" data-zdeskdocid="img_6028199048402845" class="docsimage currimg sty__hy73vk__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bd7de4a8c0c824eada8198f79c82008ea"> 
+  <br>
+ </div> 
+ <div>
+  <i> <span class="colour sty__oib9jk__cls"> <span class="size sty__klfvu6__cls"> <span class="size sty__y943ft__cls"> Fig. 4 – Edit Multiple Materials Interface</span></span></span></i>
+ </div> 
+ <p> After you have set this property for the preferred hardware materials, enjoy the benefits of increased speed when loading spec groups with this option checked ON.</p>
+ <div>
+  <br>
+ </div>
+<style type="text/css" data-css-purify-styler="1755095929957">.sty__x2bu9u__cls{line-height: normal; background: white}
+.sty__a7cer5__cls{color: rgb(34, 34, 34)}
+.sty__7rrl23__cls{font-size: 18pt}
+.sty__d4blu0__cls{line-height: normal; background: white}
+.sty__xnw9yu__cls{color: rgb(34, 34, 34)}
+.sty__vqjnyh__cls{font-size: 18pt}
+.sty__i5muqy__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 738px; height: auto}
+.sty__ucy7jf__cls{color: rgb(34, 34, 34)}
+.sty__aybcsx__cls{font-size: 11.5pt}
+.sty__6e8ehc__cls{font-size: 13px}
+.sty__mp1c1d__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 738px; height: 654px}
+.sty__lfpbfp__cls{font-size: 13px}
+.sty__agjo3j__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 637.5px; height: auto}
+.sty__93e6ob__cls{color: rgb(34, 34, 34)}
+.sty__32b4gr__cls{font-size: 11.5pt}
+.sty__w6elta__cls{font-size: 13px}
+.sty__hy73vk__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 520px; height: auto}
+.sty__oib9jk__cls{color: rgb(34, 34, 34)}
+.sty__klfvu6__cls{font-size: 11.5pt}
+.sty__y943ft__cls{font-size: 13px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="06 May 2021 06:42 PM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-of-hardware-spreadsheet-synchronization&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-of-hardware-spreadsheet-synchronization" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-of-hardware-spreadsheet-synchronization" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/overview-of-hardware-spreadsheet-synchronization" target="_blank">https://community.microvellum.com/portal/en/kb/articles/overview-of-hardware-spreadsheet-synchronization</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:38:51 AM</p>
+            <p><strong>Categories:</strong> Specification Groups</p>
+        </div>
+    </div>
+</body>
+</html>

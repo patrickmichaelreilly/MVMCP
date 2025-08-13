@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__rtn478__cls{line-height: normal; background: white}
+.sty__ch3fko__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__go4d75__cls{font-size: 13px}
+.sty__603sho__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__23owwm__cls{font-size: 13px}
+.sty__epcw8k__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__5rr8qu__cls{font-size: 13px}
+.sty__ymbnxi__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__udf0oo__cls{font-size: 13px}
+.sty__5fu29h__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__c5wru4__cls{font-size: 13px}
+.sty__uwcgoj__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__a8zqis__cls{font-size: 13px}
+.sty__8uieig__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ggfxsj__cls{font-size: 13px}
+.sty__ady0en__cls{line-height: normal; background: white}
+.sty__nb5f4o__cls{color: rgb(34, 34, 34); background: white}
+.sty__tj6dbo__cls{color: rgb(34, 34, 34); background: white}
+.sty__gh0z1o__cls{color: rgb(34, 34, 34); background: white}
+.sty__hvksi5__cls{color: rgb(34, 34, 34); background: white}
+.sty__xnjeiq__cls{color: rgb(34, 34, 34); background: white}
+.sty__msmkkm__cls{color: rgb(34, 34, 34); background: white}
+.sty__091eo7__cls{color: rgb(34, 34, 34); background: white}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">BlueCell XML Import from Microvellum (Overview)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <h2 class="toc_anchors sty__rtn478__cls" id="Overview_of_BlueCell_XML_________Parts_File_Import"> Overview of BlueCell XML Parts File Import <br></h2> 
+ <p> BlueCell® is a software optimizer produced by Eurosoft, Inc. It optimizes or determines the best location and rotation of parts on a material sheet to maximize material usage. <br></p> 
+ <p> It is one of several optimizers that may be used to optimize Microvellum data. Others include Ardis and CutRite, as well as the ubiquitous Microvellum Sawing Optimizer. <br></p> 
+ <p> BlueCell can produce output for both nested routers and panel saws. Microvellum currently connects to the BlueCell sawing optimizer, but not to their nesting optimizer. <br></p> 
+ <p> The Microvellum output for a processing station of type “BlueCell XML” is similar to that for “Ardis Parts File,” “CutRite MDB,” or “CutRite ASCII” in which you set up and process with a station set up specifically for one of those four types of optimizers. This is in contrast to a station set up with a type of Microvellum Sawing Optimizer (or Schelling HPO) in which you set the “Output Type” property to one of the selected formats. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttb021b97353ed4230beb674377b4971cc" class="sty__ch3fko__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__go4d75__cls"> Fig. 01 – Processing Stations </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p> You do not attach a Microvellum toolfile to a BlueCell processing station as you would for stations of the types Nesting Optimizer, Microvellum Sawing Optimizer, Single Part GCode, or Horizontal Boring. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt5b1b4a677de646219bc30fa27ae33946" class="sty__603sho__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__23owwm__cls"> Fig. 02 – BlueCell Parts File Station Properties </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p> Set up processing station associates if you want data associated with a secondary machining process to appear in the BlueCell parts file. Set these up on the Associates tab. For example, you may want the horizontal boring data produced by an edgeboring machine station to appear in your parts file and thus be available on the labels produced by the optimizer software. Add and configure a new associate of the type “Edge_Bore,” as explained in the tutorial below. This will result in a parts file containing data produced by a separate processing station. <br></p> 
+ <p> If you define two stations of the same type, such as two Edge_Bore stations, as in the following figure, the resulting XML file will contain data for both Associates, separated by a pipe symbol, as shown in figure 6. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttfb8368d683ae4d19809982771c1d7b36" class="sty__epcw8k__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__5rr8qu__cls"> Fig. 03 – Processing Station Associates </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p> Set up the folder that you want to contain the XML parts file in the processing station properties at: “Files &amp; Pictures &gt; File Location.” <br></p> 
+ <p> If you need Microvellum to produce part pictures, set up the folder that you want to contain those picture files in the processing station properties at: “Files &amp; Pictures &gt; Part Picture File Location.” Also, set the Picture Type and size/zoom factor there. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt09dcf4c079784e79ab17f69cb012f6b9" class="sty__ymbnxi__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__udf0oo__cls"> Fig. 04 – Processing Station Files and Pictures </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p> The XML file that is produced by the BlueCell processing station contains a total of 31 data locations for each part. This means that you may pass 31 different pieces of part data from Microvellum to the BlueCell optimizer. Eleven of these are passed by default when producing the XML file. Six of the remaining 20 are created according to the stations used when processing and the associates defined as explained in a previous paragraph. The remaining 14 fields are user-definable. Set up these user-defined fields in the processing station properties in the Custom Settings tab. See the BlueCell XML Import Tutorials for more information. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt2329c9d7f0944703bf92b43299848914" class="sty__5fu29h__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__c5wru4__cls"> Fig. 05 – Processing Station Custom Settings </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p> Here is the XML file output from the Custom Settings and Processing Stations Associates shown in figures 3 and 5. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt3021042814f84b0cb06df78f974c7935" class="sty__uwcgoj__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__a8zqis__cls"> Fig. 06 – BlueCell XML Output from Custom Settings and Associates </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p> Notice that the values for fields UserText05 and UserText06 contain two values separated or delimited by the pipe symbol. This is because we used two edgeboring stations to process the work order and defined two edgeboring stations as associates, as shown in figure 3. If we had used only one edgeboring station, then only one value would be displayed here. <br></p> 
+ <p> Figure 6 shows the default Microvellum output with no Associates or Custom fields defined. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttb3183457b0e54384b40e110aeb4ce791" class="sty__8uieig__cls"> 
+  <br>
+ </div> 
+ <div> 
+  <i> <span class="size sty__ggfxsj__cls"> Fig. 07 – BlueCell XML Default Output </span> </i> 
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p> Click&nbsp;<a rel="noopener noreferrer" href="https://community.microvellum.com/portal/kb/articles/bluecell-xml-import-from-microvellum-reference" target="_blank">here</a>&nbsp;for the article “BlueCell Parts File (Reference)” for more information about individual XML file elements and other&nbsp;BlueCell processing station commands and properties. <br></p> 
+ <h2 class="toc_anchors sty__ady0en__cls" id="Use_and_General_Procedure_When_________Optimizing_Microvellum_Data_with_BlueCell"> Use and General Procedure When Optimizing Microvellum Data with BlueCell <br></h2> 
+ <ul> 
+  <li class="MsoNormal sty__nb5f4o__cls"> <span> Purchase &amp; configure the BlueCell® software from Eurosoft to consume the XML. </span> <br></li> 
+  <li class="MsoNormal sty__tj6dbo__cls"> <span> Purchase the Microvellum module “Parts List for BlueCell.” </span> <br></li> 
+  <li class="MsoNormal sty__gh0z1o__cls"> <span> Create a project and work order in Microvellum. </span> <br></li> 
+  <li class="MsoNormal sty__hvksi5__cls"> <span> Create and configure a BlueCell processing station in Microvellum (see tutorial below). </span> <br></li> 
+  <li class="MsoNormal sty__xnjeiq__cls"> <span> Process a work order with the BlueCell processing station. </span> <br></li> 
+  <li class="MsoNormal sty__msmkkm__cls"> <span> Configure BlueCell to consume the XML produced by Microvellum. </span> <br></li> 
+  <li class="MsoNormal sty__091eo7__cls"> <span> Optimize the XML file with BlueCell (see the BlueCell documentation from Eurosoft for more information). </span> <br></li> 
+ </ul> 
+ <p> Click&nbsp;<a rel="noopener noreferrer" href="https://community.microvellum.com/portal/kb/articles/create-and-configure-a-bluecell-processing-station-in-microvellum">here</a>&nbsp;to view a tutorial of creating and configuring a BlueCell processing station. <br></p>
+ <div>
+  <br>
+ </div>
+<style type="text/css" data-css-purify-styler="1755096772723">.sty__rtn478__cls{line-height: normal; background: white}
+.sty__ch3fko__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__go4d75__cls{font-size: 13px}
+.sty__603sho__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__23owwm__cls{font-size: 13px}
+.sty__epcw8k__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__5rr8qu__cls{font-size: 13px}
+.sty__ymbnxi__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__udf0oo__cls{font-size: 13px}
+.sty__5fu29h__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__c5wru4__cls{font-size: 13px}
+.sty__uwcgoj__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__a8zqis__cls{font-size: 13px}
+.sty__8uieig__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ggfxsj__cls{font-size: 13px}
+.sty__ady0en__cls{line-height: normal; background: white}
+.sty__nb5f4o__cls{color: rgb(34, 34, 34); background: white}
+.sty__tj6dbo__cls{color: rgb(34, 34, 34); background: white}
+.sty__gh0z1o__cls{color: rgb(34, 34, 34); background: white}
+.sty__hvksi5__cls{color: rgb(34, 34, 34); background: white}
+.sty__xnjeiq__cls{color: rgb(34, 34, 34); background: white}
+.sty__msmkkm__cls{color: rgb(34, 34, 34); background: white}
+.sty__091eo7__cls{color: rgb(34, 34, 34); background: white}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="09 Nov 2022 04:51 PM"><span>2 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fbluecell-xml-import-from-microvellum-overview&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fbluecell-xml-import-from-microvellum-overview" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fbluecell-xml-import-from-microvellum-overview" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/bluecell-xml-import-from-microvellum-overview" target="_blank">https://community.microvellum.com/portal/en/kb/articles/bluecell-xml-import-from-microvellum-overview</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:52:53 AM</p>
+            <p><strong>Categories:</strong> Third Party Optimization</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__kyvwkj__cls{color: rgb(34, 34, 34)}
+.sty__zjp0jo__cls{font-size: 11pt}
+.sty__nqdblv__cls{box-sizing: border-box}
+.sty__nucjgx__cls{color: rgb(34, 34, 34)}
+.sty__79scav__cls{font-size: 11pt}
+.sty__7khwur__cls{list-style-type: decimal}
+.sty__08pljf__cls{list-style-type: decimal}
+.sty__ug0c1v__cls{color: rgb(34, 34, 34)}
+.sty__fqyuhu__cls{font-size: 14.6667px}
+.sty__iuoc2t__cls{list-style-type: decimal}
+.sty__z92buc__cls{box-sizing: border-box}
+.sty__ctue4d__cls{color: rgb(34, 34, 34)}
+.sty__94fenc__cls{font-size: 11pt}
+.sty__tmg40i__cls{box-sizing: border-box}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">How to Work with 'Batches' in Reports and Labels</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p><span class="colour sty__kyvwkj__cls"><span class="size sty__zjp0jo__cls">Batches are used in Microvellum and allow you to
+         release parts to manufacturing in groupings of parts that you specify at the
+         rate desired. It is not within the scope of this knowledge base article to
+         fully explain the details of 'batching,' only how it affects the reports and
+         labels.&nbsp; </span> </span> <br></p><p class="sty__nqdblv__cls"><span class="colour sty__nucjgx__cls"><span class="size sty__79scav__cls">It's straightforward
+         to configure your reports for 'batching,' just follow the three steps below,
+         noting the requirements. </span> </span> <br></p><ol><li class="sty__7khwur__cls">Reports or labels must have the "Is Batch Report" property set in the "Report Setup" screen accessed by clicking the "Edit Data Source" button within the Setup Reports command. <br></li><li class="sty__08pljf__cls"><span class="colour sty__ug0c1v__cls"><span class="size sty__fqyuhu__cls">Product parts in a work order can be processed to separate batches. Assume you have a work order with five products. All of the products have a quantity of one, except for #3.01, with a quantity of three. You could select parts for item numbers 1.01 and 1.02 and process them to batch "B1," &nbsp;parts for item numbers 2.01 and 2.02 and process them to batch "B2," parts for item number 3.01 (qty 3) and process to batch "B3." The processing station for each successive part selection must be specified and then cleared from the parts list before processing the next group of parts to a different batch. (It does not make a difference which parts (rows) are highlighted during processing. The important thing is which parts have a processing station specified that determines what is processed to any particular batch.) </span> </span> <br></li><li class="sty__iuoc2t__cls">Open the report/label and select the batch from the list. If multiple batches have not been processed, the select batch box will not display. Multiple batches may be selected by holding down the Shift key when making multiple selections. Only the optimized sheets for the selected batches will be populated to the PlacedSheets and OptmizationResults work order tables. The Parts table is not modified by the batch functionality. <br></li></ol><p class="sty__z92buc__cls"><span class="colour sty__ctue4d__cls"><span class="size sty__94fenc__cls"><span class="sty__tmg40i__cls">Setting the "Is Batch Report" property
+            set in the "Report Setup" screen is generally the only modification
+            needed to transform the report into a batch style report or label. </span> </span> </span> <br></p><style type="text/css" data-css-purify-styler="1755096204054">.sty__kyvwkj__cls{color: rgb(34, 34, 34)}
+.sty__zjp0jo__cls{font-size: 11pt}
+.sty__nqdblv__cls{box-sizing: border-box}
+.sty__nucjgx__cls{color: rgb(34, 34, 34)}
+.sty__79scav__cls{font-size: 11pt}
+.sty__7khwur__cls{list-style-type: decimal}
+.sty__08pljf__cls{list-style-type: decimal}
+.sty__ug0c1v__cls{color: rgb(34, 34, 34)}
+.sty__fqyuhu__cls{font-size: 14.6667px}
+.sty__iuoc2t__cls{list-style-type: decimal}
+.sty__z92buc__cls{box-sizing: border-box}
+.sty__ctue4d__cls{color: rgb(34, 34, 34)}
+.sty__94fenc__cls{font-size: 11pt}
+.sty__tmg40i__cls{box-sizing: border-box}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="06 Aug 2020 03:02 PM"><span>5 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fhow-to-work-with-batches-in-reports-and-labels&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fhow-to-work-with-batches-in-reports-and-labels" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fhow-to-work-with-batches-in-reports-and-labels" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/how-to-work-with-batches-in-reports-and-labels" target="_blank">https://community.microvellum.com/portal/en/kb/articles/how-to-work-with-batches-in-reports-and-labels</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:43:24 AM</p>
+            <p><strong>Categories:</strong> Production</p>
+        </div>
+    </div>
+</body>
+</html>

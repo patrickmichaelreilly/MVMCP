@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__4supu8__cls{background: white}
+.sty__se4z83__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__o0utmv__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__f0z0yo__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__7b436v__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__t3y34p__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__5m4307__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__opkcyi__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__19k9i2__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__1y2dr2__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__r8wrdl__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__keyll3__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__dlm249__cls{background: white}
+.sty__q55mdd__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__nxhvyq__cls{box-sizing: border-box}
+.sty__g4q3jd__cls{color: rgb(39, 111, 208)}
+.sty__1a5e80__cls{box-sizing: border-box}
+.sty__ia703h__cls{box-sizing: border-box}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Using Barcode Fonts "3 of 9" and "Code 128b" in Microvellum (Overview)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><div><p class="sty__4supu8__cls"><span class="sty__se4z83__cls">The Microvellum reports support a variety of barcode
+fonts to match the scanning requirements of many popular barcode scanning
+devices. The two fonts most often used are “3 of 9” (referred to as “Code 39”
+in this article), and “Code 128b.”</span></p>
+
+<p class="sty__o0utmv__cls"><span class="sty__f0z0yo__cls">This article
+explains some of the similarities and differences between the two and how to install
+them on your system.</span></p>
+
+<p class="sty__7b436v__cls"><span class="sty__t3y34p__cls">The most obvious
+symptom that you don’t have the correct font installed is that your report or
+label displays a barcode string in text instead of in a barcode font. This is
+an indication that you do not have the font Code 39 installed. This is not
+commonly a symptom of a missing font “Code 128b” as that font uses a different
+component within the Report Designer.</span></p>
+
+<p class="sty__5m4307__cls"><span class="sty__opkcyi__cls">Some Users inquire
+about why the need for two fonts when traditionally Microvellum has used only
+Code 39. The answer is the evolution of CNC machinery software. Previously,
+much of that software was unable to process file names containing certain ASCII
+characters. As a result, we were able to use Code 39, which is understood by
+many to be the easiest of the alpha-numeric barcodes to use. It defines 43
+characters, but not the full ASCII character set.</span></p>
+
+<p class="sty__19k9i2__cls"><span class="sty__1y2dr2__cls">On the other hand,
+Code 128b supports all 128 ASCII characters. It also has a much higher density
+than Code 39 and supports smaller barcodes. Thus, as CNC software has become
+more sophisticated, this font supports the ability to produce and display more
+complex file names.</span></p>
+
+<p class="sty__r8wrdl__cls"><span class="sty__keyll3__cls">In general, if you
+are scanning barcode strings containing only numbers and letters, you may
+safely use Code 39. On the other hand, if you will be scanning barcode strings
+containing characters other than numbers and letters, we suggest you use Code
+128b.</span></p>
+
+<p class="sty__dlm249__cls"><span class="sty__q55mdd__cls">Click&nbsp;<span class="wysiwyg-underline sty__nxhvyq__cls"><span class="sty__g4q3jd__cls"><span class="sty__1a5e80__cls"><a rel="noopener noreferrer" href="https://community.microvellum.com/portal/kb/articles/using" target="_blank" class="sty__ia703h__cls">here</a>&nbsp;</span></span></span>for
+a tutorial explaining how to install and use these two barcode fonts in
+Microvellum reports.&nbsp;</span></p><br></div><div><br></div><style type="text/css" data-css-purify-styler="1755096313392">.sty__4supu8__cls{background: white}
+.sty__se4z83__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__o0utmv__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__f0z0yo__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__7b436v__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__t3y34p__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__5m4307__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__opkcyi__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__19k9i2__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__1y2dr2__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__r8wrdl__cls{background: white; box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__keyll3__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__dlm249__cls{background: white}
+.sty__q55mdd__cls{font-size: 11pt; color: rgb(34, 34, 34)}
+.sty__nxhvyq__cls{box-sizing: border-box}
+.sty__g4q3jd__cls{color: rgb(39, 111, 208)}
+.sty__1a5e80__cls{box-sizing: border-box}
+.sty__ia703h__cls{box-sizing: border-box}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="08 Sep 2021 05:23 PM"><span>3 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fusing-barcode-fonts-overview&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fusing-barcode-fonts-overview" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fusing-barcode-fonts-overview" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/using-barcode-fonts-overview" target="_blank">https://community.microvellum.com/portal/en/kb/articles/using-barcode-fonts-overview</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:45:14 AM</p>
+            <p><strong>Categories:</strong> Reports & Labels</p>
+        </div>
+    </div>
+</body>
+</html>

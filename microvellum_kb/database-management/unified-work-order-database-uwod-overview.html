@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__iq52rx__cls{list-style-type: disc}
+.sty__nfnlz1__cls{list-style-type: disc}
+.sty__efiyv0__cls{list-style-type: disc}
+.sty__2h82zh__cls{list-style-type: disc}
+.sty__5k9zew__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__mbqtdz__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__m68w8z__cls{color: rgb(34, 34, 34)}
+.sty__l6hgnv__cls{font-size: 18px}
+.sty__ir2e9w__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__hf2o3d__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__zb3nly__cls{color: rgb(39, 111, 208)}
+.sty__79xqtk__cls{color: rgb(34, 34, 34)}
+.sty__ohb9px__cls{font-size: 18px}
+.sty__wrwbs4__cls{font-size: 18px}
+.sty__e0bp0i__cls{color: rgb(39, 111, 208)}
+.sty__tdy9wq__cls{color: rgb(34, 34, 34)}
+.sty__mh2uad__cls{font-size: 18px}
+.sty__xe3795__cls{color: rgb(39, 111, 208)}
+.sty__yjfvh8__cls{color: rgb(34, 34, 34)}
+.sty__qq9npe__cls{color: rgb(34, 34, 34)}
+.sty__xpwk4k__cls{font-size: 18px}
+.sty__48h3qm__cls{background-color: white}
+.sty__sdoxoi__cls{color: rgb(34, 34, 34)}
+.sty__8utw84__cls{color: rgb(39, 111, 208)}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Unified Work Order Database - UWOD (Overview)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><div>
+ Before build 15.6, the only option for ‘database type’ when working with work order databases was for each work order folder to contain its own standalone work order database. These discrete databases were SQL CE database files located on the local computer with an SDF file extension. 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ As of build 15.6, you now have the option of consolidating all the separate work order databases into a single database – which we have given the name “Unified Work Order Database.” Of course, you may continue to work with discrete work order databases if you wish. 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ There are several reasons you may consider transitioning to a unified work order database. 
+ <br>
+</div>
+<ol>
+ <li class="sty__iq52rx__cls">Database maintenance is less complicated for your IT personnel. It is more challenging to maintain multiple databases scattered about on multiple computers than a single database located on a single server. <br></li>
+ <li class="sty__nfnlz1__cls">The database capacity is greater. The SQL CE databases that are created when using discrete databases are limited to 4 GB, SQL Server Express 2017 databases are limited to 10 GB, and standard version SQL Server databases are limited to 524 PB (petabytes). <br></li>
+ <li class="sty__efiyv0__cls">They extended reporting potentials. Using discrete work order databases, factory level reports are limited to a single work order database. With the unified work order database, you may create factory-level reports incorporating data from multiple work orders. <br></li>
+ <li class="sty__2h82zh__cls">The unified work order database may be included in existing SQL Server backup scripts, thereby simplifying and expanding the scope of your backups. <br></li>
+</ol>
+<div>
+ For these or other reasons, you may wish to transition from the discrete work order database type to the Unified Work Order Database (UWOD) type. 
+ <br>
+</div>
+<div>
+ <div>
+  <span class="KB_New_Editor_Highlights sty__5k9zew__cls"><img src="https://img.zohostatic.com/zde/static/images/info.png" data-type="non-resize" data-image="contentStyle" class="sty__mbqtdz__cls"> 
+   <div>
+    The&nbsp;Unified Work Order Database is recommended only for use with&nbsp; 
+    <b> SQL Server Standard Edition </b> &nbsp;in a normal manufacturing environment&nbsp; When deployed against SQL Server Express Edition, there will be issues with storage limitations. If it is determined that it must be used with SQL Server Express, it should be for only temporary use or sandbox testing. 
+    <br>
+   </div></span>
+ </div>
+</div>
+<div>
+ Continue reading for the process to follow when making the transition. It contains links to other articles that will help you understand the process in general and the specific steps involved in making the transition. 
+ <br>
+</div>
+<h2 class="toc_anchors" id="Step_1InstallSQL_Server_DatabaseUsing____________SQL_Server_Standard_Edition_or_Express_for_testing"><b><span class="colour sty__m68w8z__cls"><span class="size sty__l6hgnv__cls">Step #1:&nbsp;&nbsp;Install&nbsp;SQL Server Database&nbsp;Using SQL Server Standard Edition (or Express for testing). </span> </span> </b> <br></h2>
+<div>
+ The first series of steps to get your UWOD set up is to install a version of SQL Server. 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ The SQL Server Express Edition supports databases up to 10 GB in size and is available at no charge to the User (see the note above). 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ The SQL Server Standard Edition supports databases up to 524 PB in size, supports up to 24 core processing, has maximum memory up to 128 GB, and is available from Microsoft (contact Microsoft for pricing). It is recommended that you deploy your UWOD against SQL Server Standard Edition or SQL Server Enterprise Edition. 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ The SQL Server Enterprise Edition supports databases up to 524 PB in size, supports unlimited core processing, has maximum memory up to the OS system limit, and is available from Microsoft (contact Microsoft for pricing). 
+ <br>
+</div>
+<div>
+ <span class="KB_New_Editor_Highlights sty__ir2e9w__cls"><img src="https://img.zohostatic.com/zde/static/images/info.png" data-type="non-resize" data-image="contentStyle" class="sty__hf2o3d__cls"> 
+  <div>
+   Microsoft ended mainstream support for SQL Server 2008 products as of July 2014. For that, and other reasons, we strongly recommend that you install software from either the SQL Server 2016 or SQL Server 2017 product family to configure your database. 
+   <br>
+  </div></span>
+</div>
+<div>
+ Click&nbsp;
+ <b><a rel="noopener noreferrer" href="https://desk.zoho.com/portal/microvellumsoftware/kb/articles/sql-server-2017-installing-the-express-edition-tutorial-1" target="_blank"><span class="colour sty__zb3nly__cls">here</span></a>&nbsp;</b>for an article providing the procedure to install a SQL Server 2017 Express database. 
+ <br>
+</div>
+<h2 class="toc_anchors" id="Step_2ConfigureSQL_Server_Database_____Using_SQL_Server_Express______or_Standard_Edition"><b><span class="colour sty__79xqtk__cls"><span class="size sty__ohb9px__cls">Step #2:&nbsp;&nbsp;Configure&nbsp;SQL Server Database&nbsp; </span> </span> </b> <span class="size sty__wrwbs4__cls"> Using SQL Server Express (or Standard Edition).&nbsp; </span> <br></h2>
+<div>
+ The second series of steps to set up your UWOD is to configure your SQL Server instance set up in step #1. 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ Click&nbsp;
+ <b><a rel="noopener noreferrer" href="https://desk.zoho.com/portal/microvellumsoftware/kb/articles/sql-server-2017-configuring-the-sql-express-database-tutorial-2" target="_blank"><span class="colour sty__e0bp0i__cls">here</span></a>&nbsp;</b>for a general article explaining how to create and configure SQL Server 2017 databases. 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ You should be aware that the Unified Work Order Database (UWOD) structure requires two new databases on your SQL Server instance. Use the tutorial above to create one database named “MicrovellumWorkOrder” and another named “MicrovellumGeometry.” 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ In addition to creating these two databases, map the required Users to those databases and assign the database role membership as described in the article just above about configuring your SQL Server database (db_owner). These Users will include anyone in your organization that will be using the configuration containing this unified work order database. 
+ <br>
+</div>
+<h2 class="toc_anchors" id="Step_3Configure_Microvellum_Softwareto____________Connect_to_the_Two_New_Databases"><b><span class="colour sty__tdy9wq__cls"><span class="size sty__mh2uad__cls">Step #3:&nbsp;&nbsp;Configure Microvellum Software&nbsp;to Connect to the Two New Databases. </span> </span> </b> <br></h2>
+<div>
+ The third series of steps to set up your UWOD is to configure your Microvellum software to connect to the two databases configured in step #2.&nbsp; 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ Click&nbsp;
+ <b><span class="colour sty__xe3795__cls"><a rel="noopener noreferrer" href="https://desk.zoho.com/portal/microvellumsoftware/kb/articles/unified-work-order-database-uwod-tutorial-3" target="_blank">here</a>&nbsp;</span></b>for an article explaining how to create and configure Microvellum to connect to your new SQL Server 2017 databases. 
+ <br>
+</div>
+<div>
+ <br>
+</div>
+<div>
+ <span class="colour sty__yjfvh8__cls">You will need to connect to your SQL Server factory database if your configuration is not already connected to it. You will also need to connect to your two SQL Server unified work order databases. The article referenced in the link above explains both procedures. After completion of the steps in that article, the last step is to transfer data into those new databases, as explained in step #4. </span> 
+ <br>
+</div>
+<h2 class="toc_anchors" id="Step_4Transfer_Existing_Datafrom_Work_Order____________Databases_to_the_New_Database"><b><span class="colour sty__qq9npe__cls"><span class="size sty__xpwk4k__cls">Step #4:&nbsp;&nbsp;Transfer Existing Data&nbsp;from Work Order Databases to the New Database. </span> </span> </b> <br></h2>
+<div>
+ The fourth and final series of steps to set up your UWOD is to transfer the factory database and each work order database from a previous configuration into the new UWOD configuration.&nbsp;
+</div>
+<div>
+ <br>
+</div>
+<div>
+ <span class="highlight sty__48h3qm__cls"><span class="colour sty__sdoxoi__cls">Click&nbsp;<b><a rel="noopener noreferrer" href="https://desk.zoho.com/portal/microvellumsoftware/kb/articles/unified-work-order-database-uwod-tutorial-4" target="_blank"><span class="colour sty__8utw84__cls">here</span></a>&nbsp;</b>for an article explaining how to transfer data from an SQL CE database to your new SQL Server databases. </span> </span> 
+ <br>
+</div>
+<div>
+ <hr>
+</div>
+<div>
+ You should now be ready to begin using your new Unified Work Order Database configuration and benefiting from a single source for work order data.&nbsp;
+</div><style type="text/css" data-css-purify-styler="1755096006636">.sty__iq52rx__cls{list-style-type: disc}
+.sty__nfnlz1__cls{list-style-type: disc}
+.sty__efiyv0__cls{list-style-type: disc}
+.sty__2h82zh__cls{list-style-type: disc}
+.sty__5k9zew__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__mbqtdz__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__m68w8z__cls{color: rgb(34, 34, 34)}
+.sty__l6hgnv__cls{font-size: 18px}
+.sty__ir2e9w__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__hf2o3d__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__zb3nly__cls{color: rgb(39, 111, 208)}
+.sty__79xqtk__cls{color: rgb(34, 34, 34)}
+.sty__ohb9px__cls{font-size: 18px}
+.sty__wrwbs4__cls{font-size: 18px}
+.sty__e0bp0i__cls{color: rgb(39, 111, 208)}
+.sty__tdy9wq__cls{color: rgb(34, 34, 34)}
+.sty__mh2uad__cls{font-size: 18px}
+.sty__xe3795__cls{color: rgb(39, 111, 208)}
+.sty__yjfvh8__cls{color: rgb(34, 34, 34)}
+.sty__qq9npe__cls{color: rgb(34, 34, 34)}
+.sty__xpwk4k__cls{font-size: 18px}
+.sty__48h3qm__cls{background-color: white}
+.sty__sdoxoi__cls{color: rgb(34, 34, 34)}
+.sty__8utw84__cls{color: rgb(39, 111, 208)}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="06 Aug 2020 03:10 PM"><span>5 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Funified-work-order-database-uwod-overview&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Funified-work-order-database-uwod-overview" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Funified-work-order-database-uwod-overview" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/unified-work-order-database-uwod-overview" target="_blank">https://community.microvellum.com/portal/en/kb/articles/unified-work-order-database-uwod-overview</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:40:07 AM</p>
+            <p><strong>Categories:</strong> Database Management</p>
+        </div>
+    </div>
+</body>
+</html>

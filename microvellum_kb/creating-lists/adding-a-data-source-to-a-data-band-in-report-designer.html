@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__3r1t6b__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__jqw9k9__cls{font-size: 13px}
+.sty__tb7ja8__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__3vj50h__cls{font-size: 13px}
+.sty__nft1p9__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__fjt21u__cls{font-size: 13px}
+.sty__ay2apv__cls{list-style-type: decimal}
+.sty__bpcbkq__cls{list-style-type: decimal}
+.sty__wfce4u__cls{list-style-type: decimal}
+.sty__mzm7yw__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__1zyz28__cls{font-size: 13px}
+.sty__9tzflz__cls{list-style-type: decimal}
+.sty__mqq9jk__cls{list-style-type: decimal}
+.sty__nc62ck__cls{list-style-type: decimal}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Adding a Data Source to a Data Band in Report Designer</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p class="MsoNormal"> The articles in this section of the Knowledge Base involve working with <b> Lists </b> for display in your reports. To learn more about <b> Lists </b> and how to access the Report Designer, see <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/en/kb/articles/creating-lists-in-report-designer"> Creating Lists in Report Designer</a>. This article provides an overview of adding a Data Source to a Data band. <br></p> 
+ <p class="MsoNormal"> To output lists using the <b> Data </b> band, it is first necessary to specify a data source. It is important because the Report Designer should know how many times the <b> Data </b> band must be printed. There are several ways to associate a data source to a data band. First, it is possible to use the <b> Data </b> band editor. To access the Data band editor, double-click the Data band. It is also possible to access the editor from the context menu (right-click and select Design). See Figure 01 for an example of this menu. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt24baece89e1941ffb8d913c6354fc371" class="sty__3r1t6b__cls"> 
+  <br>
+ </div> 
+ <div>
+  <i> <span class="size sty__jqw9k9__cls"> Fig. 01 – Context Menu </span> </i>
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p class="MsoNormal"> Also, the editor can be called using the <b> Data Source </b> property of the <b> Data </b> band. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt6188ff8c90f04659af9824415d3d7a8f" class="sty__tb7ja8__cls"> 
+  <br>
+ </div> 
+ <div>
+  <i> <span class="size sty__3vj50h__cls"> Fig. 02 – Data Source Property </span> </i>
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p class="MsoNormal"> The <b> Data </b> Editor is where the data source is selected. All data sources are grouped into categories. Each category is one data connection with data in the Dictionary of Data. Figure 03 shows data in the <b> Data </b> editor. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttda052abae7974bc9b39dcf00bb1eb23b" class="sty__nft1p9__cls"> 
+  <br>
+ </div> 
+ <div>
+  <i> <span class="size sty__fjt21u__cls"> Fig. 03 – Data Editor </span> </i>
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <ol> 
+  <li class="sty__ay2apv__cls"> The Data Source is selected from this tab. <br></li> 
+  <li class="sty__bpcbkq__cls"> Select this node if there is no reason to specify a data source. <br></li> 
+  <li class="sty__wfce4u__cls"> The “Demo” category of data. <br></li> 
+ </ol> 
+ <p class="MsoNormal"> The quick button can be used on the <b> Data </b> band to select the data source from the menu. The basic elements of the menu are represented in Figure 04. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt71aac9eed352454baca9aa982fd108f5" class="sty__mzm7yw__cls"> 
+  <br>
+ </div> 
+ <div>
+  <i> <span class="size sty__1zyz28__cls"> Fig. 04 – Quick Button Access </span> </i>
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <ol> 
+  <li class="sty__9tzflz__cls"> This is the quick access button that will drop-down the list of tables in the Microvellum Database. <br></li> 
+  <li class="sty__mqq9jk__cls"> Use the Not Assigned selection to reset data source selection. <br></li> 
+  <li class="sty__nc62ck__cls"> The <b> Products </b> data source is selected. <br></li> 
+ </ol>
+ <div>
+  <br>
+ </div>
+<style type="text/css" data-css-purify-styler="1755096647279">.sty__3r1t6b__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__jqw9k9__cls{font-size: 13px}
+.sty__tb7ja8__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__3vj50h__cls{font-size: 13px}
+.sty__nft1p9__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__fjt21u__cls{font-size: 13px}
+.sty__ay2apv__cls{list-style-type: decimal}
+.sty__bpcbkq__cls{list-style-type: decimal}
+.sty__wfce4u__cls{list-style-type: decimal}
+.sty__mzm7yw__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__1zyz28__cls{font-size: 13px}
+.sty__9tzflz__cls{list-style-type: decimal}
+.sty__mqq9jk__cls{list-style-type: decimal}
+.sty__nc62ck__cls{list-style-type: decimal}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="21 Aug 2020 11:36 AM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fadding-a-data-source-to-a-data-band-in-report-designer&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fadding-a-data-source-to-a-data-band-in-report-designer" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fadding-a-data-source-to-a-data-band-in-report-designer" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/adding-a-data-source-to-a-data-band-in-report-designer" target="_blank">https://community.microvellum.com/portal/en/kb/articles/adding-a-data-source-to-a-data-band-in-report-designer</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:50:48 AM</p>
+            <p><strong>Categories:</strong> Creating Lists</p>
+        </div>
+    </div>
+</body>
+</html>

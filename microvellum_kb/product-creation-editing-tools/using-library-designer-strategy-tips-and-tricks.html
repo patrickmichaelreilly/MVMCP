@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        video { max-width: 100%; height: auto; }
+        iframe { max-width: 100%; }
+        .note { 
+            background: #fff3cd; 
+            border-left: 4px solid #ffc107; 
+            padding: 1em; 
+            margin: 1em 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a> | 
+            Engineering / Library Data / Product Creation & Editing Tools
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Using Library Designer - Strategy, Tips, and Tricks</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p>Library Designer is a powerful tool that can be utilized to make Library wide changes affecting many products at once.&nbsp; In this article, we’ll cover Strategy, Tips, and Tricks that will help you get the most out of Library Designer.&nbsp; <br></p>
+<div>
+ Before getting started, ensure that the Library Designer database has been configured and test to make sure it's communicating with the factory database. For help setting up Library Designer for the first time see <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/en/kb/articles/setting-up-library-designer" target="_blank"> Setting Up Library Designer. </a> <br>
+</div>
+<div><span class="KB_New_Editor_Highlights sty__x1ut0o__cls"> <img data-image="contentStyle" data-type="non-resize" src="https://img.zohostatic.com/zde/static/images/caution.png" class="sty__0vcoh2__cls">
+  <div>
+   Make a backup copy of your factory database before experimenting with Library Designer <br>
+  </div> </span>
+</div>
+<h2 id="Selecting_Multiple_Database_Items_at_Once" class="toc_anchors">Selecting Multiple Database Items at Once <br></h2>
+<div>
+ Holding down different combinations of the Shift and Ctrl keys while selecting items in the tree view will allow multiple items, or groups of items, to be selected together. <br>
+</div>
+<h3 id="Ctrl__Click" class="toc_anchors">Ctrl + Click <br></h3>
+<div>
+ Hold down the Ctrl key to select multiple items at once.&nbsp; Each item clicked while the Ctrl key is held down will stay selected. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b426eec98fe70438687c55edcfda8699b" class="sty__6bzj7e__cls"> <br>
+</div>
+<div><span class="sty__p88vq8__cls"> <i> Fig. 01 – Library Designer – Ctrl + Click </i> </span> <br>
+</div>
+<h3 id="Shift__Click" class="toc_anchors">Shift + Click <br></h3>
+<div>
+ Hold down the Shift key to select a group of consecutive items from the list.&nbsp; Click on the first item, then hold down the Shift key while clicking the last item you want to be included in your selection.&nbsp; Clicked items and all items sandwiched between will be selected. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b69066e2ad56340deb50665a0017fa2f5" class="sty__2s2osj__cls"> <br>
+</div>
+<div><span class="sty__bm7ybb__cls"> <i> Fig. 02 – Library Designer – Shift + Click </i> </span> <br>
+</div>
+<h3 id="Ctrl__Shift__Click" class="toc_anchors">Ctrl + Shift + Click <br></h3>
+<div>
+ Multiple groups of items can be selected by combining the functionality of <b> Ctrl + Click </b> and <b> Shift + Click </b> .&nbsp; With an item or group of items already selected, hold down Ctrl and click the first item to be selected.&nbsp; Continue holding Ctrl and begin holding Shift while clicking the last item in the list of consecutive items to be selected.&nbsp; &nbsp;Clicked items and all items sandwiched between them will be selected while maintaining all previously selected items. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b87c6f154f4a74ea0857ca076a915944d" class="sty__ux84jy__cls"> <br>
+</div>
+<div><span class="sty__ejh660__cls"> <i> Fig. 03 – Library Designer – Ctrl + Shift + Click </i> </span> <br>
+</div>
+<h2 id="Select_Multiple_Items_to_Show_Like_Attributes" class="toc_anchors">Select Multiple Items to Show Like Attributes <br></h2>
+<div>
+ When multiple items are selected in the tree view, only data attributes that are the same for all highlighted items are displayed. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b203aa8cf898149a780ac49c2b28ff447" class="sty__ou53ln__cls"> <br>
+</div>
+<div><span class="sty__7nsd3p__cls"> <i> Fig. 04 – Library Designer – Show Like Attributes </i> </span> <br>
+</div>
+<h2 id="Underscore_vs_No_Underscore" class="toc_anchors">Underscore vs No Underscore <br></h2>
+<div>
+ Be aware that some prompts have underscores while others do not.&nbsp; In older libraries, underscores were used by default. Current library development uses spaces in place of underscores.&nbsp; Be sure to scroll down and check for prompts with underscores as they are not listed adjacent to the non-underscored prompts in the alphabetized list. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bbadec2bd94ae4a2d9ec0ea45813949fd" class="sty__sgu1ot__cls"> <br>
+</div>
+<div><i> <span class="sty__8kqu1w__cls"> Fig. 05 – Library Designer – Underscore vs No Underscore </span> </i> <br>
+</div>
+<h2 id="Click_to_Apply__Parts_Products_and_Subassemblies_Using_This_Item" class="toc_anchors">Click to Apply – Parts, Products, and Subassemblies Using This Item <br></h2>
+<div>
+ When unchecking items in the Part, Products, or Subassemblies Using This Item lists, remember to finalize the action using the Click to Apply link. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7be2156d96b20f4fefaee65f4064a0699c" class="sty__rlf9r7__cls"> <br>
+</div>
+<div><span class="sty__i0cwm9__cls"> <i> Fig. 06 – Library Designer – Click to Apply </i> </span> <br>
+</div>
+<h2 id="Send_To_Library_Designer" class="toc_anchors">Send To Library Designer <br></h2>
+<div>
+ Library Designer is not always the most efficient option for editing your library data. When you need to make changes to one or two cabinets, it is much faster to edit the workbooks accessible through Database Explorer. Be sure to update the modified cabinets in your Library Designer database using the Send to Library Designer option found by right-clicking the cabinet in the Database Explorer tree view. Alternatively, you can delete and rebuild the Library Designer database. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bc749ac237c5741b2b1aabe7e8525a9a2" class="sty__oafar4__cls"> <br>
+</div>
+<div><i> <span class="sty__2614ad__cls"> Fig. 07 – Database Explorer – Send to Library Designer </span> </i> <br>
+</div>
+<h2 id="Rebuild_Selected_Products_From_Library" class="toc_anchors">Rebuild Selected Products From Library <br></h2>
+<div>
+ Library Designer only updates your template products and will not edit products that already exist in a project.&nbsp; If you would like to apply changes made in Library Designer to products inside an existing project, you can update those products from the product list.&nbsp; &nbsp;Right-click on a selected product or group of products, then select Rebuild Selected Products From Library. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7ba9d38248c0d64929aaee44dbc9eaa2b4" class="sty__whv7a4__cls"> <br>
+</div>
+<div><i> <span class="sty__1fq1dr__cls"> Fig. 08 – Product List – Rebuild Selected Products From Library </span> </i> <br>
+</div>
+<h2 id="Workbook_Compatibility_with_Library_Designer" class="toc_anchors">Workbook Compatibility with Library Designer <br></h2>
+<div>
+ When creating or editing your workbook there are a few things to keep in mind to preserve compatibility with Library Designer.&nbsp; When Library Designer reads your workbook it follows certain rules to maintain efficiency.&nbsp; The Following guidelines will help ensure Library Designer analyzes your Library data accurately and completely. <br>
+</div>
+<ol>
+ <li class="sty__pddbkh__cls">Do not leave more than one blank row between prompts.&nbsp; When Library designer scans your workbooks, it processes single blank rows between prompts without issue.&nbsp; However, data below two or more blank rows may not be analyzed. <br></li>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b53c3352330824dc5925c405b52d1cc4e" class="docsimage currimg sty__bmunmr__cls" data-zdeskdocid="img_06410509399252073" data-zdeskdocselectedclass="original"> <br>
+ </div>
+ <div><span class="sty__46pwi9__cls"> <i> Fig. 09 – Workbook Designer – Two Blank Rows</i></span> <br>
+ </div>
+ <div><span class="sty__790h87__cls"><i> </i> </span> <br>
+ </div>
+ <li class="sty__wdn7eu__cls">Do not place lookup tables in the prompt worksheet, this may cause issues when Library Designer reads your prompts.&nbsp; Instead, create a new worksheet called LookUpTables to store your look-up tables. <br></li>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b3422dd2f9bb244b9b129cb846aab8b71" class="sty__qg92te__cls"> <br>
+ </div>
+ <div><span class="sty__d8lp9m__cls"> <i> Fig. 10 – Workbook Designer – LookUpTables Tab</i></span> <br>
+ </div>
+ <div><span class="sty__8dqgmh__cls"><i> </i> </span> <br>
+ </div>
+ <li class="sty__8cn2xh__cls">Do not leave blank machine token columns, everything to the right of a blank machine token column will not be analyzed by Library Designer. <br></li>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bb0065c4a74c14298bc6fedcd3eecfca9" class="sty__9x3dfg__cls"> <br>
+ </div>
+ <div><span class="sty__1o6enm__cls"> <i> Fig. 11 – Workbook Designer – Blank Machine Token</i></span> <br>
+ </div>
+ <div><span class="sty__1au4bd__cls"><i> </i> </span> <br>
+ </div>
+ <li class="sty__ptqzze__cls">Do not use zeros or any other generic placeholder to fill empty machine token columns.&nbsp; Library designer will read all matching machine tokens as the same token, confusing your Library Designer database. <br></li>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b4736cb45088b4fa78ac1ce72feac91ce" class="sty__5pra64__cls"> <br>
+ </div>
+ <div><span class="sty__c7q99k__cls"> <i> Fig. 12 – Workbook Designer – Zero Machine Token </i> </span> <br>
+ </div>
+</ol>
+<div><br>
+</div>
+<h2 id="Working_with_Multiple_Libraries" class="toc_anchors">Working with Multiple Libraries <br></h2>
+<div>
+ Although it is not recommended for inexperienced users, Library Designer will allow you to add more than one library to your Library Designer database. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b5190c1e8ad584717a1889d819ce3df89" class="sty__vj1lum__cls"> <br>
+</div>
+<div><span class="sty__9bddev__cls"> <i> Fig. 13 – Library Designer – Two Libraries </i> </span> <br>
+</div>
+<div><br>
+</div>
+<div>
+ Keep in mind that while the libraries are listed separately in the tree view, Library Designer accesses all of them when looking up items.&nbsp; For instance, with a prompt or other database item selected, Library Designer will include all Parts, Products, and Subassemblies across all imported libraries in the Using This Item lists.&nbsp; Any changes made will be applied accordingly across all libraries. <br>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b8724975169074c4094dc0fd407950137" class="sty__zgd9s0__cls"> <br>
+</div>
+<div><i> <span class="sty__nxa1rs__cls"> Fig. 14 – Library Designer – Two Libraries Using This Item </span> </i> <br>
+</div>
+<div><br>
+</div>
+<div>
+ For more information on how to use Library Designer see <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/en/kb/articles/using-library-designer-beginner-s-guide"> Using Library Designer - Beginner’s Guide. </a> <br>
+</div>
+<div>
+ <hr> <iframe sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-popups allow-downloads" width="750" height="425" src="https://www.youtube.com/embed/YChP23hr8hA" allowfullscreen=""> </iframe> <br>
+</div><style type="text/css" data-css-purify-styler="1755097140029">.sty__x1ut0o__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(252, 177, 177); border-right: 5px solid rgb(252, 139, 139)}
+.sty__0vcoh2__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__6bzj7e__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__p88vq8__cls{font-size: 10pt}
+.sty__2s2osj__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__bm7ybb__cls{font-size: 10pt}
+.sty__ux84jy__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ejh660__cls{font-size: 10pt}
+.sty__ou53ln__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__7nsd3p__cls{font-size: 10pt}
+.sty__sgu1ot__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__8kqu1w__cls{font-size: 10pt}
+.sty__rlf9r7__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__i0cwm9__cls{font-size: 10pt}
+.sty__oafar4__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__2614ad__cls{font-size: 10pt}
+.sty__whv7a4__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__1fq1dr__cls{font-size: 10pt}
+.sty__pddbkh__cls{list-style-type: disc}
+.sty__bmunmr__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 224px; height: auto}
+.sty__46pwi9__cls{font-size: 10pt}
+.sty__790h87__cls{font-size: 10pt}
+.sty__wdn7eu__cls{list-style-type: disc}
+.sty__qg92te__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__d8lp9m__cls{font-size: 10pt}
+.sty__8dqgmh__cls{font-size: 10pt}
+.sty__8cn2xh__cls{list-style-type: disc}
+.sty__9x3dfg__cls{font-size: 10pt; padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__1o6enm__cls{font-size: 10pt}
+.sty__1au4bd__cls{font-size: 10pt}
+.sty__ptqzze__cls{list-style-type: disc}
+.sty__5pra64__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__c7q99k__cls{font-size: 10pt}
+.sty__vj1lum__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__9bddev__cls{font-size: 10pt}
+.sty__zgd9s0__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__nxa1rs__cls{font-size: 10pt}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="11 May 2021 12:11 AM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fusing-library-designer-strategy-tips-and-tricks&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fusing-library-designer-strategy-tips-and-tricks" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fusing-library-designer-strategy-tips-and-tricks" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/using-library-designer-strategy-tips-and-tricks" target="_blank">https://community.microvellum.com/portal/en/kb/articles/using-library-designer-strategy-tips-and-tricks</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:59:03 AM</p>
+            <p><strong>Categories:</strong> Engineering > Library Data > Product Creation & Editing Tools</p>
+            <p><em>Note: This article was scraped separately due to video/animation content.</em></p>
+        </div>
+    </div>
+</body>
+</html>

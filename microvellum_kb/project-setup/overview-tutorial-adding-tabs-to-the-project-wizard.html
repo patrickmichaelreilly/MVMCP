@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__2j9o22__cls{list-style-type: decimal}
+.sty__99ig0r__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__2tldrb__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__768wkg__cls{list-style-type: decimal}
+.sty__if5foc__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__vvz3ox__cls{list-style-type: decimal}
+.sty__d973kx__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__pxi24o__cls{list-style-type: decimal}
+.sty__a49idq__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__mvvr5x__cls{list-style-type: decimal}
+.sty__7p6f4h__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__iu6qqm__cls{list-style-type: decimal}
+.sty__ndwo21__cls{list-style-type: decimal}
+.sty__0ili0b__cls{list-style-type: decimal}
+.sty__nys6d6__cls{list-style-type: decimal}
+.sty__3kncsc__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__r53fxr__cls{list-style-type: decimal}
+.sty__1ktftf__cls{list-style-type: decimal}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Overview &amp; Tutorial: Adding Tabs to the Project Wizard</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"> 
+ <p class="MsoNormal"> Some Microvellum libraries include a Project Wizard that does not contain tabs that other libraries do contain. One example of this is the Project Wizard for the 046.2 library does not contain a Machining tab, while some earlier libraries do. <br></p> 
+ <p class="MsoNormal"> The reason for this one specific change was that the construction machining variables had been moved from that tab to the Global Variables. It makes more sense for them to be there in the default Microvellum library data since the majority of Microvellum Users generally don’t change construction type variables with every project. <br></p> 
+ <p class="MsoNormal"> Nevertheless, we want you to have the tools you need, where you need them. With that in mind, you can set up your wizard to include these if you want. This article presents an overview of the process and a tutorial of specific steps to do so. <br></p> 
+ <h2 class="toc_anchors" id="Overview"> <b> Overview </b> <br></h2> 
+ <p class="MsoNormal"> The Project Wizard tabs and variable data is kept in the “W” sheet of the Workbook Designer. Column “N” contains the name of the tab beginning with row 1, and column “M” contains the index number of that tab beginning with zero (0). In other words, all of the rows that contain prompts or variables that belong to the first tab (defined on row 1, column N) should contain a one (1) in column “M” for that prompt, and so on. <br></p> 
+ <p class="MsoNormal"> To add a tab, open the “W” sheet in the Workbook Designer. Add the name for your new tab in column “N” after the last name in that column. There should be no blank cells anywhere between the first and last name in that column. <br></p> 
+ <p class="MsoNormal"> That additional cell will have the next higher index number. Be sure you understand that the first row will have an index number of zero. If you have six (6) tab names defined, you will have six rows and index numbers 0 – 5 (for a total of 6). These six indexes will be entered in column “M” for each variable (row). If the tab name is on row 6, then enter the number 5 in row “M” for all variables that belong in that new tab. <br></p> 
+ <p class="MsoNormal"> The variables for a tab that is added to the end of the existing list should also be added to the end of the existing list of variables in column “A.” Add the necessary information in columns “B” – “K” for those new spreadsheet rows. <br></p> 
+ <p class="MsoNormal"> Although it is more complicated, you may also insert a cell in column “N” in the middle of the existing list. If you do that, you will need to renumber the index numbers in the existing variables to match the newly inserted tab name index. If you don’t do this, the variables (prompts) will appear on the wrong tab. <br></p> 
+ <p class="MsoNormal"> If you are moving primary access to certain information from the Global Variables to the Project Wizard, you don’t usually want to enter the information in both places. To prevent this and avoid errors, enter a formula that references the new “W” workbook location of the variable or prompt in the corresponding global variable. For example, if you want to set the variable for Use_Dado in the Machining tab of the Project Wizard, and it also exists in the Global Variables, the name should be the same in both locations. Enter the formula as follows in the global variable of the same name as the wizard variable: =W!Use_Dado. That will populate the wizard variable value to the global variable. <br></p> 
+ <h2 class="toc_anchors" id="Tutorial"> <b> Tutorial </b> <br></h2> 
+ <ol> 
+  <li class="sty__2j9o22__cls"> Determine how you want to configure your new Project Wizard tab. Open a project in Toolbox. For a view of your current Project Wizard click: Toolbox Setup &gt; Project Specification Groups &gt; Open Project Wizard. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp7756ccb4aad147938bdc970412464972" class="sty__99ig0r__cls"> 
+   <br> 
+  </div> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp0c59e5d55e144553a99f6bb62d1a8382" class="sty__2tldrb__cls"> 
+   <br> 
+  </div> 
+  <li class="sty__768wkg__cls"> For access to the Project Wizard source file, close the Project Wizard screen and click the button Open Workbook Designer. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp0eb5efd3bdf74339838f0afc78465396" class="sty__if5foc__cls"> 
+   <br> 
+  </div> 
+  <li class="sty__vvz3ox__cls"> Double click the “W” worksheet. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp8ba13dc3ba7e4509b25c0f65c9ae429b" class="sty__d973kx__cls"> 
+   <br> 
+  </div> 
+  <li class="sty__pxi24o__cls"> Scroll to row 1; column N. Enter the name of your new tab in first empty cell beginning at the top and going down. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp017f5543f91a450a9d28b500b8c1da64" class="sty__a49idq__cls"> 
+   <br> 
+  </div> 
+  <li class="sty__mvvr5x__cls"> Determine the index number of your new tab for use in grouping and displaying the variables. Subtract one from the row number to determine the index number. If your new tab name is on row six, subtract one and the index number for your new variable is five. If it is on row seven, subtract one and the index number is six. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp1bfaf7af939f496abcfce42275197c6d" class="sty__7p6f4h__cls"> 
+   <br> 
+  </div> 
+  <li class="sty__iu6qqm__cls"> Add the variables or prompts to be displayed on the new tab in column “A” beginning in the first blank cell at the end of the existing list, and going down. Verify that the names are the same if matching variables from the globals. <br></li> 
+  <li class="sty__ndwo21__cls"> Add the desired information in columns “B” – “K” for those newly added spreadsheet rows. <br></li> 
+  <li class="sty__0ili0b__cls"> Add the index number for the variables to be included in the new tab, in column “M.” This index number was determined in Step 1 above. <br></li> 
+  <li class="sty__nys6d6__cls"> If matching variables from the globals, close the Workbook Designer and open the Global Variables from within the Spec Group Interface. <br></li> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=ocssp3418becf32c6493fa0f0a86a4527504d" class="sty__3kncsc__cls"> 
+   <br> 
+  </div> 
+  <li class="sty__r53fxr__cls"> Locate the matching global variable and enter a formula referencing the new wizard variable. (e.g. =W!Use_Dado or similar). <br></li> 
+  <li class="sty__1ktftf__cls"> If matching variables from the globals, verify that updating the value in the Project Wizard also updates it in the Global Variables.&nbsp; <br></li> 
+ </ol> 
+<style type="text/css" data-css-purify-styler="1755096131564">.sty__2j9o22__cls{list-style-type: decimal}
+.sty__99ig0r__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__2tldrb__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__768wkg__cls{list-style-type: decimal}
+.sty__if5foc__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__vvz3ox__cls{list-style-type: decimal}
+.sty__d973kx__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__pxi24o__cls{list-style-type: decimal}
+.sty__a49idq__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__mvvr5x__cls{list-style-type: decimal}
+.sty__7p6f4h__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__iu6qqm__cls{list-style-type: decimal}
+.sty__ndwo21__cls{list-style-type: decimal}
+.sty__0ili0b__cls{list-style-type: decimal}
+.sty__nys6d6__cls{list-style-type: decimal}
+.sty__3kncsc__cls{padding: 20px 20px 20px 0px; max-width: 100%; box-sizing: border-box}
+.sty__r53fxr__cls{list-style-type: decimal}
+.sty__1ktftf__cls{list-style-type: decimal}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="04 Jun 2021 06:33 PM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-tutorial-adding-tabs-to-the-project-wizard&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-tutorial-adding-tabs-to-the-project-wizard" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Foverview-tutorial-adding-tabs-to-the-project-wizard" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/overview-tutorial-adding-tabs-to-the-project-wizard" target="_blank">https://community.microvellum.com/portal/en/kb/articles/overview-tutorial-adding-tabs-to-the-project-wizard</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:42:12 AM</p>
+            <p><strong>Categories:</strong> Project Setup</p>
+        </div>
+    </div>
+</body>
+</html>

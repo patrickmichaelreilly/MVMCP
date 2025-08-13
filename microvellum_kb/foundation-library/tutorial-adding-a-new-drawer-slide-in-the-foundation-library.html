@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        video { max-width: 100%; height: auto; }
+        iframe { max-width: 100%; }
+        .note { 
+            background: #fff3cd; 
+            border-left: 4px solid #ffc107; 
+            padding: 1em; 
+            margin: 1em 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a> | 
+            Engineering / Library Data / Foundation Library
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Tutorial: Adding a New Drawer Slide in the Foundation Library</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><div><h2 class="toc_anchors" id="Adding_a_New_Drawer_Slide"><b>Adding a New Drawer Slide</b><br></h2><div>This article will demonstrate how to add a new drawer slide to the Foundation Library.&nbsp;</div><div>Adding a new slide to your library will allow you to customize the drilling for the slide holes, the name of the hardware that appears on reports, and the 3D and 2D representation of the hardware in the drawing.</div><div>There are only a few steps required to add a new drawer slide.</div><div>First, you need to create a lookup table that stores the lengths of the slides, the drilling locations, and the hardware names.</div><div>Second, you need to add a row to the LookUpTableSystemDrawerSlide with the correct information for the slide entered into each column.</div><div>Third, you will need to append your drawer slide name to the LookUpTableListOptions under “Wood Drawer Slide Options” to make it available in your drop-down selection.</div><div><br></div><h2 class="toc_anchors" id="Create_a_New_Table_for_the_Drawer_Slide"><b>Create a New Table for the Drawer Slide&nbsp; </b>&nbsp;<br></h2><div>First, we are going to create a new table that stores the lengths of the slides, the drilling locations, and the hardware names.</div><div>It is important to add the new table to the template so the change will be available in every new project.</div><div>It is also recommended that you copy one of the lookup tables for an existing slide and adjust the values to work for the new slide.<br></div><div><br></div><div><table class="noBorder sty__iwb4g4__cls" cellspacing="0" cellpadding="0"><tbody><tr><td class="sty__8q4lf6__cls"><div><span class="size sty__24wykm__cls">1. Open the Factory workbook (F) from either the Library or Project spec group setup.</span><br></div><div><br></div><div><img src="https://community.microvellum.com/galleryDocuments/edbsn836242cbf6856863d20b1b0e85cc6f78c385eabc207904a5038501cdd1adb110e4a798b0298d3f9ffccf2ecfe81d6035?inline=true" class="sty__4kntay__cls"><br></div></td></tr><tr><td class="sty__lgplfp__cls"><div><br></div></td></tr><tr><td class="sty__iyj8q9__cls"><div><span class="sty__a8go26__cls">2. Open Workbook Designer.</span><br></div><div><br></div><div><span class="sty__dudc0l__cls"><b><img src="https://community.microvellum.com/galleryDocuments/edbsn4232cc0cd0851ef85b0c9800e22f7550ad2a2fc9234bc36a45f1fb02f6295dd42856cd083cbd0e204ced5d60410b2f6e?inline=true" class="sty__whvhed__cls"></b></span><br></div></td></tr><tr><td><div><br></div></td></tr><tr><td class="sty__tkzl6x__cls"><div><span class="sty__hwkk8u__cls">3.&nbsp;</span><span class="size sty__n0ryuw__cls">Open the Factory Workbook.</span><br></div><div><br></div><div><img src="https://community.microvellum.com/galleryDocuments/edbsnf48d5bccbca907c7c69a469b68205772959d1cd15e5dbac1eb74c382df357b8972b731a3c4a87221980b84927aa3911c?inline=true" class="sty__2inva9__cls"><br></div></td></tr><tr><td><div><br></div></td></tr><tr><td class="sty__ko9v5h__cls"><div><span class="sty__c2s93s__cls">4. In the search field, select one of the tables that starts with “LookUpTableDrwSlide…”</span><br></div><div><br></div><div><span class="sty__9lnpym__cls"><div id="target_mov_img_20843883385587425" class="target_moving"><b><img data-zdeskdocselectedclass="original" class="docsimage sty__lgiz4r__cls" data-zdeskdocid="img_20843883385587425" src="https://community.microvellum.com/galleryDocuments/edbsn9d4fd6fe62cfd7d8de0d17960293e45fcf00198f9949829a0f128e694b25b85df0dba285374edd6bcbc27ca8d287ab1a?inline=true"></b></div></span><br></div></td></tr><tr><td><div><br></div></td></tr><tr><td class="sty__hz2bcy__cls"><div><span class="size sty__8b8q6l__cls">5. Copy the entire range, including the header.</span><br></div><div><br></div><div><b><span class="size sty__l1j59p__cls"><img src="https://community.microvellum.com/galleryDocuments/edbsnb7fb423e726c8eeaa7ca241cb1e3fb14e81f2786c4712c77fd19ed6e185b715419d4e52c2506fdbfc5a21d5e29958ae0?inline=true" class="sty__4hf93g__cls"></span></b><br></div></td></tr><tr><td><div><br></div></td></tr><tr><td class="sty__muisj9__cls"><div><span class="size sty__3fqnlr__cls">6. Go to the bottom of the worksheet and paste the range leaving one blank row.</span><br></div><div><br></div><div><span class="size sty__mvzqh0__cls"><b><img src="https://community.microvellum.com/galleryDocuments/edbsn8607db1c6a6c770f5fa33d54ffba0e3662a301e17559700d511505f221b754c7b33607e5663685f82104612f638b98a4?inline=true" class="sty__t9xt98__cls"></b></span><br></div></td></tr><tr><td><div><br></div></td></tr><tr><td class="sty__xihs37__cls"><div><span class="size sty__no1kkn__cls">7. Change the header name to the name of the slide you are adding then update the data in this table. Each row represents a slide length. The first column is the length of all of the slides. Columns 2 - 6 represents the drilling location on the side of the cabinet. Column 7 is the name of the hardware that should be called out for each slide length. Column 8 is the last hole that is drilled for the slide holes. This is used by rollouts to determine where the rear spacer needs to be placed.</span><br></div><div><br></div></td></tr><tr><td><div><br></div></td></tr><tr><td class="sty__mczpnd__cls"><div><span class="size sty__zt1sec__cls">8.&nbsp;</span><span class="sty__go1kx3__cls"><span class="size sty__dk1kyw__cls">Define the range by selecting all of the data (excluding the header row), right-clicking, and selecting “Define a Range.” In the dialog, enter the name “LookUpTableDrwSlide ___” with the name of the slide at the end. (A good practice is to copy the lookuptable name and paste it into the defined range to avoid misspelling).</span></span><br></div><div><br></div><div><span class="sty__mw6avm__cls"><span class="size sty__9a2hnl__cls"><b><img src="https://community.microvellum.com/galleryDocuments/edbsnc2dadb0921afa7ff251938da4c46aa2881f2e2afda303dc7d684b4b7d5b0317395b9532354103b1bfeffec0b8e3e6992?inline=true" class="sty__pw03t1__cls"></b></span></span><br></div></td></tr><tr><td><div><br></div></td></tr><tr><td class="sty__j959a2__cls"><div><span class="size sty__vhbk70__cls">9. Now that the technical information has been added for the new slide, extend the look up table with new slide details.</span></div></td></tr></tbody></table><br><br></div><h2 class="toc_anchors" id="Extend_LookupTableSystemDrawerSlide_withthe_New_Slide_Data"><b>Extend LookupTableSystemDrawerSlide with&nbsp;the New Slide Data</b><br></h2><div>Now we need to extend the<i> LookUptableSystemDrawerSlide</i> table with the new slide.&nbsp;</div><ol><li class="sty__mkif9j__cls">Append your new drawer slide by inserting a new row into the table.</li><li class="sty__r5zsb6__cls">Fill in the correct information for your drawer slide (See<b> LookUpTableSystemDrawerSlide Column Information</b> for help)<br></li></ol><div><img src="https://community.microvellum.com/galleryDocuments/edbsn6a81ad887153347436c73520a046a3e6014e40933129693a3eca6469ab5114370e123ccd32ebbafc80d26dcdafcb27da?inline=true" class="sty__at8kso__cls"><br></div><h2 class="toc_anchors" id="Add_new_slide_option_to_LookUpTableListOptions"><b>Add new slide option to LookUpTableListOptions</b>&nbsp;<br></h2><ol><li class="sty__099xv9__cls">Copy new slide name from Column 1. In<i> LookUpTableSystemDrawerSlide&nbsp;</i><br></li><li class="sty__rqxl2p__cls">Append new slide name to the list in the respective region, under “Wood Drawer Slide options”. The slide names should be separated by a pipe symbol “|”.</li></ol><div><img src="https://community.microvellum.com/galleryDocuments/edbsnb40b649578c498709dff9d81cc26cf0e54fe3c0df3849b6d938e4f0b12d19fe77c8f230906504a7c67d8643bc1b6ff6b?inline=true" data-zdeskdocid="img_28785793201801635" class="docsimage sty__kvsye9__cls" data-zdeskdocselectedclass="original"><br></div><div><span>&nbsp; &nbsp; &nbsp;&nbsp;</span><span>3. Once the new slide name has been added to the </span><i>LookUpTableListOptions</i><span>, it will be available for drop down selection.</span><br></div></div><div><div><img src="https://community.microvellum.com/galleryDocuments/edbsn1c24b18f9cefe3431466eb1ec48d23539dec60ae9d36577e9a246ceafb73d27277b37d2ac747478be3ba230e862dc61a?inline=true" data-zdeskdocid="img_15974465441692254" class="docsimage sty__zvwbqn__cls" data-zdeskdocselectedclass="original">&nbsp;<br></div><div>&nbsp;</div><h2 class="toc_anchors" id="LookUpTableSystemDrawerSlide_Column_Information">LookUpTableSystemDrawerSlide Column Information<br></h2><ol><li class="sty__c79mc5__cls"><b>Column 1 - (Slide)</b> The slide name is placed in the {LookUpTableListOptions} which is then used to select from the drop-down menu in the Global and prompt interfaces.&nbsp;&nbsp;</li><li class="sty__ceplyj__cls"><b>Column 2 - (Slide Height From Drawer Bottom)</b> This is the calculated distance Between the drawer box bottom to the Z location of the slide hole that are associated to the side of the cabinet or division.&nbsp;</li><li class="sty__8bl65p__cls"><b>Column 3 - (Overall Slide Clearance | Is Undermount 1=Yes | Cabinet To Drawer Side Clearance)&nbsp;</b></li><ol><li class="sty__ajjrmp__cls"><b>Overall slide Clearance:</b> This Value should reflect the desired side gap by the manufacturer(x2)&nbsp;</li><li class="sty__eagzu1__cls"><b>Is Undermount:</b> Input a 1 after the first pipe to indicate that the chosen slide is an undermount.&nbsp;</li><li class="sty__u6jtfq__cls"><b>Cabinet To Drawer Side Clearance:</b> This is the desired distance between the side of the drawer <span class="sty__ysrjnl__cls">	</span>and the associated side or division. This is the amount used in deducting from the width of the drawer box.&nbsp;&nbsp;</li></ol><li class="sty__cje0pb__cls"><b>Column 4 - (Bottom Location)</b> This is the clearance from the bottom of the drawer box to the bottom Z origin of the Subassembly.&nbsp;&nbsp;</li><li class="sty__yc8yxi__cls"><b>Column 5 - (Bottom To Side Offset)</b> Distance from Drawer Bottom to the bottom of the Drawer Side.&nbsp;</li><li class="sty__d6a6uz__cls"><b>Column 6 - (Bottom Gap) </b>Similar to the previous column, this value is the Difference between (Bottom Location – Bottom to side offset) Offsetting the drawer system from the bottom of opening.&nbsp;</li><li class="sty__dib5lz__cls"><b>Column 7 - (Drawer Length Deduction) </b>This column allows a value input if there is a needed length to be removed/accounted for in the overall length of the drawer.&nbsp;&nbsp;</li><li class="sty__3joxvp__cls"><b>Column 8 - (Rear Undermount Notch Width | Front Undermount Notch Width)</b> If a notch is required in the drawer back or drawer front for an under-mount slide, enter the width of the notch that should be created. Otherwise, leave this column blank. Separate the Rear and Front width values using a pipe |.&nbsp;</li><li class="sty__s9eopo__cls"><b>Column 9 - (Undermount Hole From Cabinet Side)</b> Some undermount slides require a hole in the back of the drawer box. This is the distance the hole should be placed from the left and right edge.&nbsp;</li><li class="sty__pf7hnx__cls"><b>Column 10 - (Undermount Hole Height From Drawer Bottom)</b> Some undermount slides require a hole in the back of the drawer box. This is the distance the hole should be placed from the bottom of the drawer back.&nbsp;</li><li class="sty__r6vlsu__cls"><b>Column 11 - (Undermount Hole Diameter)</b> Some undermount slides require a hole in the back of the drawer box. This is the diameter of the hole.&nbsp;</li><li class="sty__rj4g3g__cls"><b>Column 12 - (Rear Undermount Machine Notch | Front Undermount Machine Notch)</b> If a notch is required in the drawer back or drawer front for an under-mount slide, enter a 1 in this column. Enter a 1|1 to notch both the rear and front. Otherwise, leave this column blank.&nbsp;</li><li class="sty__czh0lb__cls"><b>Column 13 - (Undermount Clip Left)</b> If undermount clips are required for this slide, enter the hardware name for the left clip. Otherwise, leave this column blank.&nbsp;</li><li class="sty__f5lvir__cls"><b>Column 14 - (Undermount Clip Right)</b> If undermount clips are required for this slide, enter the hardware name for the right clip. Otherwise, leave this column blank.&nbsp;</li><li class="sty__84n6dk__cls"><b>Column 15 - (3D Hardware Graphics Folder) </b>If you are going to have a 3D model to represent the drawer slide, enter in the path from the graphics folder to the folder where you placed the 3D model. &nbsp;</li><li class="sty__h30vfk__cls"><b>Column 16 - (2D Section Location)</b> If you are going to have a 2D model to represent the drawer slide in cross-sections, enter in the path from the graphics folder to the folder where you placed the 3D model.  &nbsp;</li><li class="sty__7wehev__cls"><b>Column 17 - (LookupTableSlideLengths)</b> This column should contain the affiliated LookupTable name for the desired drawer slide. This LookupTable should be defined as a range in the workbook.&nbsp;</li></ol><div><br></div><div><div class="KB_Editor_ImageDiscBdr" id="desc_img_14495135492440347"><img src="https://community.microvellum.com/galleryDocuments/edbsn6a48882f684f1561864a6b286002383a3dea24ca0e8f5ea7e25ff65acd4a5b539196f5614412c94a7edebd301615a095?inline=true" data-zdeskdocid="img_14495135492440347" class="docsimage sty__948s05__cls" data-zdeskdocselectedclass="original"><span class="KB_Editor_Quotedisc sty__3i4ftz__cls"><span class="inner">Figure 1: Location of Slide names for list selection in LookUpTableListOptions.</span></span></div></div><div><span>&nbsp;</span></div><div><div class="KB_Editor_ImageDiscBdr" id="desc_img_6877832103107078"><img src="https://community.microvellum.com/galleryDocuments/edbsndd8d61d336cd3de502c73cc46717812f4ca49300ceff7435bba4b16380bef7242d366fd1d8c48090ccbac91dbd40635a?inline=true" data-zdeskdocid="img_6877832103107078" class="docsimage sty__vthija__cls" data-zdeskdocselectedclass="original"><span class="KB_Editor_Quotedisc sty__nh7bqa__cls"><span class="inner">Figure 2: Associated Table name from LookUpTableSlideLengths.</span></span></div></div><div><br></div><h2 id="Video_Tutorial" class="toc_anchors">Video Tutorial<br></h2><div>The video below will reiterate the process of adding a new drawer slide to your Foundation Library.&nbsp;</div><div><br></div><div><iframe sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-popups allow-downloads allow-popups-to-escape-sandbox" width="640" height="360" src="https://player.vimeo.com/video/936462977" allowfullscreen=""></iframe><br></div><div><br></div></div><div><br></div><style type="text/css" data-css-purify-styler="1755097119940">.sty__iwb4g4__cls{font-size: 12px; text-align: initial; table-layout: fixed; overflow-wrap: break-word; height: 2289px; max-width: 100%}
+.sty__8q4lf6__cls{height: 306px; width: 791px}
+.sty__24wykm__cls{font-size: 16px; line-height: normal}
+.sty__4kntay__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__lgplfp__cls{height: 15px}
+.sty__iyj8q9__cls{height: 16px; width: 791px}
+.sty__a8go26__cls{font-size: 15px}
+.sty__dudc0l__cls{font-size: 15px}
+.sty__whvhed__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__tkzl6x__cls{width: 791px; height: 537px}
+.sty__hwkk8u__cls{font-size: 15px}
+.sty__n0ryuw__cls{font-size: 16px; line-height: normal}
+.sty__2inva9__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ko9v5h__cls{width: 791px; height: 14px}
+.sty__c2s93s__cls{font-size: 15px}
+.sty__9lnpym__cls{font-size: 15px}
+.sty__lgiz4r__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 226px; height: auto}
+.sty__hz2bcy__cls{width: 791px; height: 175px}
+.sty__8b8q6l__cls{font-size: 16px; line-height: normal}
+.sty__l1j59p__cls{font-size: 16px; line-height: normal}
+.sty__4hf93g__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__muisj9__cls{width: 791px; height: 14px}
+.sty__3fqnlr__cls{font-size: 16px; line-height: normal}
+.sty__mvzqh0__cls{font-size: 16px; line-height: normal}
+.sty__t9xt98__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__xihs37__cls{width: 791px; height: 14px}
+.sty__no1kkn__cls{font-size: 16px; line-height: normal}
+.sty__mczpnd__cls{width: 791px; height: 14px}
+.sty__zt1sec__cls{font-size: 16px; line-height: normal}
+.sty__go1kx3__cls{text-align: initial}
+.sty__dk1kyw__cls{font-size: 16px; line-height: normal}
+.sty__mw6avm__cls{text-align: initial}
+.sty__9a2hnl__cls{font-size: 16px; line-height: normal}
+.sty__pw03t1__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__j959a2__cls{width: 791px; height: 14px}
+.sty__vhbk70__cls{font-size: 16px; line-height: normal}
+.sty__mkif9j__cls{list-style-type: decimal}
+.sty__r5zsb6__cls{list-style-type: decimal}
+.sty__at8kso__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__099xv9__cls{list-style-type: decimal}
+.sty__rqxl2p__cls{list-style-type: decimal}
+.sty__kvsye9__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 626px; height: auto}
+.sty__zvwbqn__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 234px; height: auto}
+.sty__c79mc5__cls{list-style-type: disc}
+.sty__ceplyj__cls{list-style-type: disc}
+.sty__8bl65p__cls{list-style-type: disc}
+.sty__ajjrmp__cls{list-style-type: circle}
+.sty__eagzu1__cls{list-style-type: circle}
+.sty__u6jtfq__cls{list-style-type: circle}
+.sty__ysrjnl__cls{white-space: pre}
+.sty__cje0pb__cls{list-style-type: disc}
+.sty__yc8yxi__cls{list-style-type: disc}
+.sty__d6a6uz__cls{list-style-type: disc}
+.sty__dib5lz__cls{list-style-type: disc}
+.sty__3joxvp__cls{list-style-type: disc}
+.sty__s9eopo__cls{list-style-type: disc}
+.sty__pf7hnx__cls{list-style-type: disc}
+.sty__r6vlsu__cls{list-style-type: disc}
+.sty__rj4g3g__cls{list-style-type: disc}
+.sty__czh0lb__cls{list-style-type: disc}
+.sty__f5lvir__cls{list-style-type: disc}
+.sty__84n6dk__cls{list-style-type: disc}
+.sty__h30vfk__cls{list-style-type: disc}
+.sty__7wehev__cls{list-style-type: disc}
+.sty__948s05__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 626px; height: auto}
+.sty__3i4ftz__cls{color: rgb(153, 153, 153); text-align: left; position: relative; display: block; padding: 10px 10px 0 20px}
+.sty__vthija__cls{padding: 0px; max-width: 100%; box-sizing: border-box; width: 626px; height: auto}
+.sty__nh7bqa__cls{color: rgb(153, 153, 153); text-align: left; position: relative; display: block; padding: 10px 10px 0 20px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="11 Nov 2024 05:55 PM"><span>9 months ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Ftutorial-adding-a-new-drawer-slide-in-the-foundation-library&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Ftutorial-adding-a-new-drawer-slide-in-the-foundation-library" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Ftutorial-adding-a-new-drawer-slide-in-the-foundation-library" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/tutorial-adding-a-new-drawer-slide-in-the-foundation-library" target="_blank">https://community.microvellum.com/portal/en/kb/articles/tutorial-adding-a-new-drawer-slide-in-the-foundation-library</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:58:43 AM</p>
+            <p><strong>Categories:</strong> Engineering > Library Data > Foundation Library</p>
+            <p><em>Note: This article was scraped separately due to video/animation content.</em></p>
+        </div>
+    </div>
+</body>
+</html>

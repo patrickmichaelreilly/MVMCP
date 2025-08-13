@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__fotv40__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__ak8i4h__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__hra7j2__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__dq87hr__cls{font-size: 13px}
+.sty__g0tznq__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ikrcns__cls{font-size: 13px}
+.sty__1ecx7h__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__2limf6__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Adding a Footer to a Table in Report Designer</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <p> The articles in this section of the Knowledge Base involve working with <b> Lists </b> for display in your reports. To learn more about <b> Lists </b> and how to access the Report Designer, see <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/en/kb/articles/creating-lists-in-report-designer"> Creating Lists in Report Designer</a>. This article provides information on adding a Footer band to a list. <br></p> 
+ <p> To print a list, <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/en/kb/articles/understanding-report-bands-in-report-designer"> add a Data band</a>&nbsp;to the template page, and <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/en/kb/articles/adding-a-data-source-to-a-data-band-in-report-designer"> assign a Data Source</a>&nbsp;to the band. <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/en/kb/articles/adding-a-header-to-a-table-in-report-designer"> Insert a Header band</a>&nbsp;with column names entered in text components within the band. <br></p> 
+ <p> <b> Footer </b> bands are generally used to print totals for the data. The <b> Footer </b> band is placed after the Data band, and this is reflected in the rendered report. Insert a Text component inside the footer and enter the expression of your choice. <br></p> 
+ <div> 
+  <span class="KB_New_Editor_Highlights sty__fotv40__cls"> <img src="//img.zohostatic.com/zde/static/images/info.png" data-type="non-resize" data-image="contentStyle" class="sty__ak8i4h__cls"> 
+   <div>
+     In this example, I’ve entered “Count: {Count()}” in the text component. 
+    <br>
+   </div> </span> 
+ </div> 
+ <p> In Figure 01, a report template with the <b> Footer </b> band is displayed. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0ynttf4168eda43de465db75dc1f3bba7b41e" class="sty__hra7j2__cls"> 
+  <br>
+ </div> 
+ <div>
+  <span class="size sty__dq87hr__cls"> <i> Fig. 01 – Footer Band in the Report Template </i> </span>
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <p> When this example is rendered, it should look something like Figure 02. <br></p> 
+ <div> 
+  <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=0yntt628467b102dd49d4bf3ea39c8cae8089" class="sty__g0tznq__cls"> 
+  <br>
+ </div> 
+ <div>
+  <span class="size sty__ikrcns__cls"> <i> Fig. 02 – Rendered Report with Footer Band Count </i> </span>
+  <br>
+ </div> 
+ <div> 
+  <br>
+ </div> 
+ <div> 
+  <div> 
+   <span class="KB_New_Editor_Highlights sty__1ecx7h__cls"> <img src="//img.zohostatic.com/zde/static/images/info.png" data-type="non-resize" data-image="contentStyle" class="sty__2limf6__cls"> 
+    <div>
+      An unlimited number of Footer bands can be created per Data band. 
+     <br>
+    </div> </span> 
+  </div> 
+ </div>
+ <div>
+  <br>
+ </div>
+<style type="text/css" data-css-purify-styler="1755096652190">.sty__fotv40__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__ak8i4h__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__hra7j2__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__dq87hr__cls{font-size: 13px}
+.sty__g0tznq__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__ikrcns__cls{font-size: 13px}
+.sty__1ecx7h__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__2limf6__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="21 Aug 2020 04:06 PM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fadding-a-footer-to-a-table-in-report-designer&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fadding-a-footer-to-a-table-in-report-designer" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fadding-a-footer-to-a-table-in-report-designer" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/adding-a-footer-to-a-table-in-report-designer" target="_blank">https://community.microvellum.com/portal/en/kb/articles/adding-a-footer-to-a-table-in-report-designer</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:50:53 AM</p>
+            <p><strong>Categories:</strong> Creating Lists</p>
+        </div>
+    </div>
+</body>
+</html>

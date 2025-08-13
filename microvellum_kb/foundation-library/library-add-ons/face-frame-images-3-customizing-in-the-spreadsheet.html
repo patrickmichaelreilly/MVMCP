@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        video { max-width: 100%; height: auto; }
+        iframe { max-width: 100%; }
+        .note { 
+            background: #fff3cd; 
+            border-left: 4px solid #ffc107; 
+            padding: 1em; 
+            margin: 1em 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a> | 
+            Engineering / Library Data / Foundation Library / Library Add-ons
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Overview &amp; Tutorials: Face Frame Images 3 (Customizing in the Spreadsheet)</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p>This is the third article in the series giving an overview of how to configure the custom face frame images in the default Microvellum shipping libraries of build 046.2 and higher. <br></p>
+<p>The first articles in the series discussed how to use the default functionality by adjusting prompt values. The second article discussed how to modify the face frame images produced by adjusting global variables, and demonstrated the intended use of subassembly splitters and door and drawer subassemblies. This article will focus on how to use the spreadsheet to modify the tokens and their parameters inside the spreadsheet with the goal of customizations that would not be possible otherwise. <br></p>
+<p>Elsewhere in the Knowledge Base you will find articles and videos containing tutorials on how to perform specific customizations to your library spreadsheet data beyond your global and product settings. <br></p>
+<h2 class="toc_anchors sty__3k8vg7__cls" id="Face_Frame_Image_Draw_Tokens"><b> <span class="colour sty__nhf9e5__cls"> <span class="size sty__nkeprf__cls"> <span class="size sty__npo7yx__cls"> Face Frame Image Draw Tokens </span> </span> </span> </b> <br></h2>
+<p>The automated face frame images in AutoCAD or the reports are produced with the use of draw tokens in the library data. These draw tokens are responsible for the automated creation of dynamic product images, plan view and elevation view drawings, cross-section drawings, etc. The tokens, along with their parameters, are located either in the product level prompts tab, or the subassembly level prompts tab of the workbook, as shown in Figures 1 and 2. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b96e262ae064d4011b90762196e5fc629" class="sty__r4hz50__cls"> <br>
+</div>
+<div><i> <span class="size sty__o0q3qt__cls"> Fig. 1 </span> </i> <br>
+</div>
+<p><br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b609204d6f49141b9a28c5ddf28c4b4be" class="sty__ebr5wl__cls"> <br>
+</div>
+<div><i> <span class="size sty__g2v0vx__cls"> Fig. 2 </span> </i> <br>
+</div>
+<p><br></p>
+<p>These draw tokens also produce the face frame images, but are not present either in the main L workbook (prompts page) or in the Carcass Base subassembly prompts page. They exist only inside the face frame subassembly prompts page. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b62757b3e576a418497aa50bcf87e7038" class="sty__2m5dfa__cls"> <br>
+</div>
+<div><i> <span class="size sty__ltclyr__cls"> Fig.3 </span> </i> <br>
+</div>
+<h2 class="toc_anchors sty__wqrf3s__cls" id="Using_the_Parts_Properties_Interface_to_Modify_Draw_Tokens"><b> <span class="colour sty__2bhkii__cls"> <span class="size sty__qp8jis__cls"> <span class="size sty__zwcpj7__cls"> Using the Parts Properties Interface to Modify Draw Tokens </span> </span> </span> </b> <br></h2>
+<p>You may also use the Part Properties interface to evaluate and modify the draw tokens if you prefer that interface to using the spreadsheet (Edit Design Data). <br></p>
+<p>Click “Modify &gt; Modify Products” or “Modify &gt; Modify Parts” from the Toolbox palette. Select the product to work with. Right-click on the face frame subassembly from the list on the left, and click Show Properties. Click the tab on the Face Frame tab on the right to display the individual tokens in the box above, and the parameters for each one in the list below. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bf1c134c3116c494c953cb155e27de823" class="sty__cx5rra__cls"> <br>
+</div>
+<div><i> <span class="size sty__yckqsv__cls"> Fig.4 </span> </i> <br>
+</div>
+<p><br></p>
+<p class="MsoNormal sty__a0h3p5__cls"><span class="highlight sty__ltkcbb__cls"> <span class="colour sty__g6lsci__cls"> <span class="size sty__gy28uw__cls"> We are making constant improvements to the parameters that contain parsed values. Download the file “Prompt Drawing Token Tabs” in the <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/kb/articles/library-data-help-documents-part-2"> Library Data Help Documents </a> &nbsp;article. Look for the changes highlighted in blue within that file. </span> </span> </span> <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b82cfc6a0f2844224a6948f33c6f03ffa" class="sty__vl2u30__cls"> <br>
+</div>
+<div><i> <span class="size sty__dydbiw__cls"> Fig. 5 </span> </i> <br>
+</div>
+<p><br></p>
+<h2 class="toc_anchors sty__hgrao8__cls" id="Differences_in_Previous_and_Current_Face_Frame_Image_Creation"><b> <span class="colour sty__nhdpgn__cls"> <span class="size sty__0eh7xk__cls"> <span class="size sty__rpk38g__cls"> Differences in Previous and Current Face Frame Image Creation </span> </span> </span> </b> <br></h2>
+<p>Previous versions of the program and library required you to create individual draw tokens for each part. To show shapes for each rail and stile included in the face frame assembly (DRAWRECTANGLE, DRAWLINE, etc.). &nbsp; <br></p>
+<p>Versions that are more recent support the use of the FLATSHOT token that draws the complete assembly with a single token. Think of the flatshot token as being the equivalent of standing at various points around the finished cabinet with a camera and taking photographs of the cabinet. You could stand at the front and take an elevation view picture of the cabinet, or at the southwest corner and take an isometric shot of it, or on the left side and take a side view shot. <br></p>
+<p>The flatshot token produces a 2D snapshot of the cabinet or subassembly similarly. It uses part filters to determine which parts not to show in the 2D image produced by the token. These would be the parts behind the parts of particular interest, and if there were included would create a confusing drawing with many extra lines. <br></p>
+<p>You may also group image annotations to a specific image produced by the token. For example, in the default library data, the front face frame view displays the stile and rail dimensions and opening dimensions, while the reverse view of that same face frame does not. The reverse view of the face frame displays the index numbers of each part while the front view displays the part dimensions instead. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7ba243c92a1e204f088cc0d4a1b4f10632" class="sty__ez5wg2__cls"> <br>
+</div>
+<div><i> <span class="size sty__rxp24x__cls"> Fig. 6 </span> </i> <br>
+</div>
+<p><br></p>
+<p>All the draw tokens (flatshot and non-flatshot) necessary to produce a complete face frame image are grouped. The tokens that are grouped into a single face frame image by the asterisk and group number. In the token name “FLATSHOT*1,” the number after the asterisk or star is the group number. All draw tokens with a *1 will be assembled into a single image. <br></p>
+<p>The draw tokens are grouped with the flatshot token first, followed by the drawtext token, followed by the drawdim token, and so on. All the tokens in this first group will have *1 appended to the name indicating that all the annotations resulting from this group will be used in a single image. <br></p>
+<p>That group may then be followed by another grouping, perhaps with *10 appended to the name indicating a reverse view of the face frame. Left Side face frames are grouped with *2 (front view), and *20 (rear view). Right Side face frames are grouped with *3 (front view) and *30 (rear view). Rear face frames are grouped with *4 (front view) and *40 (rear view). For more information on the possible values for the draw token grouping ID, see Figure 7. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bcd33733c7213418abd7bdd51939a4a8f" class="sty__k9equg__cls"> <br>
+</div>
+<div><i> <span class="size sty__j8g9cl__cls"> Fig. 7 </span> </i> <br>
+</div>
+<p><br></p>
+<p>The drawtoken grouping ID is created with a formula that evaluates the Bay_Position defined name. If the value of that defined name is “101,” then a front view of a Rear face frame will be created instead of a front view of a front face frame. An example of this type of formula is included here:&nbsp;&nbsp; ="DRAWTEXT*"&amp;IF(Bay_Position=101,4,1). It demonstrates what is possible to consolidate drawtokens using formulas. <br></p>
+<h2 class="toc_anchors sty__uizdd5__cls" id="Overview_of_Draw_Tokens_in_Workbook_Designer"><b> <span class="colour sty__r92n6f__cls"> <span class="size sty__y0myqn__cls"> <span class="size sty__ly9nai__cls"> Overview of Draw Tokens in Workbook Designer </span> </span> </span> </b> <br></h2>
+<p>See Figure 8 for an example of the Face Frame Draw Tokens in the Workbook Designer. <br></p>
+<div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_5180778326584137" class="docsimage sty__dimoqc__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b0251d294a8664c238d8b63407766462b"> <br>
+</div>
+<div><i> <span class="size sty__hnxa90__cls"> Fig. 8 </span> </i> <br>
+</div>
+<p><br></p>
+<p>Each row contains one drawtoken and its ten associated parameters as columns. <br></p>
+<p>Column CM – contains the drawtoken name. <br></p>
+<p>Columns CN through CW – contains the parameters to the corresponding drawtoken specified in column CM. <br></p>
+<p class="MsoNormal sty__gse4qo__cls"><span class="highlight sty__n34g7o__cls"> <span class="colour sty__qjdds4__cls"> <span class="size sty__4t5qk2__cls"> For a complete list and explanation of the parameters, download the document “Prompt Drawing Tokens Tabs” in the <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/kb/articles/library-data-help-documents-with-attachments"> Library Data Help Documents </a> &nbsp;article. Pages 10 and 11 contain this parameter list. </span> </span> </span> <br></p>
+<p>An abbreviated description of each of those parameters is also located below. Download the full document for all the details. <br></p>
+<h2 class="toc_anchors sty__cftkjr__cls" id="FLATSHOT1"><b> <span class="colour sty__40p9e7__cls"> <span class="size sty__5u23c0__cls"> <span class="size sty__pf8rxs__cls"> FLATSHOT*1 </span> </span> </span> </b> <br></h2>
+<p>Parameter 1 – sets the Flatshot view. For face frame images, this usually means either 3, 4, 5, or 6. <br></p>
+<p>Parameter 2 – sets various options, including the parts explode factor, visibility for Drilling, Routing, and the Face Frame itself. <br></p>
+<p>Parameter 3 – sets the offset of the images produced for clarity. Without this parameter, the front and rear views of the face frame would be superimposed over each other. This parameter supports the use of formulas referencing the width of another image to offset or draw the successive images a specified distance and direction away from all the previous images. <br></p>
+<p>Parameter 4 – sets the bounding box extents (not currently used for face frame images). <br></p>
+<p>Parameter 5 – sets the Draw Index options, including the size of the index number, placement of a parts list in X and Y, and the AutoCAD text style when drawing in AutoCAD. <br></p>
+<p>Parameter 6 – sets the use type of the face frame data, whether reports, AutoCAD, or both. <br></p>
+<p>Parameter 7 – sets the AutoCAD layer used when drawing it in AutoCAD. If “3DPartLayer” is entered, a new layer will be created using the same layer name as the 3D part, prefixed with “2D”. Thus, if the 3D part is on the layer named “3DFaceFrameRail,” the face frame created from the draw tokens will be named “2DFaceFrameRail.” Otherwise, enter the name of the layer to be used for the face frame image. <br></p>
+<p>Parameter 8 – sets the parts to include in the image that is created. Create a comma-separated list of parts to include, or preface each part name with a minus sign to create an exclusion list. The side face frame subassembly parts that have been modified contain the word Side to support this feature. If you add “–side” to the list, all the side face frame parts will be excluded to simplify the front view of the face frame. None of the side parts will be superimposed behind front face frame parts, which would cause confusion. It will be important to remember this if you have the impulse to change part names. If you indiscriminately change the names, the resulting face frame image might contain unexpected lines. The part name filters are necessary because the program functionality that determines whether to include parts behind or parts in front of the face frame is not yet fully developed. On rare occasions, the wrong parts are included. <br></p>
+<h2 class="toc_anchors sty__nmu5j9__cls" id="DRAWTEXT1"><b> <span class="colour sty__2zey7w__cls"> <span class="size sty__e3dxfj__cls"> <span class="size sty__xrf3ww__cls"> DRAWTEXT*1 </span> </span> </span> </b> <br></h2>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bbe035324080146aa913d88a1ee583ee3" class="sty__pzg179__cls"> <br>
+</div>
+<div><i> <span class="size sty__28f97o__cls"> Fig. 9 </span> </i> <br>
+</div>
+<p><br></p>
+<p class="MsoNormal sty__oefxny__cls"><span class="highlight sty__fud1a1__cls"> <span class="colour sty__q0jg8w__cls"> <span class="size sty__tk3x9b__cls"> This discussion&nbsp; <b> does not include a full discussion </b> &nbsp;of the DRAWTEXT token. For a full description, download the document “Prompt Drawing Token Tabs” in the <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/kb/articles/library-data-help-documents-with-attachments"> Library Data Help Documents </a> &nbsp;article. Page 5 contains this parameter list. </span> </span> </span> <br></p>
+<p>You will notice that there are many cells containing DRAWTEXT token data in the formula, but only eight cells that display the token name. That means that only those eight rows will include information in the face frame image. <br></p>
+<div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_8967546252426599" class="docsimage sty__bzptwi__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bbfd920c368de4022a712246736c7ce37"> <br>
+</div>
+<div><i> <span class="size sty__aum44o__cls"> Fig. 10 </span> </i> <br>
+</div>
+<p><br></p>
+<p>Parameter 1 – sets the start point of the text in the X-axis in relation to your pick point in AutoCAD. <br></p>
+<p>Parameter 2 – sets the start point of the text in the Y-axis in relation to your pick point in AutoCAD. <br></p>
+<p>Parameter 3 – sets the angle of the text. <br></p>
+<p>Parameter 4 – sets the width of the text. If this value is populated, the text will be converted to multi-line text with word wrap enabled. <br></p>
+<p>Parameter 5 – sets a variety of options. Used only for 15.5 build and greater. Previously 2 DRAWTEXT tokens were needed that used only Parameter 7. Parameter 5 was not used. With those previous versions, one token was used for drawing in AutoCAD, and one for production of the WMF image file in the Metafile Instructions area. Now, those two are unified into a single token and use this parameter. (See the document “Prompt Drawing Token Tabs” for details about how the program decides which format to use under the subheading “How it works” in the DRAWTEXT section.) The last value of the parameter sets the report text height but is not connected to a global variable. If the current text height must be modified, do a find and replace operation to replace the existing height value with a new height value. <br></p>
+<p>Parameter 6 – sets the actual text to display when the image is created. Our default library data formats text used for the part sizes with the use of the function “FormatNumber().” This function returns the number, converts it a fraction if that option is selected, and adds a units suffix. You will notice that the formula for this value concatenates several values to form the final part size string. <br></p>
+<p>Parameter 7 – sets text properties in pre-15.5 builds. It has been retained for backward compatibility even though Parameter 5 now contains the options necessary to draw the image in AutoCAD and populate the database for reports. <br></p>
+<p>Parameter 8 – contains the comment or help text about that token is used for. This is needed because you don’t necessarily know what each token is used for just by looking at the token name and parameters. The formulas for the comments field may apply that token to multiple situations. Look at this parameter to quickly discern what the drawtoken on that row is used for. <br></p>
+<div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_35847091291226674" class="docsimage sty__ga9713__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b0de9484332a54ebdb2cd13258ff23f66"> <br>
+</div>
+<div><i> <span class="size sty__dvqpcx__cls"> Fig. 11 </span> </i> <br>
+</div>
+<p><br></p>
+<h2 class="toc_anchors sty__n9duyx__cls" id="DRAWDIM1"><b> <span class="colour sty__d8r0st__cls"> <span class="size sty__zai8qj__cls"> <span class="size sty__up71le__cls"> DRAWDIM*1 </span> </span> </span> </b> <br></h2>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bc54251beacab40bab9d04fa70c3b59bb" class="sty__44zo15__cls"> <br>
+</div>
+<div><i> <span class="size sty__q4bpzz__cls"> Fig. 12 </span> </i> <br>
+</div>
+<p><br></p>
+<p class="MsoNormal sty__yp5qzv__cls"><span class="highlight sty__serrim__cls"> <span class="colour sty__rdaq8i__cls"> <span class="size sty__pqve6n__cls"> This discussion&nbsp; <b> does not include a full discussion&nbsp; </b> of the DRAWDIM token. For a full description, download the document “Prompt Drawing Token Tabs” in the <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/kb/articles/library-data-help-documents-with-attachments"> Library Data Help Documents </a> &nbsp;article. Page 4 contains this parameter list. </span> </span> </span> <br></p>
+<p>The DRAWDIM token is similar to the DRAWTEXT in that the full token name is dependent on the subassembly bay position. <br></p>
+<p>Parameter 1 – sets the start point of the dimension in the X-axis in relation to your pick point in AutoCAD. <br></p>
+<p>Parameter 2 – sets the start point of the dimension in the Y-axis in relation to your pick point in AutoCAD. <br></p>
+<p>Parameter 3 – sets the endpoint of the dimension in the X-axis in relation to your pick point in AutoCAD. <br></p>
+<p>Parameter 4 - sets the endpoint of the dimension in the Y-axis in relation to your pick point in AutoCAD. <br></p>
+<p>Parameter 5 – sets the length to offset the dimension extension lines from the image. <br></p>
+<p>Parameter 6 – sets the actual dimension text to display when the image is created. Our default library data formats text used for the part sizes with the use of the function “FormatNumber().” <br></p>
+<p>Parameter 7 – sets the AutoCAD dimension style. This parameter uses the two dim style extensions “ALNTXT and “HRZTXT” to correctly position the splitter opening dimensions. (See the Help Center article “Overview Face Frame Images 2 - Custom Functionality” for more information.) <br></p>
+<p>Parameter 8 – contains the comment or help text about that token is used for. This is similar to the DRAWTEXT token described above. <br></p>
+<p>Parameter 9 – contains data that unifies the previous parameters from multiple draw tokens into a single DRAWDIM token. That means that there is now additional placeholder data included in this parameter. This includes Rotation Override, and TextHeight (see document references above). No longer a need for DRAWHDIM or DRAWVDIM, although included for backward compatibility. <br></p>
+<h2 class="toc_anchors sty__q7m3o3__cls" id="Overview_of_Subassembly_Insert_Draw_Tokens"><b> <span class="colour sty__tjwqpy__cls"> <span class="size sty__cfwd57__cls"> <span class="size sty__rcygea__cls"> Overview of Subassembly Insert Draw Tokens </span> </span> </span> </b> <br></h2>
+<p>The draw tokens for the opening dimensions resulting from the use of horizontal or vertical splitters are included within the subassembly inserts containing those splitters. You may view the locations of these by viewing the subassembly files for one of the face frame subassemblies, as shown in Figures 13 &amp; 14. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7beb8b819720084642bcc7849dea585e93" class="sty__ga84vv__cls"> <br>
+</div>
+<div><i> <span class="size sty__xcowcv__cls"> Fig. 13 </span> </i> <br>
+</div>
+<p><br></p>
+<div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_19383389148359687" class="docsimage sty__fii1kc__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bfd70cd9c69ee41689e4aced5bda7ea22"> <br>
+</div>
+<div><i> <span class="size sty__nars34__cls"> Fig. 14 </span> </i> <br>
+</div>
+<p><br></p>
+<p>You will find the part dimension text for the mid-rails of subassembly inserts containing splitters in the nested mid-rail subassembly prompts. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bb7a323ba9d774c4bbb8ed13d9da514b5" class="sty__ycgj0m__cls"> <br>
+</div>
+<div><i> <span class="size sty__yf4068__cls"> Fig. 15 </span> </i> <br>
+</div>
+<p><br></p>
+<div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_3985927043227955" class="docsimage sty__k7qwhb__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bf01fb076c51a4b9a8e8b58ecc90ee4b9"> <br>
+</div>
+<div><i> <span class="size sty__utrli3__cls"> Fig. 16 </span> </i> <br>
+</div>
+<p><br></p>
+<p>You will find these mid stiles and mid-rails only in a component, that splits the opening. It is also possible to add mid stiles and rails by picking points on the adjacent face frame manually. You will rarely find this necessary, as the splitter components are much more powerful. Still, in case you do use them individually, there are additional DRAWTEXT tokens for those times you find it necessary to use a single mid stile or rail. The token name displays a zero unless they are used. <br></p>
+<p>Parameter 7 contains data to change the AutoCAD dimension style to compensate for the size of the opening – either aligned or horizontal (ALNTXT or HRZTXT). This keeps the dimension universally legible regardless of the opening size and was discussed in the first video of this series. There are local prompts that calculate the dimension text length, and the formula in this parameter uses that to use one dim style or the other – to keep the dimension as close to the adjacent part as possible to maximize clarity. <br></p>
+<div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_3269773418673372" class="docsimage sty__d036tp__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b02f503a0d8f8493bb1ad0cfa3d361d45"> <br>
+</div>
+<div><i> <span class="size sty__a787r0__cls"> Fig. 17 </span> </i> <br>
+</div>
+<p><br></p>
+<p>Parameter 9 contains data to format the dimension in the report. The formula will be similar, but not identical, to Parameter 7 containing the AutoCAD dimension properties. This is because the report image creation does not support the use of dimension styles, so the height and rotation of the dimension text must be set to generate the same results as contained in the AutoCAD drawing. There are local prompts that calculate the dimension text length, and the formula in this parameter uses that to use one text height and rotation or the other – to keep the dimension as close to the adjacent part as possible to maximize clarity. <br></p>
+<div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_3650432482225683" class="docsimage sty__fawi5w__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b3b88828583504cb0a9b50b192b7c5f12"> <br>
+</div>
+<div><i> <span class="size sty__kpl8e5__cls"> Fig. 18 </span> </i> <br>
+</div>
+<h2 class="toc_anchors sty__v03n2b__cls" id="What_is_Different_About_Side_Face_Frames"><b> <span class="colour sty__l86fsi__cls"> <span class="size sty__9mpwf6__cls"> <span class="size sty__h35pxf__cls"> What is Different About Side Face Frames </span> </span> </span> </b> <br></h2>
+<p>This section discusses the differences in the tokens with side face frames. <br></p>
+<p>Side face frames do not contain nested subassemblies with mid stiles and rails, but only the applied finished ends that may be used inside the face frame opening. The difference is that there are no nested subassembly inserts containing draw tokens in the mid stiles and rails. All the drawtokens are located in the first level of subassembly prompts and not nested as separate subassemblies. There are two reasons for this. One is that the program does not currently support manual insertion of mid rail subassembly inserts in any plane except the front. Second, the data has not yet been set up to support this in products, except the island starter product that contains opening options for the front, side, and back of the island. <br></p>
+<div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_8276756235263489" class="docsimage sty__j2nbfr__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bc64eb180717044ecb49d2db0316b69cf"> <br>
+</div>
+<div><i> <span class="size sty__wm8o8o__cls"> Fig. 19 </span> </i> <br>
+</div>
+<p><br></p>
+<p>For more information about breaking-up side face frames into multiple panels, refer to the following video: <br></p>
+<div><span class="colour sty__ih0718__cls"> <span class="size sty__me4ojf__cls"> <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/kb/articles/construction-variables-multi-panel-options-at-applied-fe-side-face-frame"> Construction Variables: Multi Panel Options at Applied FE &amp; Side Face Frame </a> </span> </span> <br>
+</div>
+<div><span class="colour sty__0vdlhi__cls"> <span class="size sty__vq4bka__cls"> </span> </span> <br>
+</div>
+<p>The DRAWDIM tokens for the opening dimensions are also located in the first level of subassemblies for these side face frames. <br></p>
+<p>The parameters for the tokens in the side face frames are the same as those found in the stile and rail subassembly inserts previously examined in this article. <br></p>
+<h2 class="toc_anchors sty__cb7wsy__cls" id="Haunched_Face_Frame_Images"><b> <span class="colour sty__iwkj66__cls"> <span class="size sty__ps9mq6__cls"> <span class="size sty__re9bfl__cls"> Haunched Face Frame Images </span> </span> </span> </b> <br></h2>
+<p>Using the Flatshot draw tokens, we get an accurate face frame image when setting the “Face Frame Options &gt; Face Frame Bead Option” to Haunched. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bbf7ffa8a2cc949e293b5be348b1faaa8" class="sty__xmsw6o__cls"> <br>
+</div>
+<div><i> <span class="size sty__8kzovh__cls"> Fig. 20 </span> </i> <br>
+</div>
+<p><br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bc897983dca17445f93f0e59ce21cf00e" class="sty__27gvqg__cls"> <br>
+</div>
+<div><i> <span class="size sty__7cwsu0__cls"> Fig. 21 </span> </i> <br>
+</div>
+<p><br></p>
+<h2 class="toc_anchors sty__poa7d1__cls" id="Flatshot_Tokens_and_Diagonal_Corner_Cabinets"><b> <span class="colour sty__ginfet__cls"> <span class="size sty__o8i693__cls"> <span class="size sty__e4l0rc__cls"> Flatshot Tokens and Diagonal Corner Cabinets </span> </span> </span> </b> <br></h2>
+<p>Because of how the flatshot image is generated for diagonal corner cabinets, there are additional nested subassemblies in these products. Look at the subassembly “Base FF Diagonal” and nested subassembly “Base FF Diagonal Drawing” which is used only to draw the face frame image. It uses negative materials, so nothing is added to the parts list. <br></p>
+<p>There are differences with the parameter values when compared to a normal front face frame. You can discover these differences by this comparison. <br></p>
+<div><span class="KB_New_Editor_Highlights sty__n57773__cls"> <img src="https://img.zohostatic.com/zde/static/images/info.png" data-type="non-resize" data-image="contentStyle" class="sty__coc5rg__cls">
+  <div>
+   It is normal if the layer named “3D_OBLIQUE FF DRAWING 3D LAYER OFF 2D ON” is turned on to see an extra face frame in the 3D image as shown in Figure 22. This is for drawing purposes only and does not create extra parts. Simply turn the layer off if you don’t want to see that 3D image. The layer named “2D_OBLIQUE FF DRAWING 3D LAYER OFF 2D ON” should be turned on to see the 2D image of the face frame. <br>
+  </div> </span>
+</div>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b103e78b65317494aa9d1cd8729b3fcc1" class="sty__lim7re__cls"> <br>
+</div>
+<div><i> <span class="size sty__edebto__cls"> Fig. 22 </span> </i> <br>
+</div>
+<p><br></p>
+<h2 class="toc_anchors" id="Flatshot_Tokens_and_Pie_Cut_Corner_Cabinets"><b> <span class="colour sty__gknbg1__cls"> <span class="size sty__jgep4k__cls"> Flatshot Tokens and Pie Cut Corner Cabinets </span> </span> </b> <br></h2>
+<p>The flatshot drawing token does not display the right-angled face frame of pie cut corner cabinets opened up as a flat drawing. Instead, it displays it as two separate drawings with text located on the adjacent parts, indicating a return on the appropriate side. <br></p>
+<div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bbfc5273b37084a1a89450893aa776df8" class="sty__l6qjlh__cls"> <br>
+</div>
+<div><i> <span class="size sty__ysbx5h__cls"> Fig. 23 </span> </i> <br>
+</div>
+<p><br></p>
+<p>No reverse view images are set up in the default library data. <br></p>
+<h2 class="toc_anchors" id="Differences_and_Similarities_Between_Face_Frame_Drawing_Tokens"><b> <span class="colour sty__el4o79__cls"> <span class="size sty__xan5sd__cls"> Differences and Similarities Between Face Frame Drawing Tokens </span> </span> </b> <br></h2>
+<p>The face frame images produced for base cabinets, tall cabinets, and upper cabinets are generally the same. A few of the notable differences are noted below. <br></p>
+<ol>
+ <li class="sty__dxq6rq__cls">Base and Tall cabinets include the option to extend the face frame to the floor, whereas the Uppers do not. <br></li>
+ <li class="sty__8qz5qz__cls">The tokens and parameters for the side face frames are interchangeable between the base cabinets, tall, and uppers except for the extend to floor option. <br></li>
+</ol>
+<h2 class="toc_anchors" id="Tutorial_How_to_Automate_a_Page_Border_for_the_AutoCAD_Face____________Frame_Images"><b> <span class="colour sty__t83jsp__cls"> <span class="size sty__pzh7gz__cls"> Tutorial:&nbsp; How to Automate a Page Border for the AutoCAD Face Frame Images </span> </span> </b> <br></h2>
+<p>We have developed a method of automating the addition of page border and title block when the AutoCAD face frame images are generated. We use the token DRAWBLOCK in the same Face Frame Drawing Instructions are of the subassembly prompts to achieve this. <br></p>
+<ol>
+ <li class="sty__zh54qs__cls">Make sure you have created a title block, or verify that the file named “Dynamic Product Image Tblock.dwg” exists at: &lt;path to Microvellum Data&gt;\Graphics\Drawing Blocks\ <br></li>
+ <li class="sty__16pf31__cls">Open the subassembly prompts in the workbook designer and find the Face Frame Drawing Instructions area. <br></li>
+ <li class="sty__u8s6by__cls">Carefully insert a partial row of cells in the columns that affect only the Face Frame Drawing Instructions and its ten parameters. Do not enter a row across the entire subassembly workbook as that would create blank rows in other token sections, causing errors and unexpected results. <br></li>
+ <div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_5001380485535862" class="docsimage sty__sm24a5__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bbcfecb8f9c1842d3b0f6b6418469fbaa"> <br>
+ </div>
+ <div><i> <span class="size sty__5g1h7d__cls"> Fig. 24 </span> </i> <br>
+ </div>
+ <p><br></p>
+ <li class="sty__b4gxpf__cls">Select the option button for Shift Down from the Insert Cells box. <br></li>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b827ddb2017634eb69cd0ffb7eaa56133" class="sty__2my22x__cls"> <br>
+ </div>
+ <div><i> <span class="size sty__9gslrt__cls"> Fig. 25 </span> </i> <br>
+ </div>
+ <p><br></p>
+ <li class="sty__b8lrug__cls">Enter values as follows to start. You may also replace the formulas with hard locked values. <br></li>
+ <ol>
+  <li class="sty__cx8y4v__cls">Token name: DRAWBLOCK*1 <br></li>
+  <li class="sty__9n0m3v__cls">Parameter 1: =IF(Units=1,-20, -508) <br></li>
+  <li class="sty__effa5i__cls">Parameter 2: = IF(Units=1,-10, -254) <br></li>
+  <li class="sty__0noa1a__cls">Parameter 3: &lt;enter the full path of the preferred title block AutoCAD drawing on disc&gt; <br></li>
+  <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bc440f7f8198c470488d52a425bb1f2ee" class="sty__qas9wv__cls"> <br>
+  </div>
+  <div><i> <span class="size sty__nvfw35__cls"> Fig. 26 </span> </i> <br>
+  </div>
+  <p><br></p>
+  <p>Modify these values to match your requirements. <br></p>
+ </ol>
+ <li class="sty__kip29x__cls">Verify that the values for Offset X Dimension and Offset Y Dimension in the Face Frame Image Settings of Product Drawing Setup is set as preferred. <br></li>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7b74ec95e339a84b83a2331acf31ddab26" class="sty__dnli1u__cls"> <br>
+ </div>
+ <div><i> <span class="size sty__29ds4v__cls"> Fig. 27 </span> </i> <br>
+ </div>
+ <p><br></p>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bf7ddd440ae9d417da91ca7ba1cc23fd6" class="sty__lfb2mh__cls"> <br>
+ </div>
+ <div><i> <span class="size sty__t2whcb__cls"> Fig. 28 </span> </i> <br>
+ </div>
+</ol>
+<h2 class="toc_anchors" id="Tutorial_How_to_Automate_a_Parts_List_for_the_AutoCAD____________Face_Frame_Images"><b> <span class="colour sty__zpxnma__cls"> <span class="size sty__juqx45__cls"> Tutorial:&nbsp; How to Automate a Parts List for the AutoCAD Face Frame Images </span> </span> </b> <br></h2>
+<p>We have also developed a procedure for automating the addition of a parts list to the AutoCAD face frame image. <br></p>
+<ol>
+ <li class="sty__8jkoga__cls">Open the subassembly prompts in the workbook designer and find the Face Frame Drawing Instructions area. <br></li>
+ <li class="sty__1o90tc__cls">In Parameter 5 of FLATSHOT*10, enter the locations in X and Y of the parts list. This is shown in Figure 29. <br></li>
+ <div><img data-zdeskdocselectedclass="best" data-zdeskdocid="img_6359968287128646" class="docsimage sty__2qcqzu__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bfb27f1881d7c46a3b08342286ab319f1"> <br>
+ </div>
+ <div><i> <span class="size sty__7mkgdp__cls"> Fig. 29 </span> </i> <br>
+ </div>
+ <p><br></p>
+ <div><img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=6hy7bdf68b9c7e9fc4ae0b4f715e581769818" class="sty__ibxpdl__cls"> <br>
+ </div>
+ <div><i> <span class="size sty__64w60e__cls"> Fig. 30 </span> </i> <br>
+ </div>
+</ol>
+<p><br></p>
+<p>Adjust the parameters as needed to generate the parts list as desired. <br></p>
+<h2 class="toc_anchors" id="Conclusion"><b> <span class="colour sty__1gxf3e__cls"> <span class="size sty__54ct2y__cls"> Conclusion </span> </span> </b> <br></h2>
+<p>In this section, you have learned how to customize the face frame images to display the images in AutoCAD drawings, or in the reports as needed by your company. <br></p>
+<p>Here is the list of subjects we have covered in this section: <br></p>
+<ul>
+ <li><span class="size sty__5r5keq__cls">
+   <div>
+    Face Frame Image Draw Tokens <br>
+   </div> </span></li>
+ <li><span class="size sty__r04vyh__cls">
+   <div>
+    Using the Parts Properties Interface to Modify Draw Tokens <br>
+   </div> </span></li>
+ <li><span class="size sty__berr6i__cls">
+   <div>
+    Differences in Previous and Current Face Frame Image Creation <br>
+   </div> </span></li>
+ <li><span class="size sty__n9mj0s__cls">
+   <div>
+    Overview of Draw Tokens in Workbook Designer <br>
+   </div> </span></li>
+ <li><span class="size sty__pku82g__cls">
+   <div>
+    Overview of Subassembly Insert Draw Tokens <br>
+   </div> </span></li>
+ <li><span class="size sty__ix535s__cls">
+   <div>
+    What is Different About Side Face Frames <br>
+   </div> </span></li>
+ <li><span class="size sty__6ho9e2__cls">
+   <div>
+    Haunched Face Frame Images <br>
+   </div> </span></li>
+ <li><span class="size sty__5frf9e__cls">
+   <div>
+    Flatshot Tokens and Diagonal Corner Cabinets <br>
+   </div> </span></li>
+ <li><span class="size sty__g7c6dm__cls">
+   <div>
+    Flatshot Tokens and Pie Cut Corner Cabinets <br>
+   </div> </span></li>
+ <li><span class="size sty__dvyb9p__cls">
+   <div>
+    Differences and Similarities Between Face Frame Drawing Tokens <br>
+   </div> </span></li>
+ <li><span class="size sty__99apey__cls">
+   <div>
+    Tutorial: How to Automate a Page Border for the AutoCAD Face Frame Images <br>
+   </div> </span></li>
+ <li><span class="size sty__lpzym4__cls">
+   <div>
+    Tutorial: How to Automate a Parts List for the AutoCAD Face Frame Images <br>
+   </div> </span></li>
+</ul>
+<p>The next article in the series will describe a few recent changes to the face frame images. <br></p>
+<p class="MsoNormal"><iframe sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-popups allow-downloads" width="560" height="315" src="https://www.youtube.com/embed/dFsjxMPLgdE" allowfullscreen="" class="sty__ub91q0__cls"> </iframe> &nbsp; <br></p>
+<div><br>
+</div><style type="text/css" data-css-purify-styler="1755097109979">.sty__3k8vg7__cls{line-height: normal; background: white}
+.sty__nhf9e5__cls{color: rgb(34, 34, 34)}
+.sty__nkeprf__cls{font-size: 11.5pt}
+.sty__npo7yx__cls{font-size: 24px}
+.sty__r4hz50__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__o0q3qt__cls{font-size: 13px}
+.sty__ebr5wl__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__g2v0vx__cls{font-size: 13px}
+.sty__2m5dfa__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ltclyr__cls{font-size: 13px}
+.sty__wqrf3s__cls{line-height: normal; background: white}
+.sty__2bhkii__cls{color: rgb(34, 34, 34)}
+.sty__qp8jis__cls{font-size: 11.5pt}
+.sty__zwcpj7__cls{font-size: 24px}
+.sty__cx5rra__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__yckqsv__cls{font-size: 13px}
+.sty__a0h3p5__cls{line-height: normal}
+.sty__ltkcbb__cls{background-color: white}
+.sty__g6lsci__cls{color: rgb(34, 34, 34)}
+.sty__gy28uw__cls{font-size: 11.5pt}
+.sty__vl2u30__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__dydbiw__cls{font-size: 13px}
+.sty__hgrao8__cls{line-height: normal; background: white}
+.sty__nhdpgn__cls{color: rgb(34, 34, 34)}
+.sty__0eh7xk__cls{font-size: 11.5pt}
+.sty__rpk38g__cls{font-size: 24px}
+.sty__ez5wg2__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__rxp24x__cls{font-size: 13px}
+.sty__k9equg__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__j8g9cl__cls{font-size: 13px}
+.sty__uizdd5__cls{line-height: normal; background: white}
+.sty__r92n6f__cls{color: rgb(34, 34, 34)}
+.sty__y0myqn__cls{font-size: 11.5pt}
+.sty__ly9nai__cls{font-size: 24px}
+.sty__dimoqc__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 669px; height: auto}
+.sty__hnxa90__cls{font-size: 13px}
+.sty__gse4qo__cls{line-height: normal}
+.sty__n34g7o__cls{background-color: white}
+.sty__qjdds4__cls{color: rgb(34, 34, 34)}
+.sty__4t5qk2__cls{font-size: 11.5pt}
+.sty__cftkjr__cls{line-height: normal; background: white}
+.sty__40p9e7__cls{color: rgb(34, 34, 34)}
+.sty__5u23c0__cls{font-size: 11.5pt}
+.sty__pf8rxs__cls{font-size: 24px}
+.sty__nmu5j9__cls{line-height: normal; background: white}
+.sty__2zey7w__cls{color: rgb(34, 34, 34)}
+.sty__e3dxfj__cls{font-size: 11.5pt}
+.sty__xrf3ww__cls{font-size: 24px}
+.sty__pzg179__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__28f97o__cls{font-size: 13px}
+.sty__oefxny__cls{line-height: normal}
+.sty__fud1a1__cls{background-color: white}
+.sty__q0jg8w__cls{color: rgb(34, 34, 34)}
+.sty__tk3x9b__cls{font-size: 11.5pt}
+.sty__bzptwi__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 669px; height: auto}
+.sty__aum44o__cls{font-size: 13px}
+.sty__ga9713__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 669px; height: auto}
+.sty__dvqpcx__cls{font-size: 13px}
+.sty__n9duyx__cls{line-height: normal; background: white}
+.sty__d8r0st__cls{color: rgb(34, 34, 34)}
+.sty__zai8qj__cls{font-size: 11.5pt}
+.sty__up71le__cls{font-size: 24px}
+.sty__44zo15__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__q4bpzz__cls{font-size: 13px}
+.sty__yp5qzv__cls{line-height: normal}
+.sty__serrim__cls{background-color: white}
+.sty__rdaq8i__cls{color: rgb(34, 34, 34)}
+.sty__pqve6n__cls{font-size: 11.5pt}
+.sty__q7m3o3__cls{line-height: normal; background: white}
+.sty__tjwqpy__cls{color: rgb(34, 34, 34)}
+.sty__cfwd57__cls{font-size: 11.5pt}
+.sty__rcygea__cls{font-size: 24px}
+.sty__ga84vv__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__xcowcv__cls{font-size: 13px}
+.sty__fii1kc__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 664px; height: auto}
+.sty__nars34__cls{font-size: 13px}
+.sty__ycgj0m__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__yf4068__cls{font-size: 13px}
+.sty__k7qwhb__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 669px; height: auto}
+.sty__utrli3__cls{font-size: 13px}
+.sty__d036tp__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 669px; height: auto}
+.sty__a787r0__cls{font-size: 13px}
+.sty__fawi5w__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 669px; height: auto}
+.sty__kpl8e5__cls{font-size: 13px}
+.sty__v03n2b__cls{line-height: normal; background: white}
+.sty__l86fsi__cls{color: rgb(34, 34, 34)}
+.sty__9mpwf6__cls{font-size: 11.5pt}
+.sty__h35pxf__cls{font-size: 24px}
+.sty__j2nbfr__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 631px; height: auto}
+.sty__wm8o8o__cls{font-size: 13px}
+.sty__ih0718__cls{color: rgb(34, 34, 34)}
+.sty__me4ojf__cls{font-size: 11.5pt}
+.sty__0vdlhi__cls{color: rgb(34, 34, 34)}
+.sty__vq4bka__cls{font-size: 11.5pt}
+.sty__cb7wsy__cls{line-height: normal; background: white}
+.sty__iwkj66__cls{color: rgb(34, 34, 34)}
+.sty__ps9mq6__cls{font-size: 11.5pt}
+.sty__re9bfl__cls{font-size: 24px}
+.sty__xmsw6o__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__8kzovh__cls{font-size: 13px}
+.sty__27gvqg__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__7cwsu0__cls{font-size: 13px}
+.sty__poa7d1__cls{line-height: normal; background: white}
+.sty__ginfet__cls{color: rgb(34, 34, 34)}
+.sty__o8i693__cls{font-size: 11.5pt}
+.sty__e4l0rc__cls{font-size: 24px}
+.sty__n57773__cls{margin: 10px 0px; position: relative; display: inline-block; padding: 10px 10px 10px 40px; background-color: rgb(193, 225, 244); border-right: 5px solid rgb(167, 212, 234)}
+.sty__coc5rg__cls{position: absolute; left: 12px; top: 14px; width: 15px; max-width: 100%}
+.sty__lim7re__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__edebto__cls{font-size: 13px}
+.sty__gknbg1__cls{color: rgb(34, 34, 34)}
+.sty__jgep4k__cls{font-size: 24px}
+.sty__l6qjlh__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__ysbx5h__cls{font-size: 13px}
+.sty__el4o79__cls{color: rgb(34, 34, 34)}
+.sty__xan5sd__cls{font-size: 24px}
+.sty__dxq6rq__cls{list-style-type: decimal}
+.sty__8qz5qz__cls{list-style-type: decimal}
+.sty__t83jsp__cls{color: rgb(34, 34, 34)}
+.sty__pzh7gz__cls{font-size: 24px}
+.sty__zh54qs__cls{list-style-type: decimal}
+.sty__16pf31__cls{list-style-type: decimal}
+.sty__u8s6by__cls{list-style-type: decimal}
+.sty__sm24a5__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 669px; height: auto}
+.sty__5g1h7d__cls{font-size: 13px}
+.sty__b4gxpf__cls{list-style-type: decimal}
+.sty__2my22x__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__9gslrt__cls{font-size: 13px}
+.sty__b8lrug__cls{list-style-type: decimal}
+.sty__cx8y4v__cls{list-style-type: lower-alpha}
+.sty__9n0m3v__cls{list-style-type: lower-alpha}
+.sty__effa5i__cls{list-style-type: lower-alpha}
+.sty__0noa1a__cls{list-style-type: lower-alpha}
+.sty__qas9wv__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__nvfw35__cls{font-size: 13px}
+.sty__kip29x__cls{list-style-type: decimal}
+.sty__dnli1u__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__29ds4v__cls{font-size: 13px}
+.sty__lfb2mh__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__t2whcb__cls{font-size: 13px}
+.sty__zpxnma__cls{color: rgb(34, 34, 34)}
+.sty__juqx45__cls{font-size: 24px}
+.sty__8jkoga__cls{list-style-type: decimal}
+.sty__1o90tc__cls{list-style-type: decimal}
+.sty__2qcqzu__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box; width: 669px; height: auto}
+.sty__7mkgdp__cls{font-size: 13px}
+.sty__ibxpdl__cls{padding: 20px 20px 0px 0px; max-width: 100%; box-sizing: border-box}
+.sty__64w60e__cls{font-size: 13px}
+.sty__1gxf3e__cls{color: rgb(34, 34, 34)}
+.sty__54ct2y__cls{font-size: 24px}
+.sty__5r5keq__cls{font-size: 11.5pt}
+.sty__r04vyh__cls{font-size: 11.5pt}
+.sty__berr6i__cls{font-size: 11.5pt}
+.sty__n9mj0s__cls{font-size: 11.5pt}
+.sty__pku82g__cls{font-size: 11.5pt}
+.sty__ix535s__cls{font-size: 11.5pt}
+.sty__6ho9e2__cls{font-size: 11.5pt}
+.sty__5frf9e__cls{font-size: 11.5pt}
+.sty__g7c6dm__cls{font-size: 11.5pt}
+.sty__dvyb9p__cls{font-size: 11.5pt}
+.sty__99apey__cls{font-size: 11.5pt}
+.sty__lpzym4__cls{font-size: 11.5pt}
+.sty__ub91q0__cls{width: 750px; height: 425px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="11 May 2021 12:15 AM"><span>4 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fface-frame-images-3-customizing-in-the-spreadsheet&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fface-frame-images-3-customizing-in-the-spreadsheet" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fface-frame-images-3-customizing-in-the-spreadsheet" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/face-frame-images-3-customizing-in-the-spreadsheet" target="_blank">https://community.microvellum.com/portal/en/kb/articles/face-frame-images-3-customizing-in-the-spreadsheet</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:58:33 AM</p>
+            <p><strong>Categories:</strong> Engineering > Library Data > Foundation Library > Library Add-ons</p>
+            <p><em>Note: This article was scraped separately due to video/animation content.</em></p>
+        </div>
+    </div>
+</body>
+</html>

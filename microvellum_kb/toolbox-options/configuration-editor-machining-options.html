@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__nwxev4__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__cltm80__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__tdwpeh__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__tuoid4__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__7xwzs2__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__86po5o__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__dd00kc__cls{padding: 20px; max-width: 100%; box-sizing: border-box; width: 444px; height: 373px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Configuration Editor: Machining Options</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><div>
+   This article provides an overview of the options and settings available on the 
+  <b>Machining</b> tab of the Configuration Editor (Options) Interface.&nbsp; For a complete list of available tabs and options visit <a rel="noopener noreferrer" target="_blank" href="https://community.microvellum.com/portal/en/kb/articles/options">Overview: Configuration Editor (Options) Interface.</a><br> 
+ </div><hr> 
+ <p> The machining tab contains settings that apply when you create G-Code for a CNC machine. The settings range from setting the current drawing tool file you want to use and accessing the tool file to change additional options with G-Code generation.&nbsp; <br> </p> 
+ <div> 
+   
+  <img src="https://community.microvellum.com/galleryDocuments/edbsna12e717b3d4fdebba43a8682bfc71ed99c0a2ff0d6c73c9bcfcff8c7a85e15f6e6e6d3bbc84e81f07ec4c169111ede0b?inline=true" class="sty__nwxev4__cls"><br> 
+ </div> 
+ <h3 class="toc_anchors" id="Single_Part_Drawings"> <b> Single Part Drawings </b> <br> </h3> 
+ <blockquote> 
+  <p> Parts processed with a Single Part G-code station can generate a drawing into a drawing file just like a nest. Processing parts using a single part g-code station creates a parts.dwg file in the material folder of the corresponding work order. The option selected from the single part drawings settings will determine the creation method of the parts drawings. <br> </p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7x88d94622a4504c6e8456aef007fe621b" class="sty__cltm80__cls"> 
+   <br> 
+  </div> 
+  <p> <b> None </b> &nbsp;– No parts are drawn into the parts.dwg file. <br> </p> 
+  <p> <b> Draw Parts with Errors Only </b> &nbsp;– Draws only parts with errors in their G-Code into the parts.dwg file. <br> </p> 
+  <p> <b> Draw All Parts </b> &nbsp;– Draws all parts into the parts.dwg file. <br> </p> 
+  <p> <b> Draw All Parts with Dimensions </b> – Draws all parts into the parts.dwg file with the dimensions set in the&nbsp; <i> Dimension Settings </i> &nbsp;button,&nbsp;dimension the overall part size, routing, sawing, vertical drilling, and horizontal drilling machining operations. <br> </p> 
+ </blockquote> 
+ <h3 class="toc_anchors" id="G-Code_File_Naming_Convention"> <b> G-Code File Naming Convention </b> <br> </h3> 
+ <blockquote> 
+  <p> <b> Item Number + Part Number </b> –&nbsp;This naming convention generates more descriptive G-Code file names, but increases the chance for duplicate file names. <br> </p> 
+  <p> <b> Incremental </b> – This naming convention generates a random file name single part G-Code files and ensures that the program creates unique file names. <br> </p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7x9261d53477e740738738efff3322fd2f" class="sty__tdwpeh__cls"> 
+   <br> 
+  </div> 
+ </blockquote> 
+ <h3 class="toc_anchors" id="WMF_DXF_Settings"><b>WMF, DXF Settings </b> <br> </h3> 
+ <blockquote> 
+  <b>WMF Settings&nbsp;</b>–&nbsp;<span>Properties that control the dimensions for overall part size, routing, sawing, vertical drilling, and horizontal drilling machining operations.</span><p><b>DXF Settings&nbsp;</b>– Properties that determine and control how the dimension styles present within a DXF file apply in routing, sawing, vertical drilling, and horizontal drilling machining operations. Changes in dimensions must be made within the DXF template.<br></p><div><b>Path to DXF Template&nbsp;</b>– Click browse to select the path to the file folder wherein one's DXF template is stored.&nbsp;</div><div><br></div> 
+  <div> 
+    
+   <img src="https://community.microvellum.com/galleryDocuments/edbsn40dab2ab908d9cf8d5864d1b67b9a04b323b0a37bb54e1d3860939e3861af90f037205f3a6dc4f3ab1be77d506ebc20c?inline=true" class="sty__tuoid4__cls"><br> 
+  </div> 
+ </blockquote> 
+ <h3 class="toc_anchors" id="G-Code_File_Name_Options"> <b> G-Code File Name Options </b> <br> </h3> 
+ <blockquote> 
+  <p> <b> Remove Duplicate G-Code Files </b> – Compares each G-Code file created for duplicate files. If the program encounters a duplicate G-Code file, all references within the database will match the original file. Removing duplicate G-Code files reduces redundancy and allows a single program for identical parts. <br> </p> 
+  <p> <b> Separate G-Code Files by Material </b> &nbsp;– Creates the G-Code files for nests and single parts in separate folders based on material. <br> </p> 
+  <p> <b> Clear File Names </b> – Clears the default program functionality of assigning file names that match the data specified in the cut parts file, column N, if data exists there. If this checkbox is checked, the program will apply the names specified in the cut parts file. If it is cleared, the program will apply random file names. <br> </p> 
+  <p> <b> Create Sequential File Names </b> – Causes the program to assign file names sequentially instead of randomly. <br> </p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7x5c1e501cedec4100968b7315bbcd0742" class="sty__7xwzs2__cls"> 
+   <br> 
+  </div> 
+ </blockquote> 
+ <h3 class="toc_anchors" id="Machining_Token_Properties"> <b> Machining Token Properties </b> <br> </h3> 
+ <blockquote> 
+  <p> Controls specific machining token properties. <br> </p> 
+  <p> <b> Allow Offset Parameter (4) on HOLES Token -&nbsp; </b> enables parameter (4) of the Holes Token (see Fig. 31) <br> </p> 
+  <p> <b> Pocket Corner Notch Token -&nbsp; </b> sets pocketing for corner notch instead of a cutout. <br> </p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7xf8d93cd8808c46afa7a04aeb99e61b35" class="sty__86po5o__cls"> 
+   <br> 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div> 
+   <img data-zdeskdocselectedclass="original" data-zdeskdocid="img_34569439871768637" class="docsimage sty__dd00kc__cls" src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7x5d454fba2c2241a9b6d55c6c19996ca1"> 
+   <br> 
+  </div> 
+ </blockquote>
+ <div>
+  <br>
+ </div>
+<style type="text/css" data-css-purify-styler="1755096194813">.sty__nwxev4__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__cltm80__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__tdwpeh__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__tuoid4__cls{padding: 0px; max-width: 100%; box-sizing: border-box}
+.sty__7xwzs2__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__86po5o__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__dd00kc__cls{padding: 20px; max-width: 100%; box-sizing: border-box; width: 444px; height: 373px}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="26 Oct 2023 04:02 PM"><span>1 year ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fconfiguration-editor-machining-options&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fconfiguration-editor-machining-options" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fconfiguration-editor-machining-options" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/configuration-editor-machining-options" target="_blank">https://community.microvellum.com/portal/en/kb/articles/configuration-editor-machining-options</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:43:15 AM</p>
+            <p><strong>Categories:</strong> Toolbox Options</p>
+        </div>
+    </div>
+</body>
+</html>

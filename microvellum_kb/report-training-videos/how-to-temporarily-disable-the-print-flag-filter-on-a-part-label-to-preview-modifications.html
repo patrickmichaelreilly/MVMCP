@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__excpj5__cls{background-color: white}
+.sty__43to2s__cls{color: rgb(34, 34, 34)}
+.sty__yx70zm__cls{font-size: 11pt}
+.sty__4ueevq__cls{box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__m01g03__cls{background-color: white}
+.sty__juy93r__cls{color: rgb(34, 34, 34)}
+.sty__kvkeag__cls{font-size: 11pt}
+.sty__rtil47__cls{list-style-type: decimal}
+.sty__iruk2m__cls{list-style-type: decimal}
+.sty__st584u__cls{color: rgb(34, 34, 34)}
+.sty__m2oh68__cls{font-size: 14.6667px}
+.sty__7kp3ae__cls{list-style-type: decimal}
+.sty__6ani0c__cls{list-style-type: decimal}
+.sty__px6uzw__cls{color: rgb(34, 34, 34)}
+.sty__r3fg2t__cls{font-size: 14.6667px}
+.sty__cuaqky__cls{list-style-type: decimal}
+.sty__2zqmeb__cls{list-style-type: decimal}
+.sty__fwdoih__cls{color: rgb(34, 34, 34)}
+.sty__c8lt33__cls{font-size: 14.6667px}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">How to Temporarily Disable the Print Flag Filter on a Part Label to Preview Modifications</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0"><p><span class="highlight sty__excpj5__cls"><span class="colour sty__43to2s__cls"><span class="size sty__yx70zm__cls">The Microvellum Part Labels contain functionality to
+      limit the part labels that are printed to only those that are selected when
+      printing from patterns. This is possible from Toolbox or Production in the
+      Processing Center, or Alis.</span></span></span><br></p><p class="sty__4ueevq__cls"><span class="highlight sty__m01g03__cls"><span class="colour sty__juy93r__cls"><span class="size sty__kvkeag__cls">To make this
+      possible, we have defined a databand filter inside the Part Label reports. This
+      works well for its intended purpose, but when the part label is being modified
+      in the report designer, it prevents the rendered report from being displayed if
+      the database print flag data has not been set. Here is the procedure to
+      temporarily disable that filter to make it possible to preview the completed
+      modifications. Also, see the attached video for the procedure.</span></span></span><br></p><ol><li class="sty__rtil47__cls">Open the report in the Report Designer. <br></li><li class="sty__iruk2m__cls"><span class="colour sty__st584u__cls"><span class="size sty__m2oh68__cls">Make sure the report databands are being displayed and double click on the top-level databand if there are more than one. Usually, the data source for this databand is "OptimizationResults." If the blue databand headers are not displayed, activate them by clicking the File tab of the report designer, the Main tab to display the main options, then make sure the "Show Header" checkbox is checked. </span></span> <br></li><li class="sty__7kp3ae__cls">After you have double-clicked on the correct databand, click the Filters tab on either the left or right side depending on the version of Microvellum you are using.&nbsp; <br></li><li class="sty__6ani0c__cls"><span class="colour sty__px6uzw__cls"><span class="size sty__r3fg2t__cls">Uncheck the checkbox for "Filter On" and click OK. </span></span> <br></li><li class="sty__cuaqky__cls">Make the desired modifications, preview the report to make sure there are no errors that will prevent the report form opening in the future. <br></li><li class="sty__2zqmeb__cls"><span class="colour sty__fwdoih__cls"><span class="size sty__c8lt33__cls">Turn the filter back on, and save the report.</span></span><br></li></ol><style type="text/css" data-css-purify-styler="1755096532710">.sty__excpj5__cls{background-color: white}
+.sty__43to2s__cls{color: rgb(34, 34, 34)}
+.sty__yx70zm__cls{font-size: 11pt}
+.sty__4ueevq__cls{box-sizing: border-box; orphans: 2; widows: 2; word-spacing: 0px}
+.sty__m01g03__cls{background-color: white}
+.sty__juy93r__cls{color: rgb(34, 34, 34)}
+.sty__kvkeag__cls{font-size: 11pt}
+.sty__rtil47__cls{list-style-type: decimal}
+.sty__iruk2m__cls{list-style-type: decimal}
+.sty__st584u__cls{color: rgb(34, 34, 34)}
+.sty__m2oh68__cls{font-size: 14.6667px}
+.sty__7kp3ae__cls{list-style-type: decimal}
+.sty__6ani0c__cls{list-style-type: decimal}
+.sty__px6uzw__cls{color: rgb(34, 34, 34)}
+.sty__r3fg2t__cls{font-size: 14.6667px}
+.sty__cuaqky__cls{list-style-type: decimal}
+.sty__2zqmeb__cls{list-style-type: decimal}
+.sty__fwdoih__cls{color: rgb(34, 34, 34)}
+.sty__c8lt33__cls{font-size: 14.6667px}
+</style></div></div><div><div><h3 class="Attachment__attachmentHeading">Attachments :</h3><div><div class="Attachment__attachRow commonStyle__inlineBlock commonStyle__maxW100per" data-id="attachment_listitem"><div data-id="_down_0yntt4273157fa6bf4a54b5629dc1f7888633" class="Attachment__downloadIcon commonStyle__cursor commonStyle__fRight" title="Download"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__grey Icon__hoverbrand" alt="Download"><use xlink:href="#download"></use></svg></div><div class="Attachment__attachIcon commonStyle__fLeft commonStyle__positionRel Attachment__cursor commonStyle__cursor"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__large Icon__grey" alt="PartLabels_Disable_Print_Flag_Filter.mp4"><use xlink:href="#mp4"></use></svg></div><div class="Attachment__attachProperty commonStyle__overflowDotted commonStyle__displayBlock"><div data-id="0yntt4273157fa6bf4a54b5629dc1f7888633__attachName" class="Attachment__attachName commonStyle__displayBlock commonStyle__overflowDotted Attachment__cursor commonStyle__cursor">PartLabels_Disable_Print_Flag_Filter.mp4</div><div class="Attachment__attachSize">5 MB</div></div></div></div></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="06 Aug 2020 03:02 PM"><span>5 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fhow-to-temporarily-disable-the-print-flag-filter-on-a-part-label-to-preview-modifications&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fhow-to-temporarily-disable-the-print-flag-filter-on-a-part-label-to-preview-modifications" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fhow-to-temporarily-disable-the-print-flag-filter-on-a-part-label-to-preview-modifications" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/how-to-temporarily-disable-the-print-flag-filter-on-a-part-label-to-preview-modifications" target="_blank">https://community.microvellum.com/portal/en/kb/articles/how-to-temporarily-disable-the-print-flag-filter-on-a-part-label-to-preview-modifications</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:48:53 AM</p>
+            <p><strong>Categories:</strong> Report Training Videos</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Woodworkers, By Woodworkers - Microvellum KB</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .article-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .breadcrumbs {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .breadcrumbs a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .article-meta {
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        h1, h2, h3 { color: #2c5aa0; }
+        img { max-width: 100%; height: auto; }
+        .KB_New_Editor_Highlights {
+            background-color: #fceda0;
+            border-right: 5px solid #f2db68;
+            margin: 10px 0;
+            padding: 10px 10px 10px 40px;
+            position: relative;
+        }
+        /* Preserve original styling */
+        .sty__pd58f4__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__cbcuhw__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__mutmle__cls{list-style-type: decimal}
+.sty__5iq71t__cls{list-style-type: decimal}
+.sty__kde5u6__cls{list-style-type: decimal}
+.sty__kfnh5j__cls{list-style-type: decimal}
+.sty__3wxeth__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__rt5wah__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="breadcrumbs">
+            <a href="../index.html">← Back to Index</a>
+             | 
+        </div>
+        
+        <div class="article-content">
+            <div class="KbDetailLtContainer__articleTitle"><h1 data-id="article_Title" class="KbDetailLtContainer__detailHeader commonStyle__detailHeader" aria-describedby="article_TOC">Configuration Editor: Data Access Options</h1></div><div class="KbDetailLtContainer__pdfView commonStyle__cursor commonStyle__positionAbs " title="Download as PDF" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__midMedium Icon__greyShade95 Icon__hoverbrand" alt="Download as PDF"><use xlink:href="#pdfDownload"></use></svg></div><div data-id="articlePrint" class="KbDetailLtContainer__printView commonStyle__cursor commonStyle__positionAbs Printcontainer__print" title="Print" tabindex="0" aria-label="Print Article"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__xMedium Icon__greyShade95 Icon__hoverbrand" alt="Print"><use xlink:href="#print"></use></svg></div><div data-id="readerView" class="KbDetailLtContainer__readerView KbDetailLtContainer__readerViewNormal" title="Reader view" role="button"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__greyShade95 Icon__hoverbrand" alt="Reader view"><use xlink:href="#readerViewRight"></use></svg></div><div id="articelDetail" class="KbDetailLtContainer__articelDetail" role="article"><div class="KbDetailLtContainer__articleContent commonStyle__positionRel commonStyle__wordWrapWord commonStyle__wordBreakWord ArticleDetail_description" id="article_TOC"><div role="paragraph" class="description KbDetailLtContainer__description" tabindex="0">
+ <div>
+   This article provides an overview of the options and settings available on the 
+  <b> Data Access </b> tab of the Configuration Editor (Options) Interface.&nbsp; For a complete list of available tabs and options visit <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/en/kb/articles/options" target="_blank">Overview: Configuration Editor (Options) Interface</a>.<br> 
+ </div><hr> 
+ <h3 class="toc_anchors" id="SQL_CE"> <b> SQL CE </b> <br> </h3> 
+ <blockquote> 
+  <p> The database type "SQL Compact Edition" or "SQLCE" is a database file stored within the Factory Database folder.&nbsp; It has an SDF file extension, and some users call it a 'local' database, meaning that it resides locally on each computer.&nbsp; This is not to be confused with the SQL Local database discussed in the next section, "SQL Local (LocalDB)." <br> </p> 
+  <p> This is the default database type used when you install Toolbox. <br> </p> 
+  <p> SQL Compact Edition is limited to a single connection to the database at any one time.&nbsp; This means that if you have a company where multiple Users need to access the same data, you cannot use this database type and will need to set up a SQL Server type database. <br> </p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7x9cd8f4077871452686d39154db0ffbb1" class="sty__pd58f4__cls"> 
+   <br> 
+  </div> 
+ </blockquote> 
+ <h3 class="toc_anchors" id="SQL_Local__Local_DB"> <b> SQL Local (Local DB) </b> <br> </h3> 
+ <blockquote> 
+  <p> Structured Query Language Local Database. SQL Local DB copies a minimal set of files necessary to start the SQL Server Database Engine.&nbsp; SQL Local DB is suitable for a single-user or multi-user environment. SQL Local has a 10GB limit imposed by Microsoft. SQL Local DB is part of the Microvellum process to transition from an Individual Work Order Database to a single Unified Work Order Database. <br> </p> 
+  <p> <b> SQL Local - Factory Connection </b> <br> </p> 
+  <p> Used to convert a Factory SQL CE Database to an SQL Local (LocalDB) Database.&nbsp; Click the button&nbsp; <b> Transfer SqlCe to Sql Local </b> &nbsp;to initiate the process.&nbsp; <br> </p> 
+  <p> <b> SQL Local - Work Order Connection </b> <br> </p> 
+  <p> Used to convert Work Order SQL CE Databases into a single SQL Local Database.&nbsp; This step is necessary when transitioning to a single work order SQL Server database.&nbsp; Specify the type of database before clicking on the button&nbsp; <b> Transfer SqlCe to Sql Local. </b> <br> </p> 
+  <div> 
+   <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7x3cb85d5b5f0e4440af81d9f2fae00468" class="sty__cbcuhw__cls"> 
+   <br> 
+  </div> 
+ </blockquote> 
+ <h3 class="toc_anchors" id="SQL_Server"> <b> SQL Server </b> <br> </h3> 
+ <blockquote> 
+  <p> The SQL Server database type supports the connection of multiple computers connected to the same data through a network.&nbsp; To use this database type, you must first set up a SQL Server using Microsoft SQL Studio Manager.&nbsp; For more information on installing and configuring SQL Server, creating a database instance, and adding users see the following four-part tutorial: <br> </p> 
+  <ol> 
+   <li class="sty__mutmle__cls"> <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/en/kb/articles/sql-server-2017-installing-the-express-edition-tutorial-1"> Installing SQL Server Express Edition (Tutorial 1) </a> </li> 
+   <li class="sty__5iq71t__cls"> <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/en/kb/articles/sql-server-2017-configuring-the-sql-express-database-tutorial-2"> Configuring an SQL Express Database (Tutorial 2) </a> </li> 
+   <li class="sty__kde5u6__cls"> <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/en/kb/articles/connecting-microvellum-to-an-sql-database-uwod-tutorial-3"> Connecting Microvellum to an SQL Database (Unified Work Order Database)(Tutorial 3) </a> </li> 
+   <li class="sty__kfnh5j__cls"> <a rel="noopener noreferrer" href="https://community.microvellum.com/portal/en/kb/articles/unified-work-order-database-uwod-tutorial-4"> Transferring Data to an SQL Server Database (Unified Work Order Database)(Tutorial 4) (microvellum.com) </a> </li> 
+  </ol> 
+ </blockquote> 
+ <div> 
+  <div> 
+   <blockquote> 
+    <div> 
+     <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7x671915a967644c36934e76c4335d95d0" class="sty__3wxeth__cls"> 
+     <br> 
+    </div> 
+    <p> <b> SQL Server - Factory Authentication </b> <br> </p> 
+    <p> SQL Server databases require authentication information to establish a successful connection.&nbsp; The configuration of the SQL Server instance determines the type of Authentication necessary in this section, as well as the User Name and Password. <br> </p> 
+    <p> <b> Windows </b> &nbsp;– Uses internal Windows user data to connect to the SQL Server database.&nbsp; You must configure the server instance with one option or the other when you create the server instance. <br> </p> 
+    <p> <b> SQL Server </b> &nbsp;– Uses the "SQL Server User Name" and "SQL Server Password" entered in the same area of the interface. <br> </p> 
+    <p> <b> SQL Server - Factory Connection </b> <br> </p> 
+    <p> SQL Server instances and their databases require Data Source and Data Catalog information for a successful connection. <br> </p> 
+    <p> <b> Data Source </b> &nbsp;– Specifies the SQL Server instance name containing the desired database. <br> </p> 
+    <p> <b> Data Catalog </b> &nbsp;– Specifies the SQL Server database name to which you are connecting. <br> </p> 
+    <p> <b> Test Factory Connection&nbsp; </b> – Verifies the connection to the Factory database to ensure successful communication with the SQL Server. <br> </p> 
+    <p> <b> Transfer SQLCE to SQL Server </b> &nbsp;– Transfers an existing SQL CE Database to the SQL Server Database. Transfer will overwrite all existing SQL Server Information.&nbsp; Use caution with this command if you are transferring data to an existing database. <br> </p> 
+    <p> <b> SQL Server - Work Order Authentication </b> <br> </p> 
+    <p> The "Unified Work Order Database" SQL Server database requires authentication information for a successful connection.&nbsp; The configuration of the SQL Server instance determines the type of Authentication necessary in this section, as well as the User Name and Password. <br> </p> 
+    <p> <b> Windows </b> &nbsp;– Uses internal Windows user data to connect to the SQL Server database.&nbsp; You must configure the server instance with one option or the other when you create the server instance. <br> </p> 
+    <p> <b> SQL Server </b> &nbsp;– Uses the "SQL Server User Name" and "SQL Server Password" entered in the same area of the interface. <br> </p> 
+    <p> <b> SQL Server - Work Order Connection </b> <br> </p> 
+    <p> Unified Work Order Database connection settings.&nbsp; Data Source and Data Catalog (Work Order and Geometry) information required for a successful connection to the SQL Server and Database. <br> </p> 
+    <p> <b> Data Source </b> &nbsp;– Specifies the SQL Server Unified Work Order Database instance name containing the desired database. <br> </p> 
+    <p> <b> Data Catalog (Work Order) </b> &nbsp;– Specifies the SQL Server Unified Work Order Database name to which you are connecting. <br> </p> 
+    <p> <b> Data Catalog (Geometry) </b> &nbsp;– Specifies the SQL Server Unified Geometry Database name to which you are connecting. <br> </p> 
+    <p> <b> Test Work Order Connection&nbsp; </b> – <b> &nbsp; </b> Verifies the connection to the Unified Work Order database to ensure successful communication to the SQL Server. <br> </p> 
+    <p> <b> Test Geometry Connection&nbsp; </b> – Verifies the connection to the Unified Geometry database to ensure successful communication to the SQL Server. <br> </p> 
+    <p> <b> Transfer SQLCE to SQL Server </b> – Transfers an existing SQL CE Database to the SQL Server Database. Transfer will overwrite all existing SQL Server Information. Use caution with this command if you are transferring data to an existing database. <br> </p> 
+   </blockquote> 
+   <h3 class="toc_anchors" id="SQL_Relay"> <b> SQL Relay </b> <br> </h3> 
+   <blockquote> 
+    <p> The SQL Relay database type is for use only with Microvellum Production Time Clock. With that app, it supports time entry via a remote device and requires setup services performed by Microvellum Technicians. It is not used for Toolbox at this time. <br> </p> 
+    <div> 
+     <img src="https://desk.zoho.com/DocsDisplay?zgId=703767911&amp;mode=inline&amp;blockId=mep7xb3dcb151d9014d19ab3edc96ea4c7046" class="sty__rt5wah__cls"> 
+     <br> 
+    </div> 
+   </blockquote> 
+   <div> 
+    <br> 
+   </div> 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+ </div> 
+ <div> 
+  <br> 
+ </div> 
+<style type="text/css" data-css-purify-styler="1755095453390">.sty__pd58f4__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__cbcuhw__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__mutmle__cls{list-style-type: decimal}
+.sty__5iq71t__cls{list-style-type: decimal}
+.sty__kde5u6__cls{list-style-type: decimal}
+.sty__kfnh5j__cls{list-style-type: decimal}
+.sty__3wxeth__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+.sty__rt5wah__cls{padding: 20px; max-width: 100%; box-sizing: border-box}
+</style></div></div><div class="KbDetailLtContainer__updateTime" data-id="KbModifiedTime"><span>Updated:</span> <span title="22 Dec 2022 09:31 AM"><span>2 years ago</span></span></div><div class="KbDetailLtContainer__review" id="articleReview"><div class="KbDetailLtContainer__column"><div data-id="vote_enabled"><span class="KbDetailLtContainer__share">Helpful?</span><span data-id="like_article" class="KbDetailLtContainer__thumsup KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="like"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Like"><use xlink:href="#like"></use></svg></span><span data-id="dislike_article" class="KbDetailLtContainer__disLike commonStyle__positionRel commonStyle__inlineBlock KbDetailLtContainer__cursor commonStyle__cursor" role="button" aria-label="dislike"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__hoverbrand" alt="Dislike"><use xlink:href="#like"></use></svg></span></div></div><div class="KbDetailLtContainer__userSocialIcon"><a data-id="fb_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fconfiguration-editor-data-access-options&amp;amp;display=popup&amp;amp;ref=plugin" title="Facebook"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__fb" alt="Facebook"><use xlink:href="#facebookNew"></use></svg></a><a data-id="twitter_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fconfiguration-editor-data-access-options" title="Twitter"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__twit" alt="Twitter"><use xlink:href="#twitterNew"></use></svg></a><a data-id="linkedin_share" class="KbDetailLtContainer__socialIcon commonStyle__cursor" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcommunity.microvellum.com%2Fportal%2Fen%2Fkb%2Farticles%2Fconfiguration-editor-data-access-options" title="LinkedIn"><svg class="Icon__icon commonStyle__positionRel commonStyle__verticalMiddle Icon__medium Icon__linkedin" alt="LinkedIn"><use xlink:href="#linkedin"></use></svg></a></div></div><div id="parentContainer"><div id="kb_comment_container"></div></div><div class="KbDetailLtContainer__widget"></div></div>
+        </div>
+        
+        <div class="article-meta">
+            <p><strong>Original URL:</strong> <a href="https://community.microvellum.com/portal/en/kb/articles/configuration-editor-data-access-options" target="_blank">https://community.microvellum.com/portal/en/kb/articles/configuration-editor-data-access-options</a></p>
+            <p><strong>Scraped:</strong> 8/13/2025, 9:30:54 AM</p>
+            <p><strong>Categories:</strong> Engineering</p>
+        </div>
+    </div>
+</body>
+</html>
