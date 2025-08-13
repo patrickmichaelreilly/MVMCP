@@ -3,6 +3,7 @@
     "MVMCP": {
       "command": "dotnet",
       "args": ["run", "--project", "/home/patrick/MVMCP/MicrovellumMCP.csproj"],
+      "cwd": "/home/patrick/MVMCP",
       "description": "Microvellum MCP Server for SQL Server database operations"
     }
   }

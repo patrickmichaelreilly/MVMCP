@@ -140,6 +140,115 @@ public static class MicrovellumTools
         }
     }
 
+    [McpServerTool, Description("Search the Microvellum Knowledge Base for articles containing specific keywords")]
+    public static async Task<string> MVResearch(string keywords)
+    {
+        try
+        {
+            var searchTerms = keywords.ToLowerInvariant().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var kbPath = "/home/patrick/MVMCP/microvellum_kb";
+            
+            var htmlFiles = Directory.GetFiles(kbPath, "*.html", SearchOption.AllDirectories);
+            var results = new List<object>();
+            
+            foreach (var filePath in htmlFiles)
+            {
+                try
+                {
+                    var content = await File.ReadAllTextAsync(filePath);
+                    var contentLower = content.ToLowerInvariant();
+                    
+                    // Check if all search terms are present
+                    var matchCount = searchTerms.Count(term => contentLower.Contains(term));
+                    if (matchCount == 0) continue;
+                    
+                    // Extract title from HTML
+                    var title = ExtractTitle(content, filePath);
+                    
+                    // Get category from directory structure
+                    var relativePath = Path.GetRelativePath(kbPath, filePath);
+                    var category = Path.GetDirectoryName(relativePath)?.Replace(Path.DirectorySeparatorChar, '/') ?? "";
+                    
+                    // Find context snippets around matches
+                    var snippets = ExtractSnippets(content, searchTerms);
+                    
+                    results.Add(new
+                    {
+                        title = title,
+                        filePath = relativePath.Replace(Path.DirectorySeparatorChar, '/'),
+                        category = category,
+                        matchScore = (double)matchCount / searchTerms.Length,
+                        snippets = snippets
+                    });
+                }
+                catch
+                {
+                    // Skip files that can't be read
+                    continue;
+                }
+            }
+            
+            // Sort by match score and limit results
+            var sortedResults = results
+                .OrderByDescending(r => ((dynamic)r).matchScore)
+                .ThenBy(r => ((dynamic)r).title)
+                .Take(20)
+                .ToList();
+            
+            return JsonSerializer.Serialize(new 
+            { 
+                searchTerms = searchTerms,
+                totalMatches = sortedResults.Count,
+                results = sortedResults
+            }, new JsonSerializerOptions { WriteIndented = true });
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = ex.Message });
+        }
+    }
+
+    [McpServerTool, Description("Retrieve the full content of a specific Microvellum Knowledge Base article")]
+    public static async Task<string> MVGetArticle(string filePath)
+    {
+        try
+        {
+            var kbPath = "/home/patrick/MVMCP/microvellum_kb";
+            var fullPath = Path.Combine(kbPath, filePath.Replace('/', Path.DirectorySeparatorChar));
+            
+            // Security check - ensure path is within KB directory
+            var resolvedPath = Path.GetFullPath(fullPath);
+            var resolvedKbPath = Path.GetFullPath(kbPath);
+            
+            if (!resolvedPath.StartsWith(resolvedKbPath))
+            {
+                return JsonSerializer.Serialize(new { error = "Invalid file path - must be within knowledge base directory" });
+            }
+            
+            if (!File.Exists(resolvedPath))
+            {
+                return JsonSerializer.Serialize(new { error = "Article not found" });
+            }
+            
+            var content = await File.ReadAllTextAsync(resolvedPath);
+            var title = ExtractTitle(content, resolvedPath);
+            var category = Path.GetDirectoryName(filePath)?.Replace(Path.DirectorySeparatorChar, '/') ?? "";
+            
+            return JsonSerializer.Serialize(new 
+            { 
+                title = title,
+                filePath = filePath,
+                category = category,
+                content = content,
+                lastModified = File.GetLastWriteTime(resolvedPath)
+            }, new JsonSerializerOptions { WriteIndented = true });
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = ex.Message });
+        }
+    }
+
     [McpServerTool, Description("Get database schema information including tables, columns, relationships, and constraints")]
     public static async Task<string> GetSchema(string connectionString, string? tableName = null)
     {
@@ -288,6 +397,58 @@ public static class MicrovellumTools
         {
             return JsonSerializer.Serialize(new { error = ex.Message });
         }
+    }
+    
+    private static string ExtractTitle(string htmlContent, string filePath)
+    {
+        // Try to extract title from article_Title h1 tag
+        var articleTitleMatch = Regex.Match(htmlContent, @"data-id=""article_Title""[^>]*>([^<]+)</h1>", RegexOptions.IgnoreCase);
+        if (articleTitleMatch.Success)
+        {
+            var title = articleTitleMatch.Groups[1].Value.Trim();
+            if (!string.IsNullOrEmpty(title))
+                return title;
+        }
+        
+        // Fallback to filename without extension
+        return Path.GetFileNameWithoutExtension(filePath).Replace('-', ' ').Replace('_', ' ');
+    }
+    
+    private static List<string> ExtractSnippets(string htmlContent, string[] searchTerms)
+    {
+        var snippets = new List<string>();
+        var plainText = Regex.Replace(htmlContent, @"<[^>]*>", " "); // Simple HTML tag removal
+        plainText = Regex.Replace(plainText, @"\s+", " ").Trim(); // Normalize whitespace
+        
+        foreach (var term in searchTerms)
+        {
+            var index = plainText.IndexOf(term, StringComparison.OrdinalIgnoreCase);
+            if (index >= 0)
+            {
+                var start = Math.Max(0, index - 100);
+                var length = Math.Min(200, plainText.Length - start);
+                var snippet = plainText.Substring(start, length);
+                
+                // Clean up snippet boundaries
+                if (start > 0)
+                {
+                    var spaceIndex = snippet.IndexOf(' ');
+                    if (spaceIndex > 0 && spaceIndex < 20)
+                        snippet = snippet.Substring(spaceIndex + 1);
+                }
+                
+                if (start + length < plainText.Length)
+                {
+                    var lastSpaceIndex = snippet.LastIndexOf(' ');
+                    if (lastSpaceIndex > snippet.Length - 20)
+                        snippet = snippet.Substring(0, lastSpaceIndex);
+                }
+                
+                snippets.Add($"...{snippet.Trim()}...");
+            }
+        }
+        
+        return snippets.Take(3).ToList(); // Limit to 3 snippets per article
     }
     
     private static bool IsSelectQuery(string sql)
